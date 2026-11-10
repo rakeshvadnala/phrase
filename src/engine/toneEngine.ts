@@ -5,6 +5,7 @@ import politeRules from '../rules/polite.json';
 import formalRules from '../rules/formal.json';
 import friendlyRules from '../rules/friendly.json';
 import conciseRules from '../rules/concise.json';
+import { alignWithCapitalization, findCapitalization } from './capitalizationEngine';
 import { issuesToChanges } from './grammarEngine';
 import { findPhraseChanges } from './phraseEngine';
 import { getSentenceRanges, rangesOverlap } from './textUtils';
@@ -107,5 +108,6 @@ export function analyzeText({ text, tone, issues = [], customRules = [], diction
     (p) => !cleanup.some((c) => rangesOverlap(c, p)),
   );
   const grammar = issuesToChanges(text, issues, dictionary);
-  return [...cleanup, ...phrase, ...grammar].sort((a, b) => a.start - b.start || b.priority - a.priority);
+  const cap = findCapitalization(text, issues, dictionary);
+  return [...cleanup, ...alignWithCapitalization([...phrase, ...grammar], cap), ...cap.changes].sort((a, b) => a.start - b.start || b.priority - a.priority);
 }

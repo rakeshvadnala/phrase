@@ -12,7 +12,8 @@ Live site: <https://phrase.rakeshvadnala.in>
 | --- | --- |
 | **Editor** | Large auto-growing editor, paste / clear, live character, word and sentence counts, `Ctrl/⌘ + Enter` to improve. |
 | **Grammar checker** | [Harper](https://writewithharper.com) (WebAssembly, runs in a Web Worker). Spelling, grammar, punctuation, capitalization, repetition. Issues are underlined as you type (debounced) and listed with suggestions you can apply or ignore one by one, or all at once. |
-| **Spell check** | Built in, in every mode, using Harper's English dictionary (dialect selectable in Settings). Misspellings are underlined and listed with corrections. Unambiguous typos (`teh` → `the`) are pre-selected; where several corrections are plausible, or the word looks like a name or technical term (`kubectl`, `OAuth`), nothing is changed unless you pick a correction. Words can be added to a personal dictionary stored in your browser. |
+| **Spell check** | Built in, in every mode, using Harper's English dictionary (dialect selectable in Settings). Misspellings are underlined and listed with corrections. Unambiguous typos (`teh` → `the`) are pre-selected; where several corrections are plausible, or the word is capitalised, contains digits or symbols (`OAuth`, `Ravi`, `v2`), or is the name in a greeting line, nothing is changed unless you pick a correction. Words can be added to a personal dictionary stored in your browser. |
+| **Capitalization** | The first word of each line and sentence is capitalised (`hope you are well` → `Hope you are well`), and so is the name or form of address in a greeting (`hello ravi,` → `Hello Ravi,`). Each capital is a change you can reject. URLs, e-mail addresses, code, identifiers and words such as `iPhone` are left alone; for a word the checker does not know (`kubectl get pods`) the capital is offered but not applied. |
 | **Rephrasing engine** | 660+ phrase rules. Phrase-level, whole-word, case-insensitive matching in a single pass (no cascading or repeated replacements). Preserves case, punctuation, names, numbers, dates, URLs, e-mail addresses, code, quoted text and identifiers. Most everyday phrases offer three to six alternative wordings. |
 | **Sentence patterns** | Requests, suggestions, status checks, apologies, thanks and commitments are recognised by their shape and can be rephrased in structurally different ways: `Can you send …?` → `Could you please send …?` / `Would you mind sending …?` / `I would appreciate it if you could send ….` The sentence's final punctuation follows the wording. |
 | **Try another version** | One click switches every phrase suggestion to its next wording, giving a differently worded version of the whole message. Optional suggestions (for text that is already fine) are only applied when you choose them. |
@@ -43,6 +44,7 @@ phrase/
 │   ├── engine/
 │   │   ├── grammarEngine.ts       # Harper integration (lint → plain issues → selectable changes)
 │   │   ├── spellingEngine.ts      # spelling policy + personal dictionary
+│   │   ├── capitalizationEngine.ts # line / sentence starts and greeting names
 │   │   ├── phraseEngine.ts        # rule matching, case/punctuation handling, protected spans
 │   │   ├── toneEngine.ts          # per-mode rule configuration, analyzeText()
 │   │   ├── inflect.ts             # request-verb list and -ing forms for sentence patterns
@@ -109,7 +111,7 @@ Open <http://localhost:5173>. The grammar engine (~20 MB WebAssembly, ~8 MB comp
 | `npm run build` | Type-check, then production build into `dist/` |
 | `npm run preview` | Serve the production build locally |
 
-The test-suite (170 tests) covers: grammar-checking integration against the real Harper engine, phrase matching, case preservation, punctuation preservation, professional / polite / formal / friendly / concise transformations, custom phrase management, history storage (including the off-by-default guarantee), settings, missing LocalStorage, empty input, very long input, text comparison, e-mail templates, sentence patterns, verb inflection and whole-message versions.
+The test-suite (189 tests) covers: grammar-checking integration against the real Harper engine, phrase matching, case preservation, punctuation preservation, professional / polite / formal / friendly / concise transformations, custom phrase management, history storage (including the off-by-default guarantee), settings, missing LocalStorage, empty input, very long input, text comparison, e-mail templates, sentence patterns, verb inflection, whole-message versions and capitalization.
 
 ## 6. GitHub repository setup
 
@@ -167,6 +169,8 @@ At the DNS provider for `rakeshvadnala.in`, add one record:
 
 - **Rules, not understanding.** Phrase matches phrases; it does not understand meaning or context. It will not restructure sentences, and a rule can occasionally fit a sentence poorly — which is why every change can be rejected or swapped.
 - **Grammar coverage is Harper's coverage.** Harper is a rule-based checker, not a full parser. It misses some errors (for example it corrects `it dont work` to `don't`, not `doesn't`) and occasionally flags correct text.
+- **Lower-case names outside a greeting.** A name typed in lower case in the middle of a sentence (`ask ravi to check`) looks like an ordinary typo, so it is not capitalised and may be pre-selected for a look-alike correction. Capitalise the name or add it to the personal dictionary.
+- **Capitalization is line-based.** A line of 60 characters or more that does not end a sentence is treated as wrapped text, so the next line is not capitalised. A greeting without punctuation (`hello ravi`) only gets a suggested, not an applied, capital on the name.
 - **Spelling suggestions are look-alikes.** For unknown words (names, product names, jargon) Harper offers similar dictionary words that are often wrong, so Phrase only pre-selects unambiguous corrections and leaves the rest for you to choose. Add recurring terms to the personal dictionary.
 - **Single pass.** All changes are computed against the original text. A phrase rule will not match a phrase that contains a typo; use *Replace editor text* and improve again if needed.
 - **Variety is finite.** Alternative wordings and sentence patterns are written by hand. A sentence that matches no rule comes back unchanged (apart from grammar fixes), and sentence patterns only fire for a fixed list of about 100 common request verbs.
