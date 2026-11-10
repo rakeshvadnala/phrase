@@ -1,12 +1,119 @@
 [
   {
+    "id": "pol-pat-status",
+    "original": "Any update on … ? / What is the status of … ?",
+    "pattern": "(?:what(?:['’]s| is) the (?:status|update|progress) (?:of|on|for|regarding)|any updates? (?:on|regarding|about|for)|is there any update (?:on|regarding|about))",
+    "replacement": "could you please share an update on{?}",
+    "alternatives": [
+      "may I have an update on{?}",
+      "I am following up on{.}",
+      "I wanted to check on the status of{.}",
+      "do you have an update on{?}"
+    ],
+    "tone": "polite",
+    "priority": 85,
+    "context": "Follow-ups",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "pol-pat-i-want-to-verb",
+    "original": "I want to discuss …",
+    "pattern": "i (?:want|wanna|wish) to (\\p{L}+)",
+    "replacement": "I would like to $1",
+    "alternatives": [
+      "may I $1{?}",
+      "I was hoping to $1",
+      "would it be possible for me to $1{?}",
+      "I would appreciate the opportunity to $1"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "context": "Requests",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "pol-pat-can-we-verb",
+    "original": "Can we schedule … ? / Let's schedule …",
+    "pattern": "(?:can we|shall we|let['’]s|lets|let us) ({verb})",
+    "replacement": "could we $1{?}",
+    "alternatives": [
+      "shall we $1{?}",
+      "would it be possible to $1{?}",
+      "I suggest we $1{.}",
+      "how about $1:ing{?}",
+      "may I suggest we $1{.}"
+    ],
+    "tone": "polite",
+    "priority": 65,
+    "context": "Suggestions",
+    "description": "Several ways to phrase the same sentence — pick the one that fits.",
+    "alwaysOffer": true
+  },
+  {
+    "id": "pol-pat-please-verb",
+    "original": "Please send …",
+    "pattern": "(?:please|kindly|pls) ({verb})",
+    "replacement": "please $1",
+    "alternatives": [
+      "could you please $1{?}",
+      "would you mind $1:ing{?}",
+      "I would appreciate it if you could $1{.}",
+      "kindly $1",
+      "may I ask you to $1{?}"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "context": "Requests",
+    "description": "Already polite. Other ways to make the same request, if you want variety.",
+    "position": "sentenceStart",
+    "suggestOnly": true,
+    "alwaysOffer": true
+  },
+  {
+    "id": "pol-pat-you-need-to-verb",
+    "original": "You need to update …",
+    "pattern": "(?:i (?:want|need|expect) you to|you (?:need to|have to|must|should)) ({verb})",
+    "replacement": "could you please $1{?}",
+    "alternatives": [
+      "I would appreciate it if you could $1{.}",
+      "would you mind $1:ing{?}",
+      "it would be great if you could $1{.}",
+      "may I ask you to $1{?}"
+    ],
+    "tone": "polite",
+    "priority": 80,
+    "context": "Requests",
+    "description": "Turns a directive into a request, in several possible ways."
+  },
+  {
+    "id": "pol-pat-can-you-verb",
+    "original": "Can you send … ?",
+    "pattern": "(?:can|could|will|would) you (?:please |kindly )?({verb})",
+    "replacement": "could you please $1{?}",
+    "alternatives": [
+      "would you mind $1:ing{?}",
+      "I would appreciate it if you could $1{.}",
+      "would you be able to $1{?}",
+      "I would be grateful if you could $1{.}",
+      "may I ask you to $1{?}"
+    ],
+    "tone": "polite",
+    "priority": 70,
+    "context": "Requests",
+    "description": "Several ways to phrase the same sentence — pick the one that fits.",
+    "alwaysOffer": true
+  },
+  {
     "id": "pol-send-the-report",
     "original": "Send the report",
-    "pattern": "(?:send|share|give|provide|forward|verify|confirm|resolve|complete|approve|arrange|tell|explain|clarify|look into|let me know|make sure|ensure|inform|notify|submit|attach|install|restart|assign|prioriti[sz]e|cancel|remove|add|create|bring|schedule|fix|finish|upload|sign|reschedule|investigate|escalate|deploy|merge|revert|rollback|roll back)(?= \\p{L})",
-    "replacement": "Could you please $0",
+    "pattern": "(send|share|give|provide|forward|verify|confirm|resolve|complete|approve|arrange|tell|explain|clarify|look into|let me know|make sure|ensure|inform|notify|submit|attach|install|restart|assign|prioriti[sz]e|cancel|remove|add|create|bring|schedule|fix|finish|upload|sign|reschedule|investigate|escalate|deploy|merge|revert|rollback|roll back)(?= \\p{L})",
+    "replacement": "Could you please $0{?}",
     "alternatives": [
       "Please $0",
-      "Would you be able to $0"
+      "Would you be able to $0{?}",
+      "Would you mind $1:ing{?}",
+      "I would appreciate it if you could $0{.}",
+      "Kindly $0"
     ],
     "tone": "polite",
     "priority": 40,
@@ -24,11 +131,14 @@
   {
     "id": "pol-check-the-logs",
     "original": "Check the logs",
-    "pattern": "(?:check|review|update|call|email|test|change|close|open|help|get|take|book|show|make|run|stop|start|delete|read|write|join|contact|reply|respond)(?= (?:me|us|the|this|that|these|those|your|it|a|an|him|her|them|my|our|with|whether|if|to|all)\\b)",
-    "replacement": "Could you please $0",
+    "pattern": "(check|review|update|call|email|test|change|close|open|help|get|take|book|show|make|run|stop|start|delete|read|write|join|contact|reply|respond)(?= (?:me|us|the|this|that|these|those|your|it|a|an|him|her|them|my|our|with|whether|if|to|all)\\b)",
+    "replacement": "Could you please $0{?}",
     "alternatives": [
       "Please $0",
-      "Would you be able to $0"
+      "Would you be able to $0{?}",
+      "Would you mind $1:ing{?}",
+      "I would appreciate it if you could $0{.}",
+      "Kindly $0"
     ],
     "tone": "polite",
     "priority": 40,
@@ -46,10 +156,12 @@
   {
     "id": "pol-give-me",
     "original": "Give me",
-    "replacement": "Could you please share",
+    "replacement": "Could you please share{?}",
     "alternatives": [
-      "Could you please send me",
-      "Please share"
+      "Could you please send me{?}",
+      "Please share",
+      "Would you mind sharing{?}",
+      "May I have{?}"
     ],
     "tone": "polite",
     "priority": 60,
@@ -69,7 +181,9 @@
     "replacement": "could you please",
     "alternatives": [
       "would you be able to",
-      "would you mind helping me"
+      "would you mind helping me",
+      "would you kindly",
+      "may I ask you to"
     ],
     "tone": "polite",
     "priority": 55,
@@ -83,7 +197,9 @@
     "original": "Will you",
     "replacement": "would you please",
     "alternatives": [
-      "could you please"
+      "could you please",
+      "would you kindly",
+      "would you be able to"
     ],
     "tone": "polite",
     "priority": 55,
@@ -106,6 +222,10 @@
       "kindly",
       "would you mind",
       "would you be"
+    ],
+    "alternatives": [
+      "would you kindly",
+      "would you be able to"
     ]
   },
   {
@@ -118,7 +238,9 @@
     "replacement": "I would appreciate it if you could",
     "alternatives": [
       "Could you please",
-      "It would be great if you could"
+      "It would be great if you could",
+      "Would you be able to",
+      "May I ask you to"
     ],
     "tone": "polite",
     "priority": 75
@@ -131,10 +253,12 @@
       "you must",
       "you should"
     ],
-    "replacement": "could you please",
+    "replacement": "could you please{?}",
     "alternatives": [
       "it would be great if you could",
-      "I would suggest that you"
+      "I would suggest that you",
+      "may I ask you to",
+      "please"
     ],
     "tone": "polite",
     "priority": 60,
@@ -157,7 +281,9 @@
     "replacement": "I would appreciate",
     "alternatives": [
       "I would like",
-      "may I request"
+      "may I request",
+      "I am looking for",
+      "could I please have"
     ],
     "tone": "polite",
     "priority": 30
@@ -171,7 +297,9 @@
     "replacement": "at your earliest convenience",
     "alternatives": [
       "as soon as possible",
-      "when you have a moment"
+      "when you have a moment",
+      "whenever you get a chance",
+      "at the earliest opportunity"
     ],
     "tone": "polite",
     "priority": 50,
@@ -187,7 +315,9 @@
     ],
     "replacement": "as soon as possible",
     "alternatives": [
-      "at your earliest convenience"
+      "at your earliest convenience",
+      "promptly",
+      "at the earliest opportunity"
     ],
     "tone": "polite",
     "priority": 45
@@ -199,7 +329,9 @@
     "pattern": "thanks(?! to\\b)",
     "replacement": "thank you",
     "alternatives": [
-      "many thanks"
+      "many thanks",
+      "thank you very much",
+      "thank you kindly"
     ],
     "tone": "polite",
     "priority": 20
@@ -231,7 +363,9 @@
     "replacement": "I apologize",
     "alternatives": [
       "My apologies",
-      "I am sorry"
+      "I am sorry",
+      "Please accept my apologies",
+      "I do apologize"
     ],
     "tone": "polite",
     "priority": 20,
@@ -250,7 +384,9 @@
     "replacement": "I believe there may be a misunderstanding",
     "alternatives": [
       "I see this a little differently",
-      "I think this may need another look"
+      "I think this may need another look",
+      "I am not sure that is quite right",
+      "May I offer a different view?"
     ],
     "tone": "polite",
     "priority": 70,
@@ -266,7 +402,9 @@
     "replacement": "it looks like we still need to",
     "alternatives": [
       "could you please also",
-      "a gentle reminder to"
+      "a gentle reminder to",
+      "just a reminder to",
+      "when you get a chance, please"
     ],
     "tone": "polite",
     "priority": 65
@@ -281,7 +419,9 @@
     ],
     "replacement": "could you help me understand why you did not",
     "alternatives": [
-      "may I ask why you did not"
+      "may I ask why you did not",
+      "I was wondering why you did not",
+      "could you share why you did not"
     ],
     "tone": "polite",
     "priority": 65
@@ -298,7 +438,8 @@
     "replacement": "I am not sure I fully understand",
     "alternatives": [
       "could you please clarify",
-      "could you please help me understand"
+      "could you please help me understand",
+      "I am afraid I do not quite follow"
     ],
     "tone": "polite",
     "priority": 60
@@ -312,7 +453,9 @@
     "replacement": "how may I help you",
     "alternatives": [
       "what can I do for you",
-      "how can I assist you"
+      "how can I assist you",
+      "how can I help",
+      "what would you like me to do"
     ],
     "tone": "polite",
     "priority": 65
@@ -323,7 +466,9 @@
     "pattern": "wait(?=[ \\t]*(?:[.!\\n]|$))",
     "replacement": "Please bear with me",
     "alternatives": [
-      "Please give me a moment"
+      "Please give me a moment",
+      "One moment, please",
+      "Kindly allow me a moment"
     ],
     "tone": "polite",
     "priority": 50,
@@ -346,7 +491,9 @@
     ],
     "replacement": "please give me a moment",
     "alternatives": [
-      "please bear with me for a moment"
+      "please bear with me for a moment",
+      "one moment, please",
+      "kindly allow me a moment"
     ],
     "tone": "polite",
     "priority": 65
@@ -362,7 +509,9 @@
     "replacement": "I'm afraid I am unable to",
     "alternatives": [
       "unfortunately, I am unable to",
-      "I regret that I cannot"
+      "I regret that I cannot",
+      "I am sorry, but I am unable to",
+      "regrettably, I cannot"
     ],
     "tone": "polite",
     "priority": 50,
@@ -376,7 +525,9 @@
     ],
     "replacement": "I'm afraid I will not be able to",
     "alternatives": [
-      "unfortunately, I will not be able to"
+      "unfortunately, I will not be able to",
+      "I am sorry, but I will not be able to",
+      "regrettably, I will be unable to"
     ],
     "tone": "polite",
     "priority": 50
@@ -393,7 +544,9 @@
     ],
     "replacement": "unfortunately, that may not be possible",
     "alternatives": [
-      "I'm afraid that will be difficult"
+      "I'm afraid that will be difficult",
+      "I am sorry, but that will not be possible",
+      "that may be difficult to arrange"
     ],
     "tone": "polite",
     "priority": 60
@@ -408,7 +561,9 @@
     "replacement": "I see this differently",
     "alternatives": [
       "I have a different perspective",
-      "I respectfully disagree"
+      "I respectfully disagree",
+      "I am not sure I agree",
+      "I would like to offer another view"
     ],
     "tone": "polite",
     "priority": 55
@@ -419,7 +574,9 @@
     "replacement": "please let me know",
     "alternatives": [
       "could you please tell me",
-      "please share"
+      "please share",
+      "kindly let me know",
+      "would you mind telling me"
     ],
     "tone": "polite",
     "priority": 55,
@@ -435,9 +592,11 @@
       "any updates",
       "any news"
     ],
-    "replacement": "Could you please share an update",
+    "replacement": "Could you please share an update{?}",
     "alternatives": [
-      "May I ask if there is any update"
+      "May I ask if there is any update",
+      "Do you have any update{?}",
+      "I wanted to check if there is any update{.}"
     ],
     "tone": "polite",
     "priority": 60,
@@ -451,7 +610,9 @@
     "original": "Thanks in advance",
     "replacement": "Thank you in advance for your help",
     "alternatives": [
-      "I really appreciate your help with this"
+      "I really appreciate your help with this",
+      "Many thanks in advance",
+      "Thank you so much in advance"
     ],
     "tone": "polite",
     "priority": 60
@@ -461,7 +622,9 @@
     "original": "Hurry up",
     "replacement": "could you please expedite this",
     "alternatives": [
-      "I would appreciate it if this could be prioritized"
+      "I would appreciate it if this could be prioritized",
+      "would it be possible to speed this up",
+      "I would be grateful if this could be expedited"
     ],
     "tone": "polite",
     "priority": 60
@@ -474,7 +637,9 @@
     ],
     "replacement": "I have limited availability at the moment",
     "alternatives": [
-      "I am tied up at the moment"
+      "I am tied up at the moment",
+      "I am a little occupied right now",
+      "my schedule is quite full at the moment"
     ],
     "tone": "polite",
     "priority": 50
@@ -493,7 +658,9 @@
     "replacement": "as mentioned earlier",
     "alternatives": [
       "as noted previously",
-      "to reiterate"
+      "to reiterate",
+      "as I mentioned",
+      "as shared earlier"
     ],
     "tone": "polite",
     "priority": 60,
@@ -524,7 +691,9 @@
     ],
     "replacement": "I may not have been clear",
     "alternatives": [
-      "allow me to clarify"
+      "allow me to clarify",
+      "there may have been a misunderstanding",
+      "let me explain this better"
     ],
     "tone": "polite",
     "priority": 60,
@@ -540,7 +709,9 @@
     ],
     "replacement": "this falls short of what we expected",
     "alternatives": [
-      "I have some concerns about this"
+      "I have some concerns about this",
+      "this is not quite what we agreed",
+      "I am concerned about this"
     ],
     "tone": "polite",
     "priority": 60
@@ -551,7 +722,9 @@
     "replacement": "please let me know",
     "alternatives": [
       "kindly let me know",
-      "please keep me informed"
+      "please keep me informed",
+      "do let me know",
+      "I would appreciate it if you could let me know"
     ],
     "tone": "polite",
     "priority": 45,
@@ -564,9 +737,11 @@
     "id": "pol-do-it",
     "original": "Do it",
     "pattern": "do (it|this|that)",
-    "replacement": "Could you please take care of $1",
+    "replacement": "Could you please take care of $1{?}",
     "alternatives": [
-      "Please take care of $1"
+      "Please take care of $1",
+      "Would you mind taking care of $1{?}",
+      "I would appreciate it if you could take care of $1{.}"
     ],
     "tone": "polite",
     "priority": 55,
@@ -585,7 +760,9 @@
     "pattern": "no(?=[,.!])",
     "replacement": "Unfortunately, no",
     "alternatives": [
-      "I'm afraid not"
+      "I'm afraid not",
+      "I am sorry, but no",
+      "Regrettably, no"
     ],
     "tone": "polite",
     "priority": 30,
@@ -594,9 +771,11 @@
   {
     "id": "pol-call-me",
     "original": "Call me",
-    "replacement": "Could you please call me",
+    "replacement": "Could you please call me{?}",
     "alternatives": [
-      "Please give me a call"
+      "Please give me a call",
+      "Would you mind giving me a call{?}",
+      "I would appreciate a call{.}"
     ],
     "tone": "polite",
     "priority": 55,
@@ -617,7 +796,9 @@
     ],
     "replacement": "I noticed a delay",
     "alternatives": [
-      "it seems there has been a delay"
+      "it seems there has been a delay",
+      "there seems to be a delay",
+      "I see we are running behind"
     ],
     "tone": "polite",
     "priority": 50
@@ -631,7 +812,9 @@
     ],
     "replacement": "an oversight",
     "alternatives": [
-      "a small error"
+      "a small error",
+      "a slip",
+      "an error"
     ],
     "tone": "polite",
     "priority": 50,

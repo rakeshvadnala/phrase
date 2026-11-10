@@ -1,6 +1,6 @@
-import { CheckCircle2, Info, Replace, RotateCcw } from 'lucide-react';
-import { useMemo } from 'react';
-import { applyChanges, chosenOption } from '../engine/changes';
+import { CheckCircle2, Info, Replace, RotateCcw, Shuffle } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { applyChanges, chosenOption, countVersions, selectVersion } from '../engine/changes';
 import { compareFromChanges } from '../engine/comparisonEngine';
 import { toneLabel } from '../engine/toneEngine';
 import type { ImproveResult } from '../hooks/useAppState';
@@ -25,6 +25,27 @@ export function ResultPanel({ result, stale, onSelectionChange, onReplaceEditor,
   const comparison = useMemo(() => compareFromChanges(original, outcome), [original, outcome]);
   const applied = useMemo(() => new Set(outcome.applied.map((a) => a.change.id)), [outcome]);
   const blocked = useMemo(() => new Set(outcome.blocked), [outcome]);
+
+  // Whole-message versions: each one moves every phrase suggestion on to its next wording.
+  const versions = useMemo(() => countVersions(changes), [changes]);
+  const [version, setVersion] = useState(0);
+  // The ref keeps rapid clicks in step even before React has re-rendered.
+  const versionRef = useRef(0);
+  const showVersion = (v: number) => {
+    versionRef.current = v;
+    setVersion(v);
+  };
+  useEffect(() => showVersion(0), [changes]);
+  const nextVersion = () => {
+    const next = (versionRef.current + 1) % versions;
+    showVersion(next);
+    onSelectionChange(selectVersion(changes, selection, next));
+  };
+  const reset = () => {
+    showVersion(0);
+    onSelectionChange({});
+  };
+  const appliedCount = applied.size;
 
   const grammar = changes.filter((c) => c.source === 'grammar');
   const phrases = changes.filter((c) => c.source !== 'grammar');
@@ -55,16 +76,26 @@ export function ResultPanel({ result, stale, onSelectionChange, onReplaceEditor,
             {changed ? (
               <>
                 <CheckCircle2 size={16} aria-hidden className="text-success" />
-                {outcome.applied.length} {outcome.applied.length === 1 ? 'change' : 'changes'} applied in {toneLabel(tone)} mode
+                {appliedCount} {appliedCount === 1 ? 'change' : 'changes'} applied in {toneLabel(tone)} mode
               </>
             ) : (
               <>
                 <Info size={16} aria-hidden /> No changes applied in {toneLabel(tone)} mode
               </>
             )}
-            {pending > 0 && <span>· {pending} awaiting your review</span>}
+            {pending > 0 && <span>· {pending} optional or awaiting your review</span>}
           </p>
         </div>
+        {versions > 1 && (
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-muted" aria-live="polite">
+              Version {version + 1} of {versions}
+            </span>
+            <button type="button" className="btn" onClick={nextVersion} title="Switch every phrase suggestion to its next wording">
+              <Shuffle size={16} aria-hidden /> Try another version
+            </button>
+          </div>
+        )}
       </div>
 
       {stale && (
@@ -82,7 +113,7 @@ export function ResultPanel({ result, stale, onSelectionChange, onReplaceEditor,
             <button type="button" className="btn btn-sm" onClick={() => onReplaceEditor(outcome.text)} disabled={!changed}>
               <Replace size={15} aria-hidden /> Replace editor text
             </button>
-            <button type="button" className="btn btn-sm" onClick={() => onSelectionChange({})} disabled={!customised}>
+            <button type="button" className="btn btn-sm" onClick={reset} disabled={!customised}>
               <RotateCcw size={15} aria-hidden /> Reset changes
             </button>
           </>
@@ -116,7 +147,9 @@ export function ResultPanel({ result, stale, onSelectionChange, onReplaceEditor,
             <p className="mt-3 text-sm text-muted">No phrase rule for this mode matched your message.</p>
           ) : (
             <div className="mt-3">
-              <p className="mb-3 text-xs text-muted">Pick an alternative wording, or keep your original phrase.</p>
+              <p className="mb-3 text-xs text-muted">
+                Pick an alternative wording, or keep your original phrase. Suggestions marked Optional are not applied unless you choose one.
+              </p>
               <ChangeList changes={phrases} selection={selection} applied={applied} blocked={blocked} onSelect={select} />
             </div>
           )}

@@ -24,6 +24,37 @@ export function chosenOption(change: Change, selection: Selection = {}): number 
   return index >= 0 && index < change.options.length ? index : -1;
 }
 
+/** Phrase changes that offer a choice of wording (grammar corrections are not "versions"). */
+const hasVariants = (c: Change) => c.source !== 'grammar' && c.options.length > 0;
+
+/** How many distinct whole-message versions `selectVersion` can produce. */
+export function countVersions(changes: Change[]): number {
+  let max = 1;
+  for (const c of changes) if (hasVariants(c)) max = Math.max(max, c.options.length + (c.defaultOption < 0 ? 1 : 0));
+  return max;
+}
+
+/**
+ * Builds the selection for whole-message version `version` (0 = the default).
+ * Each phrase change moves on to its next wording; changes with fewer
+ * wordings wrap around. Grammar choices already made are kept.
+ */
+export function selectVersion(changes: Change[], selection: Selection, version: number): Selection {
+  const next: Selection = {};
+  for (const c of changes) {
+    if (!hasVariants(c)) {
+      if (selection[c.id] !== undefined) next[c.id] = selection[c.id];
+      continue;
+    }
+    if (version === 0) continue; // fall back to the default
+    // Optional suggestions start "off", so their cycle has one extra position.
+    const cycle = c.defaultOption < 0 ? [-1, ...c.options.keys()] : [...c.options.keys()];
+    const startAt = c.defaultOption < 0 ? 0 : c.defaultOption;
+    next[c.id] = cycle[(startAt + version) % cycle.length];
+  }
+  return next;
+}
+
 /**
  * Applies the selected changes to `original` and returns the new text.
  * The original string is never mutated; every change is expressed against it,
@@ -45,12 +76,22 @@ export function applyChanges(original: string, changes: Change[], selection: Sel
   }
   accepted.sort((a, b) => a.option.start - b.option.start || a.option.end - b.option.end);
 
+  // Secondary edits (e.g. sentence-final punctuation) join in where they do not collide.
+  const edits = [...accepted];
+  for (const a of accepted) {
+    for (const extra of a.option.extra ?? []) {
+      if (edits.some((e) => rangesOverlap(e.option, extra) || (e.change !== a.change && rangesOverlap(e.change, extra)))) continue;
+      edits.push({ change: a.change, option: extra, optionIndex: a.optionIndex });
+    }
+  }
+  edits.sort((a, b) => a.option.start - b.option.start || a.option.end - b.option.end);
+
   let text = '';
   let cursor = 0;
   const applied: AppliedChange[] = [];
-  for (const a of accepted) {
+  for (const a of edits) {
     if (a.option.start < cursor) {
-      blocked.push(a.change.id);
+      if (accepted.includes(a)) blocked.push(a.change.id);
       continue;
     }
     text += original.slice(cursor, a.option.start);

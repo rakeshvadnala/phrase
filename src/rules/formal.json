@@ -1,5 +1,55 @@
 [
   {
+    "id": "for-pat-i-will-verb",
+    "original": "I will send …",
+    "pattern": "(?:i will|i am going to) ({verb})",
+    "replacement": "I shall $1",
+    "alternatives": [
+      "I will ensure that I $1",
+      "I will proceed to $1",
+      "I undertake to $1"
+    ],
+    "tone": "formal",
+    "priority": 45,
+    "context": "Commitments",
+    "description": "Optional: more formal ways to state what you will do.",
+    "suggestOnly": true
+  },
+  {
+    "id": "for-pat-thanks-for",
+    "original": "Thanks for the … / Thanks for your …",
+    "pattern": "(?:thanks|thank you|thx)(?: so much| a lot| very much)? for (the|your|this|that|all)",
+    "replacement": "thank you for $1",
+    "alternatives": [
+      "I am grateful for $1",
+      "I sincerely appreciate $1",
+      "many thanks for $1",
+      "I would like to thank you for $1"
+    ],
+    "tone": "formal",
+    "priority": 60,
+    "context": "Thanks",
+    "description": "Several ways to phrase the same sentence — pick the one that fits.",
+    "alwaysOffer": true
+  },
+  {
+    "id": "for-pat-can-you-verb",
+    "original": "Can you send … ?",
+    "pattern": "(?:can|could|will|would) you (?:please |kindly )?({verb})",
+    "replacement": "I would be grateful if you could $1{.}",
+    "alternatives": [
+      "I would appreciate it if you could $1{.}",
+      "would you kindly $1{?}",
+      "may I request that you $1{.}",
+      "could you please $1{?}",
+      "I kindly request you to $1{.}"
+    ],
+    "tone": "formal",
+    "priority": 70,
+    "context": "Requests",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
     "id": "for-don-t",
     "original": "don't",
     "variants": [
@@ -467,7 +517,8 @@
     "pattern": "(?:hi|hey|hello)(?= \\p{L})",
     "replacement": "Dear",
     "alternatives": [
-      "Hello"
+      "Hello",
+      "Good day"
     ],
     "tone": "formal",
     "priority": 30,
@@ -485,7 +536,11 @@
     ],
     "replacement": "Thank you very much",
     "tone": "formal",
-    "priority": 60
+    "priority": 60,
+    "alternatives": [
+      "I am most grateful",
+      "My sincere thanks"
+    ]
   },
   {
     "id": "for-thanks",
@@ -493,14 +548,20 @@
     "pattern": "thanks(?! to\\b)",
     "replacement": "thank you",
     "tone": "formal",
-    "priority": 20
+    "priority": 20,
+    "alternatives": [
+      "many thanks",
+      "I am grateful"
+    ]
   },
   {
     "id": "for-sorry-for",
     "original": "Sorry for",
     "replacement": "I apologize for",
     "alternatives": [
-      "Please accept my apologies for"
+      "Please accept my apologies for",
+      "My sincere apologies for",
+      "I regret"
     ],
     "tone": "formal",
     "priority": 55
@@ -510,7 +571,8 @@
     "original": "Sorry",
     "replacement": "I apologize",
     "alternatives": [
-      "Please accept my apologies"
+      "Please accept my apologies",
+      "My sincere apologies"
     ],
     "tone": "formal",
     "priority": 20,
@@ -543,7 +605,11 @@
     ],
     "replacement": "at your earliest convenience",
     "tone": "formal",
-    "priority": 60
+    "priority": 60,
+    "alternatives": [
+      "when convenient",
+      "at the earliest opportunity"
+    ]
   },
   {
     "id": "for-find-out",
@@ -835,7 +901,9 @@
     ],
     "replacement": "Should you have any questions, please do not hesitate to contact me",
     "alternatives": [
-      "Please do not hesitate to contact me should you require further information"
+      "Please do not hesitate to contact me should you require further information",
+      "Should you require any clarification, I would be pleased to assist",
+      "I remain at your disposal for any further information"
     ],
     "tone": "formal",
     "priority": 90,
@@ -846,7 +914,9 @@
     "original": "Let me know",
     "replacement": "kindly inform me",
     "alternatives": [
-      "please advise"
+      "please advise",
+      "kindly advise me",
+      "I would appreciate being informed"
     ],
     "tone": "formal",
     "priority": 35
@@ -856,7 +926,9 @@
     "original": "Let us know",
     "replacement": "kindly inform us",
     "alternatives": [
-      "please advise"
+      "please advise",
+      "kindly advise us",
+      "we would appreciate being informed"
     ],
     "tone": "formal",
     "priority": 35
@@ -866,7 +938,9 @@
     "original": "I want to",
     "replacement": "I wish to",
     "alternatives": [
-      "I would like to"
+      "I would like to",
+      "I intend to",
+      "I am writing to"
     ],
     "tone": "formal",
     "priority": 45
@@ -894,7 +968,9 @@
     "replacement": "I believe",
     "alternatives": [
       "In my opinion,",
-      "It is my understanding that"
+      "It is my understanding that",
+      "I am of the view that",
+      "It appears that"
     ],
     "tone": "formal",
     "priority": 30
@@ -922,7 +998,11 @@
     ],
     "replacement": "your assistance",
     "tone": "formal",
-    "priority": 35
+    "priority": 35,
+    "alternatives": [
+      "your support",
+      "your cooperation"
+    ]
   },
   {
     "id": "for-but",
@@ -1035,7 +1115,8 @@
     "replacement": "respond to you",
     "alternatives": [
       "revert to you with a response",
-      "follow up with you"
+      "follow up with you",
+      "reply to you"
     ],
     "tone": "formal",
     "priority": 55
@@ -1058,7 +1139,11 @@
     ],
     "replacement": "pleased to assist",
     "tone": "formal",
-    "priority": 60
+    "priority": 60,
+    "alternatives": [
+      "glad to be of assistance",
+      "pleased to help"
+    ]
   },
   {
     "id": "for-i-m-happy-to",
@@ -1074,7 +1159,9 @@
     ],
     "replacement": "I would be pleased to",
     "alternatives": [
-      "I would be glad to"
+      "I would be glad to",
+      "It would be my pleasure to",
+      "I am pleased to"
     ],
     "tone": "formal",
     "priority": 65
@@ -1091,7 +1178,9 @@
     ],
     "replacement": "I look forward to your response",
     "alternatives": [
-      "I look forward to hearing from you"
+      "I look forward to hearing from you",
+      "I await your response",
+      "I would appreciate your reply at your earliest convenience"
     ],
     "tone": "formal",
     "priority": 70,
@@ -1156,7 +1245,9 @@
     ],
     "replacement": "further information",
     "alternatives": [
-      "additional information"
+      "additional information",
+      "further details",
+      "more detailed information"
     ],
     "tone": "formal",
     "priority": 55
@@ -1201,7 +1292,9 @@
     "replacement": "Kind regards",
     "alternatives": [
       "Yours sincerely",
-      "Best regards"
+      "Best regards",
+      "Sincerely",
+      "With kind regards"
     ],
     "tone": "formal",
     "priority": 50,
@@ -1341,6 +1434,10 @@
     "original": "thanks for",
     "replacement": "thank you for",
     "tone": "formal",
-    "priority": 55
+    "priority": 55,
+    "alternatives": [
+      "I am grateful for",
+      "many thanks for"
+    ]
   }
 ]

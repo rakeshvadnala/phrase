@@ -1,11 +1,228 @@
 [
   {
+    "id": "pro-closing-forward",
+    "original": "Waiting for your reply",
+    "variants": [
+      "waiting for your response",
+      "awaiting your reply",
+      "awaiting your response",
+      "waiting for your revert",
+      "awaiting your revert",
+      "eagerly waiting for your reply",
+      "looking forward to your reply",
+      "looking forward to your response",
+      "looking forward to hearing from you",
+      "hope to hear from you soon",
+      "I am waiting for your reply",
+      "I am waiting for your response",
+      "I'm waiting for your reply",
+      "I am awaiting your reply",
+      "I am awaiting your response",
+      "I am looking forward to your reply",
+      "I am looking forward to your response",
+      "I am looking forward to hearing from you"
+    ],
+    "replacement": "I look forward to your response",
+    "alternatives": [
+      "I look forward to hearing from you",
+      "I would appreciate your response at your earliest convenience",
+      "I await your reply",
+      "Looking forward to hearing from you"
+    ],
+    "tone": "professional",
+    "priority": 80,
+    "context": "Closings",
+    "description": "A standard closing line, with several alternatives.",
+    "alwaysOffer": true
+  },
+  {
+    "id": "pro-closing-questions",
+    "original": "Let me know if you have any questions",
+    "variants": [
+      "please let me know if you have any questions",
+      "let me know if you have any doubts",
+      "please let me know if you have any doubts",
+      "let me know if you have any queries",
+      "let me know in case of any questions",
+      "let me know in case of any doubts",
+      "feel free to ask if you have any questions",
+      "let me know if you need anything",
+      "let me know if you need any clarification"
+    ],
+    "replacement": "Please let me know if you have any questions.",
+    "alternatives": [
+      "Please feel free to reach out if you have any questions.",
+      "I am happy to clarify anything further.",
+      "Should you need any clarification, please let me know.",
+      "Please do not hesitate to contact me with any questions."
+    ],
+    "tone": "professional",
+    "priority": 90,
+    "context": "Closings",
+    "description": "A standard closing line, with several alternatives.",
+    "alwaysOffer": true
+  },
+  {
+    "id": "pro-pat-forgot-to-verb",
+    "original": "I forgot to attach …",
+    "pattern": "i (?:forgot|have forgotten|had forgotten) to ({verb})",
+    "replacement": "I overlooked $1:ing",
+    "alternatives": [
+      "I missed $1:ing",
+      "I neglected to $1",
+      "I did not remember to $1"
+    ],
+    "tone": "professional",
+    "priority": 60,
+    "context": "Apologies",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "pro-pat-could-not-verb",
+    "original": "I could not complete …",
+    "pattern": "i (?:could not|couldn['’]t|was not able to|wasn['’]t able to|did not get (?:time|a chance) to|didn['’]t get (?:time|a chance) to) ({verb})",
+    "replacement": "I was unable to $1",
+    "alternatives": [
+      "I have not yet had the chance to $1",
+      "I was not able to $1",
+      "I did not manage to $1",
+      "unfortunately, I could not $1"
+    ],
+    "tone": "professional",
+    "priority": 60,
+    "context": "Updates",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "pro-pat-can-you-verb",
+    "original": "Can you send … ?",
+    "pattern": "(?:can|could|will|would) you (?:please |kindly )?({verb})",
+    "replacement": "could you please $1{?}",
+    "alternatives": [
+      "would you mind $1:ing{?}",
+      "I would appreciate it if you could $1{.}",
+      "would you be able to $1{?}",
+      "I would be grateful if you could $1{.}",
+      "may I ask you to $1{?}"
+    ],
+    "tone": "professional",
+    "priority": 45,
+    "context": "Requests",
+    "description": "Optional: other ways to make a request.",
+    "suggestOnly": true
+  },
+  {
+    "id": "pro-pat-can-we-verb",
+    "original": "Can we schedule … ? / Let's schedule …",
+    "pattern": "(?:can we|shall we|let['’]s|lets|let us) ({verb})",
+    "replacement": "could we $1{?}",
+    "alternatives": [
+      "shall we $1{?}",
+      "would it be possible to $1{?}",
+      "I suggest we $1{.}",
+      "how about $1:ing{?}"
+    ],
+    "tone": "professional",
+    "priority": 45,
+    "context": "Suggestions",
+    "description": "Optional: other ways to make a suggestion.",
+    "suggestOnly": true
+  },
+  {
+    "id": "pro-pat-we-need-to-verb",
+    "original": "We need to review …",
+    "pattern": "(?:we need to|we have to|we must|we should|we ought to) ({verb})",
+    "replacement": "we need to $1",
+    "alternatives": [
+      "we should $1",
+      "it would be best to $1",
+      "I suggest we $1",
+      "I recommend $1:ing",
+      "we will need to $1"
+    ],
+    "tone": "professional",
+    "priority": 40,
+    "context": "Suggestions",
+    "description": "Optional: other ways to propose an action.",
+    "suggestOnly": true
+  },
+  {
+    "id": "pro-pat-i-will-verb",
+    "original": "I will send …",
+    "pattern": "(?:i will|i['’]ll|i shall|i am going to|i['’]m going to) ({verb})",
+    "replacement": "I will $1",
+    "alternatives": [
+      "I will make sure to $1",
+      "I will be $1:ing",
+      "let me $1",
+      "allow me to $1",
+      "I plan to $1"
+    ],
+    "tone": "professional",
+    "priority": 40,
+    "context": "Commitments",
+    "description": "Optional: other ways to state what you will do.",
+    "suggestOnly": true
+  },
+  {
+    "id": "pro-pat-thanks-for",
+    "original": "Thanks for the … / Thanks for your …",
+    "pattern": "(?:thanks|thank you|thx|thank u)(?: so much| a lot| very much)? for (the|your|this|that|all)",
+    "replacement": "thank you for $1",
+    "alternatives": [
+      "I appreciate $1",
+      "many thanks for $1",
+      "I am grateful for $1",
+      "I really appreciate $1",
+      "thank you very much for $1"
+    ],
+    "tone": "professional",
+    "priority": 55,
+    "context": "Thanks",
+    "description": "Several ways to phrase the same sentence — pick the one that fits.",
+    "alwaysOffer": true
+  },
+  {
+    "id": "pro-pat-sorry-for",
+    "original": "Sorry for … / Sorry about …",
+    "pattern": "(?:i am |i['’]m |so |very |really |extremely )*sorry (?:for|about)",
+    "replacement": "I apologize for",
+    "alternatives": [
+      "apologies for",
+      "my apologies for",
+      "please accept my apologies for",
+      "I regret"
+    ],
+    "tone": "professional",
+    "priority": 50,
+    "context": "Apologies",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "pro-pat-status",
+    "original": "Any update on … ? / What is the status of … ?",
+    "pattern": "(?:what(?:['’]s| is) the (?:status|update|progress) (?:of|on|for|regarding)|any updates? (?:on|regarding|about|for)|is there any update (?:on|regarding|about))",
+    "replacement": "could you please share an update on{?}",
+    "alternatives": [
+      "may I have an update on{?}",
+      "I am following up on{.}",
+      "I wanted to check on the status of{.}",
+      "do you have an update on{?}"
+    ],
+    "tone": "professional",
+    "priority": 85,
+    "context": "Follow-ups",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
     "id": "pro-i-want-to-know",
     "original": "I want to know",
     "replacement": "I would like to understand",
     "alternatives": [
       "I would like to know",
-      "Could you please clarify"
+      "Could you please clarify",
+      "I am keen to understand",
+      "I would appreciate clarity on"
     ],
     "tone": "professional",
     "priority": 70,
@@ -29,7 +246,9 @@
     "replacement": "I am experiencing an issue",
     "alternatives": [
       "I have encountered an issue",
-      "I am running into an issue"
+      "I am running into an issue",
+      "I am having difficulty",
+      "I have come across an issue"
     ],
     "tone": "professional",
     "priority": 70,
@@ -45,7 +264,9 @@
     ],
     "replacement": "experiencing issues",
     "alternatives": [
-      "encountering issues"
+      "encountering issues",
+      "running into issues",
+      "having difficulties"
     ],
     "tone": "professional",
     "priority": 55
@@ -60,7 +281,9 @@
     ],
     "replacement": "experiencing an issue",
     "alternatives": [
-      "encountering an issue"
+      "encountering an issue",
+      "running into an issue",
+      "having difficulty"
     ],
     "tone": "professional",
     "priority": 55
@@ -78,7 +301,9 @@
     "replacement": "Could you please take the necessary action?",
     "alternatives": [
       "Please take the necessary action.",
-      "I would appreciate your assistance with this."
+      "I would appreciate your assistance with this.",
+      "Kindly take the appropriate action.",
+      "Could you please look into this and take it forward?"
     ],
     "tone": "professional",
     "priority": 80,
@@ -100,7 +325,9 @@
     "replacement": "Please review and provide an update",
     "alternatives": [
       "Could you please review this and share an update?",
-      "Please review and let me know your findings"
+      "Please review and let me know your findings",
+      "Could you please look into this and let me know?",
+      "Please take a look and share your update"
     ],
     "tone": "professional",
     "priority": 80,
@@ -113,7 +340,9 @@
     "replacement": "I will look into this",
     "alternatives": [
       "I will review this",
-      "I will investigate"
+      "I will investigate",
+      "I will take a look",
+      "I will check on this and get back to you"
     ],
     "tone": "professional",
     "priority": 70,
@@ -126,7 +355,9 @@
     "replacement": "I will review",
     "alternatives": [
       "I will look into",
-      "I will verify"
+      "I will verify",
+      "I will examine",
+      "I will go through"
     ],
     "tone": "professional",
     "priority": 65
@@ -150,7 +381,9 @@
     "replacement": "Apologies for the delayed response",
     "alternatives": [
       "I apologize for the delay in responding",
-      "Thank you for your patience"
+      "Thank you for your patience",
+      "My apologies for the late reply",
+      "Sorry for the delay in getting back to you"
     ],
     "tone": "professional",
     "priority": 80,
@@ -162,7 +395,9 @@
     "replacement": "Could you please consider the following approach?",
     "alternatives": [
       "May I suggest the following?",
-      "Here is a suggestion."
+      "Here is a suggestion.",
+      "I have a suggestion.",
+      "Could I propose an alternative?"
     ],
     "tone": "professional",
     "priority": 80,
@@ -175,7 +410,9 @@
     "replacement": "Please keep me informed",
     "alternatives": [
       "Please let me know",
-      "Please share an update"
+      "Please share an update",
+      "Please keep me posted",
+      "Please update me"
     ],
     "tone": "professional",
     "priority": 60
@@ -186,7 +423,9 @@
     "pattern": "let me know(?= (?:if|when|what|how|whether|which|who|where|your|the|once|in case|by)\\b)",
     "replacement": "please let me know",
     "alternatives": [
-      "please inform me"
+      "please inform me",
+      "do let me know",
+      "kindly let me know"
     ],
     "tone": "professional",
     "priority": 65
@@ -200,7 +439,9 @@
     "replacement": "as soon as possible",
     "alternatives": [
       "at the earliest opportunity",
-      "at your earliest convenience"
+      "at your earliest convenience",
+      "promptly",
+      "as a priority"
     ],
     "tone": "professional",
     "priority": 50,
@@ -211,7 +452,9 @@
     "original": "fyi",
     "replacement": "for your information",
     "alternatives": [
-      "for your reference"
+      "for your reference",
+      "just so you are aware",
+      "for your awareness"
     ],
     "tone": "professional",
     "priority": 50,
@@ -249,7 +492,9 @@
     "replacement": "Thank you for your support",
     "alternatives": [
       "I appreciate your help with this",
-      "Thank you in advance for your assistance"
+      "Thank you in advance for your assistance",
+      "Many thanks in advance",
+      "Thank you in advance"
     ],
     "tone": "professional",
     "priority": 50
@@ -301,7 +546,9 @@
     ],
     "replacement": "I have a question",
     "alternatives": [
-      "I would like to clarify something"
+      "I would like to clarify something",
+      "I have a query",
+      "I need a clarification"
     ],
     "tone": "professional",
     "priority": 60,
@@ -317,7 +564,9 @@
     ],
     "replacement": "I have a few questions",
     "alternatives": [
-      "I would like to clarify a few points"
+      "I would like to clarify a few points",
+      "I have a few queries",
+      "I need some clarifications"
     ],
     "tone": "professional",
     "priority": 60
@@ -328,7 +577,8 @@
     "replacement": "out of town",
     "alternatives": [
       "away from the office",
-      "travelling"
+      "travelling",
+      "out of office"
     ],
     "tone": "professional",
     "priority": 50
@@ -377,7 +627,9 @@
     "replacement": "I did not quite understand",
     "alternatives": [
       "Could you please clarify?",
-      "Could you please elaborate?"
+      "Could you please elaborate?",
+      "I am not sure I follow",
+      "Could you please rephrase that?"
     ],
     "tone": "professional",
     "priority": 60
@@ -399,7 +651,9 @@
     "replacement": "I believe",
     "alternatives": [
       "In my view",
-      "My understanding is that"
+      "My understanding is that",
+      "From my perspective,",
+      "It seems to me that"
     ],
     "tone": "professional",
     "priority": 20
@@ -409,7 +663,9 @@
     "original": "I guess",
     "replacement": "I believe",
     "alternatives": [
-      "It appears that"
+      "It appears that",
+      "I suppose",
+      "My assumption is that"
     ],
     "tone": "professional",
     "priority": 20
@@ -421,7 +677,9 @@
     "replacement": "Understood",
     "alternatives": [
       "Certainly",
-      "Noted"
+      "Noted",
+      "Sure",
+      "Sounds good"
     ],
     "tone": "professional",
     "priority": 30,
@@ -439,7 +697,9 @@
     "alternatives": [
       "You are welcome",
       "Not a problem at all",
-      "Happy to help"
+      "Happy to help",
+      "Of course",
+      "My pleasure"
     ],
     "tone": "professional",
     "priority": 40
@@ -457,7 +717,9 @@
     "replacement": "Hello everyone",
     "alternatives": [
       "Hi team",
-      "Hello team"
+      "Hello team",
+      "Hi everyone",
+      "Hello all"
     ],
     "tone": "professional",
     "priority": 60
@@ -752,7 +1014,9 @@
     "replacement": "determine",
     "alternatives": [
       "identify",
-      "work out"
+      "work out",
+      "establish",
+      "understand"
     ],
     "tone": "professional",
     "priority": 40
@@ -763,7 +1027,8 @@
     "replacement": "currently",
     "alternatives": [
       "at the moment",
-      "at present"
+      "at present",
+      "presently"
     ],
     "tone": "professional",
     "priority": 35
@@ -774,7 +1039,9 @@
     "replacement": "currently",
     "alternatives": [
       "at present",
-      "for now"
+      "for now",
+      "at the moment",
+      "as it stands"
     ],
     "tone": "professional",
     "priority": 45
@@ -784,7 +1051,9 @@
     "original": "at the earliest",
     "replacement": "as soon as possible",
     "alternatives": [
-      "at your earliest convenience"
+      "at your earliest convenience",
+      "promptly",
+      "at the earliest opportunity"
     ],
     "tone": "professional",
     "priority": 45
@@ -796,9 +1065,11 @@
       "what is the status",
       "whats the status"
     ],
-    "replacement": "Could you please share the current status",
+    "replacement": "Could you please share the current status{?}",
     "alternatives": [
-      "May I have an update on the status"
+      "May I have an update on the status",
+      "Could you please update me on the status",
+      "I would like to check on the status"
     ],
     "tone": "professional",
     "priority": 60,
@@ -813,10 +1084,12 @@
       "any updates",
       "any news"
     ],
-    "replacement": "Could you please share an update",
+    "replacement": "Could you please share an update{?}",
     "alternatives": [
       "Is there any update",
-      "May I have an update"
+      "May I have an update",
+      "Do you have any update",
+      "Could I get an update"
     ],
     "tone": "professional",
     "priority": 60,
@@ -836,7 +1109,9 @@
     "replacement": "I would appreciate your assistance",
     "alternatives": [
       "I would be grateful for your help",
-      "Could you please assist me"
+      "Could you please assist me",
+      "I would value your support",
+      "I could use your help"
     ],
     "tone": "professional",
     "priority": 60
@@ -851,7 +1126,9 @@
     "replacement": "I apologize for the oversight",
     "alternatives": [
       "That was my oversight",
-      "I take responsibility for the error"
+      "I take responsibility for the error",
+      "My apologies for the mistake",
+      "I apologize for the error"
     ],
     "tone": "professional",
     "priority": 55,
@@ -867,7 +1144,9 @@
     ],
     "replacement": "I apologize for the inconvenience",
     "alternatives": [
-      "Apologies for any inconvenience caused"
+      "Apologies for any inconvenience caused",
+      "I regret the inconvenience",
+      "My apologies for the inconvenience"
     ],
     "tone": "professional",
     "priority": 75,
@@ -884,7 +1163,9 @@
     ],
     "replacement": "I apologize for the interruption",
     "alternatives": [
-      "Thank you for taking the time"
+      "Thank you for taking the time",
+      "Sorry to trouble you",
+      "I hope I am not interrupting"
     ],
     "tone": "professional",
     "priority": 75,
@@ -895,7 +1176,8 @@
     "original": "Sorry",
     "replacement": "Apologies",
     "alternatives": [
-      "I apologize"
+      "I apologize",
+      "My apologies"
     ],
     "tone": "professional",
     "priority": 10,
@@ -915,7 +1197,10 @@
     "replacement": "Thank you very much",
     "alternatives": [
       "I really appreciate it",
-      "Thank you for your help"
+      "Thank you for your help",
+      "Many thanks",
+      "Thank you so much",
+      "I appreciate it"
     ],
     "tone": "professional",
     "priority": 60
@@ -926,7 +1211,11 @@
     "pattern": "thanks(?! to\\b)",
     "replacement": "thank you",
     "tone": "professional",
-    "priority": 10
+    "priority": 10,
+    "alternatives": [
+      "many thanks",
+      "thank you very much"
+    ]
   },
   {
     "id": "pro-hope-you-are-doing-well",
@@ -940,7 +1229,10 @@
     ],
     "replacement": "I hope you are doing well",
     "alternatives": [
-      "I hope this message finds you well"
+      "I hope this message finds you well",
+      "I hope all is well",
+      "I trust you are well",
+      "I hope you are having a good week"
     ],
     "tone": "professional",
     "priority": 55
@@ -956,7 +1248,9 @@
     "replacement": "regarding",
     "alternatives": [
       "concerning",
-      "about"
+      "about",
+      "with respect to",
+      "in relation to"
     ],
     "tone": "professional",
     "priority": 45
@@ -970,7 +1264,9 @@
     "replacement": "to the best of my knowledge",
     "alternatives": [
       "as far as I know",
-      "based on my understanding"
+      "based on my understanding",
+      "as I understand it",
+      "from what I know"
     ],
     "tone": "professional",
     "priority": 60
@@ -995,7 +1291,9 @@
     "replacement": "speak with",
     "alternatives": [
       "discuss with",
-      "consult"
+      "consult",
+      "check with",
+      "connect with"
     ],
     "tone": "professional",
     "priority": 30
@@ -1006,7 +1304,9 @@
     "replacement": "please let me know",
     "alternatives": [
       "please inform me",
-      "please advise"
+      "please advise",
+      "could you please tell me",
+      "please share"
     ],
     "tone": "professional",
     "priority": 40,
@@ -1035,7 +1335,9 @@
     ],
     "replacement": "completed on my end",
     "alternatives": [
-      "completed on my side"
+      "completed on my side",
+      "completed from my end",
+      "finished on my end"
     ],
     "tone": "professional",
     "priority": 60
@@ -1060,7 +1362,9 @@
     "replacement": "I will take care of it",
     "alternatives": [
       "Certainly, I will do that",
-      "I will get this done"
+      "I will get this done",
+      "Sure, I will handle it",
+      "Consider it done"
     ],
     "tone": "professional",
     "priority": 45,
@@ -1078,7 +1382,9 @@
     "replacement": "I am currently occupied",
     "alternatives": [
       "I have limited availability at the moment",
-      "I am tied up at the moment"
+      "I am tied up at the moment",
+      "I am occupied at the moment",
+      "my schedule is full right now"
     ],
     "tone": "professional",
     "priority": 50
@@ -1095,7 +1401,9 @@
     "replacement": "I am not certain",
     "alternatives": [
       "I will need to check on this",
-      "I will find out and confirm"
+      "I will find out and confirm",
+      "I am not sure",
+      "I do not have that information yet"
     ],
     "tone": "professional",
     "priority": 50
@@ -1112,7 +1420,9 @@
     "replacement": "this does not appear to be correct",
     "alternatives": [
       "there may be an error here",
-      "this may need to be revisited"
+      "this may need to be revisited",
+      "this looks incorrect",
+      "I think there is a mistake here"
     ],
     "tone": "professional",
     "priority": 50
@@ -1129,7 +1439,9 @@
     ],
     "replacement": "it is not functioning as expected",
     "alternatives": [
-      "it is not working as expected"
+      "it is not working as expected",
+      "it is not behaving as expected",
+      "it appears to be failing"
     ],
     "tone": "professional",
     "priority": 55
@@ -1156,7 +1468,9 @@
     "replacement": "significant issue",
     "alternatives": [
       "major concern",
-      "serious issue"
+      "serious issue",
+      "critical issue",
+      "considerable challenge"
     ],
     "tone": "professional",
     "priority": 45
@@ -1174,7 +1488,9 @@
     "replacement": "Could we schedule a call",
     "alternatives": [
       "Would you be available for a quick call",
-      "May we set up a brief call"
+      "May we set up a brief call",
+      "Could we connect on a call",
+      "Do you have time for a quick call"
     ],
     "tone": "professional",
     "priority": 60
@@ -1185,7 +1501,9 @@
     "replacement": "are you available",
     "alternatives": [
       "would you be available",
-      "do you have a moment"
+      "do you have a moment",
+      "do you have time",
+      "is this a good time"
     ],
     "tone": "professional",
     "priority": 45
@@ -1210,7 +1528,9 @@
     "replacement": "urgently",
     "alternatives": [
       "as a matter of urgency",
-      "as a priority"
+      "as a priority",
+      "with high priority",
+      "immediately"
     ],
     "tone": "professional",
     "priority": 55
@@ -1289,7 +1609,9 @@
     "replacement": "Please find attached",
     "alternatives": [
       "I have attached",
-      "Attached is"
+      "Attached is",
+      "Please see the attached",
+      "Attached please find"
     ],
     "tone": "professional",
     "priority": 60
@@ -1383,7 +1705,9 @@
     "replacement": "please prioritize this",
     "alternatives": [
       "please expedite this",
-      "please treat this as urgent"
+      "please treat this as urgent",
+      "could you please speed this up",
+      "this needs urgent attention"
     ],
     "tone": "professional",
     "priority": 50
@@ -1410,7 +1734,9 @@
     "original": "I need to know",
     "replacement": "I would like to know",
     "alternatives": [
-      "Could you please confirm"
+      "Could you please confirm",
+      "I would like to understand",
+      "Please let me know"
     ],
     "tone": "professional",
     "priority": 60
@@ -1425,7 +1751,9 @@
     ],
     "replacement": "please allow me some time",
     "alternatives": [
-      "I will need a little more time"
+      "I will need a little more time",
+      "please give me a little time",
+      "I would need some more time"
     ],
     "tone": "professional",
     "priority": 55
@@ -1436,7 +1764,9 @@
     "replacement": "will keep you informed",
     "alternatives": [
       "will update you",
-      "will get back to you"
+      "will get back to you",
+      "will inform you",
+      "will keep you posted"
     ],
     "tone": "professional",
     "priority": 45

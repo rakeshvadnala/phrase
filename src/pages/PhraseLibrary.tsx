@@ -20,7 +20,13 @@ interface Draft {
 const emptyDraft = (tone: ToneId = 'professional'): Draft => ({ original: '', replacement: '', alternatives: '', tone, description: '' });
 
 /** Shows how a replacement template reads ("$1" capture groups become an ellipsis). */
-const display = (s: string) => (s === '' ? '(remove)' : s.replace(/\$0/g, '…').replace(/\$\d/g, '…'));
+const display = (s: string) =>
+  s === ''
+    ? '(remove)'
+    : s
+        .replace(/\{([.?!])\}$/, ' …$1')
+        .replace(/\$\d:ing/g, '…ing')
+        .replace(/\$\d/g, '…');
 
 function PhraseForm({ draft, onCancel, onSave }: { draft: Draft; onCancel: () => void; onSave: (d: Draft) => string | null }) {
   const [d, setD] = useState(draft);
@@ -215,10 +221,11 @@ export default function PhraseLibrary() {
                       {r.custom && <span className="badge !bg-teal/15 !text-accent">My phrase</span>}
                       {r.context && !r.custom && <span className="badge">{r.context}</span>}
                       {r.position === 'sentenceStart' && <span className="badge">Start of sentence</span>}
+                      {r.suggestOnly && <span className="badge">Optional suggestion</span>}
                     </p>
                   </div>
                   <div className="flex shrink-0 flex-col gap-1 sm:flex-row">
-                    {r.replacement && !/\$\d/.test(r.replacement) && <CopyButton text={r.replacement} iconOnly label="Copy phrase" className="btn btn-ghost btn-sm !px-2" />}
+                    {r.replacement && !/\$\d|\{[.?!]\}$/.test(r.replacement) && <CopyButton text={r.replacement} iconOnly label="Copy phrase" className="btn btn-ghost btn-sm !px-2" />}
                     {r.custom && (
                       <>
                         <button type="button" className="btn btn-ghost btn-sm !px-2" aria-label={`Edit “${r.original}”`} title="Edit" onClick={() => edit(r)}>

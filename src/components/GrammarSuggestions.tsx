@@ -8,6 +8,7 @@ const PAGE = 40;
 
 function optionLabel(change: Change, index: number): string {
   const option = change.options[index];
+  if (option.label) return option.label;
   if (option.text === '') return 'Remove';
   if (option.text.trim() === '') return 'Add a space';
   if (option.start === option.end) return `Add “${option.text.trim()}”`;
@@ -42,6 +43,7 @@ export function ChangeList({ changes, selection, applied, blocked, onSelect, onA
               <div className="flex flex-wrap items-center gap-2">
                 <span className="badge">{change.label}</span>
                 {isApplied && <span className="badge !bg-teal/15 !text-accent">Applied</span>}
+                {!isApplied && !isBlocked && change.source !== 'grammar' && change.defaultOption < 0 && <span className="badge">Optional</span>}
                 {isBlocked && <span className="badge">Covered by another suggestion</span>}
                 {change.options.length === 0 && <span className="badge">No automatic fix</span>}
               </div>

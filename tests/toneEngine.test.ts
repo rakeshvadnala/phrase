@@ -34,15 +34,15 @@ describe('professional transformations', () => {
 
 describe('polite transformations', () => {
   const cases: Array<[string, string]> = [
-    ['Send me the report.', 'Could you please send me the report.'],
-    ['Check the logs and confirm.', 'Could you please check the logs and confirm.'],
+    ['Send me the report.', 'Could you please send me the report?'],
+    ['Check the logs and confirm.', 'Could you please check the logs and confirm?'],
     ['Can you share the file?', 'Could you please share the file?'],
     ['I want the report by Friday.', 'I would like the report by Friday.'],
-    ['You need to update the ticket.', 'Could you please update the ticket.'],
+    ['You need to update the ticket.', 'Could you please update the ticket?'],
     ['Reply asap.', 'Reply at your earliest convenience.'],
     ["That's wrong.", 'I believe there may be a misunderstanding.'],
     ["I can't join the call.", "I'm afraid I am unable to join the call."],
-    ['Give me the credentials.', 'Could you please share the credentials.'],
+    ['Give me the credentials.', 'Could you please share the credentials?'],
   ];
   it.each(cases)('%s -> %s', (input, expected) => {
     expect(improve(input, 'polite')).toBe(expected);
