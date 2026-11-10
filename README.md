@@ -76,7 +76,7 @@ There is no backend, database, API token or external text-processing service of 
 Requires Node.js 22.12+ (24 LTS recommended) and npm.
 
 ```bash
-git clone https://github.com/<your-github-username>/phrase.git
+git clone https://github.com/rakeshvadnala/phrase.git
 ```
 
 ```bash
