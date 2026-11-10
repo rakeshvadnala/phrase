@@ -208,7 +208,9 @@ In a `pattern`, `{verb}` expands to the built-in list of request verbs. In repla
   "tone": "polite",
   "priority": 70
 }
-``` Run `npm test` after editing — the suite checks that every rule compiles and has a unique id.
+```
+
+Run `npm test` after editing — the suite checks that every rule compiles and has a unique id.
 
 ## Privacy
 
