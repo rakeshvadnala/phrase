@@ -56,6 +56,53 @@ export function selectVersion(changes: Change[], selection: Selection, version: 
 }
 
 /**
+ * A set of mutually non-overlapping ranges with a fast overlap test that
+ * agrees with `rangesOverlap` (including its rules for empty ranges). Keeps
+ * applying thousands of changes linear instead of quadratic.
+ */
+class RangeIndex {
+  /** Id of the range covering each character (0 = free). */
+  private readonly owner: Int32Array;
+  /** Positions of empty (insertion) ranges. */
+  private readonly points: Uint8Array;
+  private nextId = 1;
+
+  constructor(length: number) {
+    this.owner = new Int32Array(length + 1);
+    this.points = new Uint8Array(length + 2);
+  }
+
+  private clamp(n: number): number {
+    return Math.max(0, Math.min(n, this.owner.length - 1));
+  }
+
+  overlaps(r: { start: number; end: number }): boolean {
+    const start = this.clamp(r.start);
+    const end = this.clamp(r.end);
+    if (start >= end) {
+      if (this.points[start]) return true;
+      // Strictly inside an existing range: the same range owns both neighbours.
+      return start > 0 && this.owner[start] !== 0 && this.owner[start] === this.owner[start - 1];
+    }
+    for (let i = start; i < end; i++) {
+      if (this.owner[i] !== 0) return true;
+      if (i > start && this.points[i]) return true;
+    }
+    return false;
+  }
+
+  add(r: { start: number; end: number }): void {
+    const start = this.clamp(r.start);
+    const end = this.clamp(r.end);
+    if (start >= end) {
+      this.points[start] = 1;
+      return;
+    }
+    this.owner.fill(this.nextId++, start, end);
+  }
+}
+
+/**
  * Applies the selected changes to `original` and returns the new text.
  * The original string is never mutated; every change is expressed against it,
  * so toggling one change can never corrupt another.
@@ -68,11 +115,17 @@ export function applyChanges(original: string, changes: Change[], selection: Sel
 
   const accepted: Array<{ change: Change; option: ChangeOption; optionIndex: number }> = [];
   const blocked: string[] = [];
+  const takenOptions = new RangeIndex(original.length);
+  const takenChanges = new RangeIndex(original.length);
   for (const { change, optionIndex } of wanted) {
     const option = change.options[optionIndex];
-    const clash = accepted.some((a) => rangesOverlap(a.option, option) || rangesOverlap(a.change, change));
-    if (clash) blocked.push(change.id);
-    else accepted.push({ change, option, optionIndex });
+    if (takenOptions.overlaps(option) || takenChanges.overlaps(change)) {
+      blocked.push(change.id);
+      continue;
+    }
+    takenOptions.add(option);
+    takenChanges.add(change);
+    accepted.push({ change, option, optionIndex });
   }
   accepted.sort((a, b) => a.option.start - b.option.start || a.option.end - b.option.end);
 
