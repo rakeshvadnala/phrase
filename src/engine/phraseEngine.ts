@@ -1,4 +1,5 @@
 import type { Change, ChangeOption, PhraseRule } from '../types';
+import { REQUEST_VERB_SOURCE, toGerund } from './inflect';
 import {
   capitalizeFirst,
   decapitalizeFirst,
@@ -59,7 +60,8 @@ export function compileRule(rule: PhraseRule): RegExp | null {
       .filter((s) => s.trim().length > 0)
       .sort((a, b) => b.length - a.length)
       .map(literalToSource);
-    const sources = [...(rule.pattern ? [rule.pattern] : []), ...literals];
+    const pattern = rule.pattern?.replace(/\{verb\}/g, REQUEST_VERB_SOURCE);
+    const sources = [...(pattern ? [pattern] : []), ...literals];
     if (sources.length > 0) regex = new RegExp(`${BEFORE}(?:${sources.join('|')})${AFTER}`, 'giu');
   } catch {
     regex = null; // invalid user-supplied pattern
@@ -74,11 +76,25 @@ interface Candidate extends Range {
   atSentenceStart: boolean;
 }
 
+/** A trailing `{?}` / `{.}` / `{!}` in a template sets the punctuation that ends the sentence. */
+const END_MARK = /\{([.?!])\}$/;
+
 function expandTemplate(template: string, match: RegExpExecArray): string {
-  return template.replace(/\$(\d)/g, (_, d: string) => {
-    const group = d === '0' ? match[0] : (match[Number(d)] ?? '');
-    return d === '0' ? decapitalizeFirst(group) : group;
+  return template.replace(END_MARK, '').replace(/\$(\d)(:ing)?/g, (_, d: string, ing?: string) => {
+    const raw = d === '0' ? decapitalizeFirst(match[0]) : (match[Number(d)] ?? '');
+    return ing ? toGerund(raw) : raw;
   });
+}
+
+/** The edit that makes the sentence containing `index` end with `punct` (null if it already does). */
+function endPunctuationEdit(text: string, index: number, sentences: Range[], punct: string, notBefore: number): ChangeOption | null {
+  const s = sentenceAt(text, index, sentences);
+  const tail = /([.?!]+)(["'”’)\]]*)$/.exec(text.slice(s.start, s.end));
+  if (!tail) return s.end >= notBefore ? { text: punct, start: s.end, end: s.end } : null;
+  const start = s.end - tail[0].length;
+  const end = start + tail[1].length;
+  if (start < notBefore || text.slice(start, end) === punct) return null;
+  return { text: punct, start, end };
 }
 
 const startsWithI = (s: string) => /^I(?:$|[\s'’])/.test(s);
@@ -99,7 +115,8 @@ const POLITE_MARKERS = new Set(['please', 'kindly', 'pls', 'plz', 'plss', 'plzz'
 const lastWord = (s: string) => /([\p{L}'’]+)[^\p{L}]*$/u.exec(s)?.[1]?.toLowerCase();
 const firstWord = (s: string) => /^[^\p{L}]*([\p{L}'’]+)/u.exec(s)?.[1]?.toLowerCase();
 
-function buildOption(text: string, c: Candidate, template: string): ChangeOption | null {
+function buildOption(text: string, c: Candidate, template: string, sentences: Range[]): ChangeOption | null {
+  const endPunct = END_MARK.exec(template)?.[1];
   let replacement = expandTemplate(template, c.match);
   let start = c.start;
   let end = c.end;
@@ -150,8 +167,13 @@ function buildOption(text: string, c: Candidate, template: string): ChangeOption
     replacement = replacement.replace(/[ \t]*[\p{L}'’]+$/u, '');
   }
 
-  if (replacement === text.slice(start, end)) return null; // no-op
-  return { text: replacement, start, end };
+  const unchanged = replacement === text.slice(start, end);
+  const extra = endPunct ? endPunctuationEdit(text, c.start, sentences, endPunct, end) : null;
+  if (!extra) return unchanged ? null : { text: replacement, start, end };
+  const label = `${replacement} …${endPunct}`;
+  // Same words, different sentence ending: the punctuation edit is the whole change.
+  if (unchanged) return { ...extra, label };
+  return { text: replacement, start, end, extra: [extra], label };
 }
 
 function isBlockedByProtectedSpan(c: Range, text: string, spans: ProtectedSpan[], replacements: string[]): boolean {
@@ -230,18 +252,23 @@ export function findPhraseChanges(text: string, rules: PhraseRule[], options: Ph
     const seen = new Set<string>();
     const opts: ChangeOption[] = [];
     for (const template of templates) {
-      const option = buildOption(text, c, template);
+      const option = buildOption(text, c, template, sentences);
       if (!option) continue;
-      const key = `${option.start}:${option.end}:${option.text}`;
+      const key = `${option.start}:${option.end}:${option.text}:${option.extra?.[0]?.text ?? ''}`;
       if (seen.has(key)) continue;
       seen.add(key);
       opts.push(option);
     }
-    // The preferred replacement must be usable; otherwise the rule does not apply here.
-    if (opts.length === 0 || buildOption(text, c, templates[0]) === null) continue;
+    // The preferred replacement must be usable; otherwise the rule does not apply here
+    // (unless the rule asks for its alternatives to be offered regardless).
+    const preferredUsable = buildOption(text, c, templates[0], sentences) !== null;
+    const offerAnyway = c.rule.alwaysOffer || c.rule.suggestOnly;
+    if (opts.length === 0 || (!preferredUsable && !offerAnyway)) continue;
 
-    const start = Math.min(c.start, ...opts.map((o) => o.start));
-    const end = Math.max(c.end, ...opts.map((o) => o.end));
+    // Outer range: the match plus any spacing an option tidies up next to it.
+    const near = opts.filter((o) => o.start <= c.end);
+    const start = Math.min(c.start, ...near.map((o) => o.start));
+    const end = Math.max(c.end, ...near.map((o) => o.end));
     if (!isFree({ start, end })) continue;
     taken.fill(1, start, Math.max(end, start + 1));
     changes.push({
@@ -255,7 +282,7 @@ export function findPhraseChanges(text: string, rules: PhraseRule[], options: Ph
       end,
       originalText: text.slice(start, end),
       options: opts,
-      defaultOption: 0,
+      defaultOption: c.rule.suggestOnly || !preferredUsable ? -1 : 0,
       priority: basePriority + c.rule.priority,
       ruleId: c.rule.id,
     });

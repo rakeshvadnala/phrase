@@ -1,5 +1,54 @@
 [
   {
+    "id": "fri-pat-i-will-verb",
+    "original": "I will send …",
+    "pattern": "(?:i will|i shall|i am going to) ({verb})",
+    "replacement": "I'll $1",
+    "alternatives": [
+      "I'm going to $1",
+      "let me $1",
+      "I'll go ahead and $1",
+      "I can $1"
+    ],
+    "tone": "friendly",
+    "priority": 35,
+    "context": "Commitments",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "fri-pat-thanks-for",
+    "original": "Thank you for the … / Thank you for your …",
+    "pattern": "(?:thank you|thank you very much|thank you so much) for (the|your|this|that|all)",
+    "replacement": "thanks for $1",
+    "alternatives": [
+      "thanks so much for $1",
+      "really appreciate $1",
+      "thanks a lot for $1",
+      "many thanks for $1"
+    ],
+    "tone": "friendly",
+    "priority": 60,
+    "context": "Thanks",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
+    "id": "fri-pat-could-you-verb",
+    "original": "Could you please send … ?",
+    "pattern": "(?:(?:could|would) you (?:please|kindly)|i would (?:appreciate it|be grateful|be obliged) if you could|(?:i )?(?:kindly )?request you to) ({verb})",
+    "replacement": "can you $1{?}",
+    "alternatives": [
+      "could you $1{?}",
+      "would you mind $1:ing{?}",
+      "any chance you could $1{?}",
+      "mind $1:ing{?}",
+      "when you get a chance, could you $1{?}"
+    ],
+    "tone": "friendly",
+    "priority": 90,
+    "context": "Requests",
+    "description": "Several ways to phrase the same sentence — pick the one that fits."
+  },
+  {
     "id": "fri-do-not",
     "original": "do not",
     "pattern": "do[ \\t]+not(?= \\p{L})",
@@ -329,7 +378,9 @@
     "replacement": "Just letting you know that",
     "alternatives": [
       "I wanted to let you know that",
-      "Quick update:"
+      "Quick update:",
+      "Just a heads-up that",
+      "Wanted to let you know that"
     ],
     "tone": "friendly",
     "priority": 90
@@ -348,7 +399,9 @@
     "replacement": "I hope you're doing well",
     "alternatives": [
       "Hope you're having a good week",
-      "Hope all is well"
+      "Hope all is well",
+      "Hope you're doing great",
+      "Hope things are going well"
     ],
     "tone": "friendly",
     "priority": 90,
@@ -360,7 +413,9 @@
     "replacement": "I'd like to",
     "alternatives": [
       "I'd love to",
-      "I want to"
+      "I want to",
+      "I'm hoping to",
+      "I'm keen to"
     ],
     "tone": "friendly",
     "priority": 60
@@ -382,7 +437,9 @@
     "replacement": "when you get a chance",
     "alternatives": [
       "whenever works for you",
-      "when you have a moment"
+      "when you have a moment",
+      "as soon as you can",
+      "when you get a minute"
     ],
     "tone": "friendly",
     "priority": 60
@@ -399,7 +456,9 @@
     "replacement": "thanks for your help",
     "alternatives": [
       "thanks so much for helping out",
-      "really appreciate your help"
+      "really appreciate your help",
+      "thanks a lot for the help",
+      "thanks for jumping in"
     ],
     "tone": "friendly",
     "priority": 75
@@ -410,7 +469,9 @@
     "replacement": "thanks so much",
     "alternatives": [
       "thanks a lot",
-      "many thanks"
+      "many thanks",
+      "thanks a ton",
+      "thank you so much"
     ],
     "tone": "friendly",
     "priority": 65
@@ -420,7 +481,9 @@
     "original": "Thank you for your patience",
     "replacement": "thanks for bearing with me",
     "alternatives": [
-      "thanks for your patience"
+      "thanks for your patience",
+      "thanks for hanging in there",
+      "appreciate your patience"
     ],
     "tone": "friendly",
     "priority": 75
@@ -430,7 +493,11 @@
     "original": "Thank you for your understanding",
     "replacement": "thanks for understanding",
     "tone": "friendly",
-    "priority": 75
+    "priority": 75,
+    "alternatives": [
+      "appreciate your understanding",
+      "thanks for being so understanding"
+    ]
   },
   {
     "id": "fri-thank-you-for-your-prompt-response",
@@ -443,7 +510,9 @@
     ],
     "replacement": "thanks for getting back to me so quickly",
     "alternatives": [
-      "thanks for the quick reply"
+      "thanks for the quick reply",
+      "thanks for the speedy reply",
+      "appreciate the quick response"
     ],
     "tone": "friendly",
     "priority": 80
@@ -453,7 +522,8 @@
     "original": "Thank you",
     "replacement": "thanks",
     "alternatives": [
-      "thanks so much"
+      "thanks so much",
+      "thanks a lot"
     ],
     "tone": "friendly",
     "priority": 25
@@ -471,7 +541,9 @@
     "replacement": "sorry for",
     "alternatives": [
       "I'm sorry for",
-      "sorry about"
+      "sorry about",
+      "apologies for",
+      "so sorry for"
     ],
     "tone": "friendly",
     "priority": 65
@@ -486,7 +558,9 @@
     ],
     "replacement": "I'm sorry",
     "alternatives": [
-      "sorry about that"
+      "sorry about that",
+      "my apologies",
+      "so sorry"
     ],
     "tone": "friendly",
     "priority": 40
@@ -504,7 +578,9 @@
     "replacement": "feel free to reach out",
     "alternatives": [
       "just let me know",
-      "give me a shout"
+      "give me a shout",
+      "I'm happy to help",
+      "reach out anytime"
     ],
     "tone": "friendly",
     "priority": 85,
@@ -522,7 +598,9 @@
     ],
     "replacement": "if you have any questions",
     "alternatives": [
-      "if anything is unclear"
+      "if anything is unclear",
+      "if you need anything",
+      "if something doesn't make sense"
     ],
     "tone": "friendly",
     "priority": 80,
@@ -541,7 +619,9 @@
     "replacement": "Hope to hear from you soon",
     "alternatives": [
       "Looking forward to hearing from you!",
-      "Talk soon"
+      "Talk soon",
+      "Can't wait to hear from you",
+      "Let me know what you think"
     ],
     "tone": "friendly",
     "priority": 80,
@@ -626,7 +706,9 @@
     "replacement": "could you please",
     "alternatives": [
       "would you mind",
-      "can you please"
+      "can you please",
+      "could you",
+      "please"
     ],
     "tone": "friendly",
     "priority": 75
@@ -643,7 +725,9 @@
     "replacement": "could you please",
     "alternatives": [
       "can you please",
-      "would you mind"
+      "would you mind",
+      "could you",
+      "it'd be great if you could"
     ],
     "tone": "friendly",
     "priority": 85
@@ -951,7 +1035,9 @@
     "replacement": "I'm happy to",
     "alternatives": [
       "I'm glad to",
-      "I'd love to"
+      "I'd love to",
+      "I'm excited to",
+      "happy to"
     ],
     "tone": "friendly",
     "priority": 70
@@ -969,7 +1055,9 @@
     "replacement": "I've attached",
     "alternatives": [
       "Here's",
-      "Attaching"
+      "Attaching",
+      "I'm attaching",
+      "Please see the attached"
     ],
     "tone": "friendly",
     "priority": 75
@@ -987,7 +1075,9 @@
     "replacement": "as we discussed",
     "alternatives": [
       "following up on our chat",
-      "like we talked about"
+      "like we talked about",
+      "as we talked about",
+      "per our chat"
     ],
     "tone": "friendly",
     "priority": 80
@@ -1010,7 +1100,9 @@
     "replacement": "Got it",
     "alternatives": [
       "Sounds good",
-      "Makes sense"
+      "Makes sense",
+      "Okay",
+      "Perfect"
     ],
     "tone": "friendly",
     "priority": 50,
@@ -1040,7 +1132,9 @@
     "replacement": "let me know what you think",
     "alternatives": [
       "let me know",
-      "what do you think?"
+      "what do you think?",
+      "what are your thoughts?",
+      "any thoughts?"
     ],
     "tone": "friendly",
     "priority": 70
@@ -1055,7 +1149,9 @@
     ],
     "replacement": "unfortunately,",
     "alternatives": [
-      "I'm sorry to say that"
+      "I'm sorry to say that",
+      "sadly,",
+      "I'm afraid"
     ],
     "tone": "friendly",
     "priority": 90
@@ -1072,7 +1168,9 @@
     "replacement": "just so you know,",
     "alternatives": [
       "a quick heads-up:",
-      "just a note:"
+      "just a note:",
+      "just a heads-up,",
+      "FYI,"
     ],
     "tone": "friendly",
     "priority": 80
@@ -1098,7 +1196,9 @@
     "replacement": "right now",
     "alternatives": [
       "for now",
-      "at the moment"
+      "at the moment",
+      "currently",
+      "just now"
     ],
     "tone": "friendly",
     "priority": 60
@@ -1145,7 +1245,9 @@
     "replacement": "I wanted to",
     "alternatives": [
       "I'm reaching out to",
-      "Just wanted to"
+      "Just wanted to",
+      "I'm writing to",
+      "I thought I'd"
     ],
     "tone": "friendly",
     "priority": 70
@@ -1156,7 +1258,9 @@
     "replacement": "can you confirm",
     "alternatives": [
       "could you confirm",
-      "mind confirming"
+      "mind confirming",
+      "can you please confirm",
+      "would you confirm"
     ],
     "tone": "friendly",
     "priority": 60

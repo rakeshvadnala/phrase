@@ -15,8 +15,10 @@ export interface PhraseRule {
   variants?: string[];
   /**
    * Optional regular-expression source used instead of the literal phrase.
-   * Word boundaries are added automatically. Use `{match}` in the replacement
-   * to re-insert the matched text.
+   * Word boundaries are added automatically. `{verb}` expands to the list of
+   * common request verbs. In replacements, `$0`-`$9` insert the match / capture
+   * groups, `$1:ing` inserts the -ing form of a captured verb, and a trailing
+   * `{?}` or `{.}` sets the punctuation that ends the sentence.
    */
   pattern?: string;
   /** Preferred replacement. An empty string removes the phrase. */
@@ -33,6 +35,10 @@ export interface PhraseRule {
   position?: 'any' | 'sentenceStart';
   /** Skip the rule when the surrounding sentence already contains one of these phrases. */
   unlessSentenceContains?: string[];
+  /** Offer the wordings as optional suggestions; never apply one by default. */
+  suggestOnly?: boolean;
+  /** Still offer the alternatives when the preferred wording is already what the user wrote. */
+  alwaysOffer?: boolean;
   /** True for rules created by the user. */
   custom?: boolean;
 }
@@ -46,6 +52,13 @@ export interface ChangeOption {
   /** Range of the ORIGINAL text that this option replaces. */
   start: number;
   end: number;
+  /**
+   * Secondary edits that belong to this wording, e.g. turning the sentence's
+   * final "." into "?" when a statement is rephrased as a question.
+   */
+  extra?: ChangeOption[];
+  /** How the option is described in the UI when its text alone is not enough. */
+  label?: string;
 }
 
 /**

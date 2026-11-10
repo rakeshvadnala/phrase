@@ -98,11 +98,12 @@ describe('phrase matching', () => {
     const text = 'I want to know the plan.';
     const changes = findPhraseChanges(text, getRulesForTone('professional'));
     expect(changes).toHaveLength(1);
-    expect(changes[0].options.map((o) => o.text)).toEqual([
+    expect(changes[0].options.map((o) => o.text).slice(0, 3)).toEqual([
       'I would like to understand',
       'I would like to know',
       'Could you please clarify',
     ]);
+    expect(changes[0].options.length).toBeGreaterThanOrEqual(5);
     expect(applyChanges(text, changes, { [changes[0].id]: 1 }).text).toBe('I would like to know the plan.');
     expect(applyChanges(text, changes, { [changes[0].id]: -1 }).text).toBe(text);
   });
