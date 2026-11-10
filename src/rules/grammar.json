@@ -1,0 +1,900 @@
+[
+  {
+    "id": "gr-could-of",
+    "original": "could of",
+    "replacement": "could have",
+    "tone": "grammar",
+    "priority": 60,
+    "description": "\"could of\" should be \"could have\"."
+  },
+  {
+    "id": "gr-should-of",
+    "original": "should of",
+    "replacement": "should have",
+    "tone": "grammar",
+    "priority": 60,
+    "description": "\"should of\" should be \"should have\"."
+  },
+  {
+    "id": "gr-would-of",
+    "original": "would of",
+    "replacement": "would have",
+    "tone": "grammar",
+    "priority": 60,
+    "description": "\"would of\" should be \"would have\"."
+  },
+  {
+    "id": "gr-must-of",
+    "original": "must of",
+    "replacement": "must have",
+    "tone": "grammar",
+    "priority": 60,
+    "description": "\"must of\" should be \"must have\"."
+  },
+  {
+    "id": "gr-might-of",
+    "original": "might of",
+    "replacement": "might have",
+    "tone": "grammar",
+    "priority": 60,
+    "description": "\"might of\" should be \"might have\"."
+  },
+  {
+    "id": "gr-discuss-about",
+    "original": "discuss about",
+    "replacement": "discuss",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Discuss\" does not take \"about\"."
+  },
+  {
+    "id": "gr-discussed-about",
+    "original": "discussed about",
+    "replacement": "discussed",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Discuss\" does not take \"about\"."
+  },
+  {
+    "id": "gr-discussing-about",
+    "original": "discussing about",
+    "replacement": "discussing",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Discuss\" does not take \"about\"."
+  },
+  {
+    "id": "gr-return-back",
+    "original": "return back",
+    "replacement": "return",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Back\" is redundant after \"return\"."
+  },
+  {
+    "id": "gr-returned-back",
+    "original": "returned back",
+    "replacement": "returned",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Back\" is redundant after \"return\"."
+  },
+  {
+    "id": "gr-repeat-again",
+    "original": "repeat again",
+    "replacement": "repeat",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Again\" is redundant after \"repeat\"."
+  },
+  {
+    "id": "gr-reply-back",
+    "original": "reply back",
+    "replacement": "reply",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Back\" is redundant after \"reply\"."
+  },
+  {
+    "id": "gr-replied-back",
+    "original": "replied back",
+    "replacement": "replied",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Back\" is redundant after \"reply\"."
+  },
+  {
+    "id": "gr-i-am-agree",
+    "original": "I am agree",
+    "variants": [
+      "I'm agree"
+    ],
+    "replacement": "I agree",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Agree\" is a verb; it does not need \"am\"."
+  },
+  {
+    "id": "gr-didn-t-went",
+    "original": "didn't went",
+    "variants": [
+      "didnt went"
+    ],
+    "replacement": "didn't go",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-went",
+    "original": "did not went",
+    "replacement": "did not go",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-came",
+    "original": "didn't came",
+    "variants": [
+      "didnt came"
+    ],
+    "replacement": "didn't come",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-came",
+    "original": "did not came",
+    "replacement": "did not come",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-saw",
+    "original": "didn't saw",
+    "variants": [
+      "didnt saw"
+    ],
+    "replacement": "didn't see",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-saw",
+    "original": "did not saw",
+    "replacement": "did not see",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-got",
+    "original": "didn't got",
+    "variants": [
+      "didnt got"
+    ],
+    "replacement": "didn't get",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-got",
+    "original": "did not got",
+    "replacement": "did not get",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-received",
+    "original": "didn't received",
+    "variants": [
+      "didnt received"
+    ],
+    "replacement": "didn't receive",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-received",
+    "original": "did not received",
+    "replacement": "did not receive",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-told",
+    "original": "didn't told",
+    "variants": [
+      "didnt told"
+    ],
+    "replacement": "didn't tell",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-told",
+    "original": "did not told",
+    "replacement": "did not tell",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-knew",
+    "original": "didn't knew",
+    "variants": [
+      "didnt knew"
+    ],
+    "replacement": "didn't know",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-knew",
+    "original": "did not knew",
+    "replacement": "did not know",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-had",
+    "original": "didn't had",
+    "variants": [
+      "didnt had"
+    ],
+    "replacement": "didn't have",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-had",
+    "original": "did not had",
+    "replacement": "did not have",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-sent",
+    "original": "didn't sent",
+    "variants": [
+      "didnt sent"
+    ],
+    "replacement": "didn't send",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-sent",
+    "original": "did not sent",
+    "replacement": "did not send",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-gave",
+    "original": "didn't gave",
+    "variants": [
+      "didnt gave"
+    ],
+    "replacement": "didn't give",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-gave",
+    "original": "did not gave",
+    "replacement": "did not give",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-took",
+    "original": "didn't took",
+    "variants": [
+      "didnt took"
+    ],
+    "replacement": "didn't take",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-took",
+    "original": "did not took",
+    "replacement": "did not take",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-did",
+    "original": "didn't did",
+    "variants": [
+      "didnt did"
+    ],
+    "replacement": "didn't do",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-did",
+    "original": "did not did",
+    "replacement": "did not do",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-made",
+    "original": "didn't made",
+    "variants": [
+      "didnt made"
+    ],
+    "replacement": "didn't make",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-made",
+    "original": "did not made",
+    "replacement": "did not make",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-found",
+    "original": "didn't found",
+    "variants": [
+      "didnt found"
+    ],
+    "replacement": "didn't find",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-found",
+    "original": "did not found",
+    "replacement": "did not find",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-didn-t-said",
+    "original": "didn't said",
+    "variants": [
+      "didnt said"
+    ],
+    "replacement": "didn't say",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-did-not-said",
+    "original": "did not said",
+    "replacement": "did not say",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the base verb after \"did not\"."
+  },
+  {
+    "id": "gr-one-of-my-friend",
+    "original": "one of my friend",
+    "pattern": "one of (my|the|our|his|her|their|your) (friend|colleague|team member|client|customer|manager|ticket|server|issue|task|project|report|requirement|document|file|application|team)",
+    "replacement": "one of $1 $2s",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"One of\" is followed by a plural noun."
+  },
+  {
+    "id": "gr-more-better",
+    "original": "more better",
+    "replacement": "better",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Double comparative."
+  },
+  {
+    "id": "gr-more-easier",
+    "original": "more easier",
+    "replacement": "easier",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Double comparative."
+  },
+  {
+    "id": "gr-more-faster",
+    "original": "more faster",
+    "replacement": "faster",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Double comparative."
+  },
+  {
+    "id": "gr-more-clearer",
+    "original": "more clearer",
+    "replacement": "clearer",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Double comparative."
+  },
+  {
+    "id": "gr-can-able-to",
+    "original": "can able to",
+    "variants": [
+      "could able to"
+    ],
+    "replacement": "can",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Can\" and \"able to\" mean the same thing; use one."
+  },
+  {
+    "id": "gr-cope-up-with",
+    "original": "cope up with",
+    "replacement": "cope with",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "The phrase is \"cope with\"."
+  },
+  {
+    "id": "gr-comprise-of",
+    "original": "comprise of",
+    "replacement": "comprise",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Comprise\" does not take \"of\"."
+  },
+  {
+    "id": "gr-comprises-of",
+    "original": "comprises of",
+    "replacement": "comprises",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Comprise\" does not take \"of\"."
+  },
+  {
+    "id": "gr-two-days-back",
+    "original": "two days back",
+    "pattern": "(days?|weeks?|months?|years?|hours?|minutes?) back",
+    "replacement": "$1 ago",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Standard English uses \"ago\" for elapsed time."
+  },
+  {
+    "id": "gr-irregardless",
+    "original": "irregardless",
+    "replacement": "regardless",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Common grammar slip."
+  },
+  {
+    "id": "gr-anyways",
+    "original": "anyways",
+    "replacement": "anyway",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Common grammar slip."
+  },
+  {
+    "id": "gr-updation",
+    "original": "updation",
+    "replacement": "update",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Updation\" is not standard English."
+  },
+  {
+    "id": "gr-upgradation",
+    "original": "upgradation",
+    "replacement": "upgrade",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Upgradation\" is not standard English."
+  },
+  {
+    "id": "gr-informations",
+    "original": "informations",
+    "replacement": "information",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Information\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-equipments",
+    "original": "equipments",
+    "replacement": "equipment",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Equipment\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-feedbacks",
+    "original": "feedbacks",
+    "replacement": "feedback",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Feedback\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-softwares",
+    "original": "softwares",
+    "replacement": "software",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Software\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-advices",
+    "original": "advices",
+    "replacement": "advice",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Advice\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-datas",
+    "original": "datas",
+    "replacement": "data",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Data\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-staffs",
+    "original": "staffs",
+    "replacement": "staff",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Staff\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-stuffs",
+    "original": "stuffs",
+    "replacement": "stuff",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Stuff\" is uncountable; it has no plural form."
+  },
+  {
+    "id": "gr-forward-to-hear",
+    "original": "forward to hear",
+    "replacement": "forward to hearing",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-meet",
+    "original": "forward to meet",
+    "replacement": "forward to meeting",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-see",
+    "original": "forward to see",
+    "replacement": "forward to seeing",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-work",
+    "original": "forward to work",
+    "replacement": "forward to working",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-speak",
+    "original": "forward to speak",
+    "replacement": "forward to speaking",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-talk",
+    "original": "forward to talk",
+    "replacement": "forward to talking",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-receive",
+    "original": "forward to receive",
+    "replacement": "forward to receiving",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-discuss",
+    "original": "forward to discuss",
+    "replacement": "forward to discussing",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-connect",
+    "original": "forward to connect",
+    "replacement": "forward to connecting",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-join",
+    "original": "forward to join",
+    "replacement": "forward to joining",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-forward-to-get",
+    "original": "forward to get",
+    "replacement": "forward to getting",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Look forward to\" is followed by an -ing verb."
+  },
+  {
+    "id": "gr-according-to-me",
+    "original": "according to me",
+    "replacement": "in my opinion",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"According to\" refers to someone else's view."
+  },
+  {
+    "id": "gr-explain-me",
+    "original": "explain me",
+    "replacement": "explain to me",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Explain\" needs \"to\" before the person."
+  },
+  {
+    "id": "gr-told-to-me",
+    "original": "told to me",
+    "replacement": "told me",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Told\" does not take \"to\"."
+  },
+  {
+    "id": "gr-said-me",
+    "original": "said me",
+    "replacement": "told me",
+    "alternatives": [
+      "said to me"
+    ],
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use \"told me\" or \"said to me\"."
+  },
+  {
+    "id": "gr-despite-of",
+    "original": "despite of",
+    "replacement": "despite",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"Despite\" does not take \"of\"."
+  },
+  {
+    "id": "gr-inspite-of",
+    "original": "inspite of",
+    "replacement": "in spite of",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Common grammar slip."
+  },
+  {
+    "id": "gr-atleast",
+    "original": "atleast",
+    "replacement": "at least",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"at least\" is written as separate words."
+  },
+  {
+    "id": "gr-alot",
+    "original": "alot",
+    "replacement": "a lot",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"a lot\" is written as separate words."
+  },
+  {
+    "id": "gr-incase",
+    "original": "incase",
+    "replacement": "in case",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"in case\" is written as separate words."
+  },
+  {
+    "id": "gr-infact",
+    "original": "infact",
+    "replacement": "in fact",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"in fact\" is written as separate words."
+  },
+  {
+    "id": "gr-eventhough",
+    "original": "eventhough",
+    "replacement": "even though",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"even though\" is written as separate words."
+  },
+  {
+    "id": "gr-noone",
+    "original": "noone",
+    "replacement": "no one",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"no one\" is written as separate words."
+  },
+  {
+    "id": "gr-everytime",
+    "original": "everytime",
+    "replacement": "every time",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"every time\" is written as separate words."
+  },
+  {
+    "id": "gr-aswell",
+    "original": "aswell",
+    "replacement": "as well",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"as well\" is written as separate words."
+  },
+  {
+    "id": "gr-ofcourse",
+    "original": "ofcourse",
+    "replacement": "of course",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"of course\" is written as separate words."
+  },
+  {
+    "id": "gr-upto",
+    "original": "upto",
+    "replacement": "up to",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"up to\" is written as separate words."
+  },
+  {
+    "id": "gr-thankyou",
+    "original": "thankyou",
+    "replacement": "thank you",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"thank you\" is written as separate words."
+  },
+  {
+    "id": "gr-atmost",
+    "original": "atmost",
+    "replacement": "at most",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"at most\" is written as separate words."
+  },
+  {
+    "id": "gr-inorder",
+    "original": "inorder",
+    "replacement": "in order",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"in order\" is written as separate words."
+  },
+  {
+    "id": "gr-your-welcome",
+    "original": "your welcome",
+    "replacement": "you're welcome",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "\"You're\" is the contraction of \"you are\"."
+  },
+  {
+    "id": "gr-between-you-and-i",
+    "original": "between you and I",
+    "replacement": "between you and me",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use \"me\" after a preposition."
+  },
+  {
+    "id": "gr-i-am-having-5-years",
+    "original": "I am having 5 years",
+    "pattern": "(?:i am|i['’]m) having (\\d+\\+?|one|two|three|four|five|six|seven|eight|nine|ten|several|many) (years?|months?)",
+    "replacement": "I have $1 $2",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Use the simple present for possession and experience."
+  },
+  {
+    "id": "gr-today-morning",
+    "original": "today morning",
+    "replacement": "this morning",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Standard English uses \"this morning\"."
+  },
+  {
+    "id": "gr-today-evening",
+    "original": "today evening",
+    "replacement": "this evening",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Standard English uses \"this evening\"."
+  },
+  {
+    "id": "gr-today-afternoon",
+    "original": "today afternoon",
+    "replacement": "this afternoon",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Standard English uses \"this afternoon\"."
+  },
+  {
+    "id": "gr-today-night",
+    "original": "today night",
+    "replacement": "tonight",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Standard English uses \"tonight\"."
+  },
+  {
+    "id": "gr-yesterday-night",
+    "original": "yesterday night",
+    "replacement": "last night",
+    "tone": "grammar",
+    "priority": 50,
+    "description": "Standard English uses \"last night\"."
+  },
+  {
+    "id": "gr-i-am-working-here-since",
+    "original": "I am working here since",
+    "pattern": "(i have|we have|i['’]ve|we['’]ve) working (here )?since",
+    "replacement": "$1 been working $2since",
+    "tone": "grammar",
+    "priority": 40,
+    "description": "Use \"have been working ... since\"."
+  }
+]

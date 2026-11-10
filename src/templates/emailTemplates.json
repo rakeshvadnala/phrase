@@ -1,0 +1,213 @@
+[
+  {
+    "id": "meeting-request",
+    "name": "Meeting request",
+    "category": "Meetings",
+    "description": "Ask someone for time to discuss a topic.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "placeholder": "Priya", "required": true },
+      { "key": "topic", "label": "Meeting topic", "type": "text", "placeholder": "Q3 release plan", "required": true },
+      { "key": "date", "label": "Proposed date", "type": "date" },
+      { "key": "time", "label": "Proposed time", "type": "time" },
+      { "key": "duration", "label": "Duration", "type": "text", "placeholder": "30 minutes" },
+      { "key": "agenda", "label": "Agenda points", "type": "textarea", "placeholder": "- Scope\n- Timeline\n- Open risks" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Meeting Request: {{topic}}",
+    "body": "Hi {{recipient}},\n\nI hope you are doing well.\n\nI would like to schedule a meeting to discuss {{topic}}.{{#date}} Would {{date}}{{#time}} at {{time}}{{/time}} work for you?{{/date}}{{#duration}} I expect the discussion to take about {{duration}}.{{/duration}}\n\n{{#agenda}}Proposed agenda:\n{{agenda}}\n\n{{/agenda}}If this time does not suit you, please let me know your availability and I will be happy to reschedule.\n\nThank you,\n{{sender}}"
+  },
+  {
+    "id": "meeting-follow-up",
+    "name": "Meeting follow-up",
+    "category": "Meetings",
+    "description": "Summarise decisions and action items after a meeting.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "placeholder": "team", "required": true },
+      { "key": "topic", "label": "Meeting topic", "type": "text", "placeholder": "Sprint planning", "required": true },
+      { "key": "date", "label": "Meeting date", "type": "date" },
+      { "key": "summary", "label": "Key points discussed", "type": "textarea", "placeholder": "- Agreed on the release scope\n- Reviewed open defects", "required": true },
+      { "key": "actions", "label": "Action items", "type": "textarea", "placeholder": "- Ravi: share the test report by Friday" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Follow-up: {{topic}}",
+    "body": "Hi {{recipient}},\n\nThank you for taking the time to attend the meeting on {{topic}}{{#date}} on {{date}}{{/date}}.\n\nHere is a summary of what we discussed:\n{{summary}}\n\n{{#actions}}Action items:\n{{actions}}\n\n{{/actions}}Please let me know if I have missed anything or if any correction is needed.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "status-update",
+    "name": "Status update",
+    "category": "Updates",
+    "description": "Share progress, next steps and blockers.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "topic", "label": "Task or work item", "type": "text", "placeholder": "Payment gateway migration", "required": true },
+      { "key": "completed", "label": "Completed so far", "type": "textarea", "placeholder": "- Database schema migrated", "required": true },
+      { "key": "next", "label": "Next steps", "type": "textarea", "placeholder": "- Begin integration testing" },
+      { "key": "blockers", "label": "Blockers or risks", "type": "textarea", "placeholder": "- Waiting for sandbox credentials" },
+      { "key": "eta", "label": "Expected completion", "type": "date" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Status Update: {{topic}}",
+    "body": "Hi {{recipient}},\n\nPlease find below the current status of {{topic}}.\n\nCompleted:\n{{completed}}\n\n{{#next}}Next steps:\n{{next}}\n\n{{/next}}{{#blockers}}Blockers / risks:\n{{blockers}}\n\n{{/blockers}}{{#eta}}Expected completion: {{eta}}\n\n{{/eta}}Please let me know if you need any further details.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "leave-request",
+    "name": "Leave request",
+    "category": "Requests",
+    "description": "Request time off from your manager.",
+    "fields": [
+      { "key": "recipient", "label": "Manager name", "type": "text", "required": true },
+      { "key": "leaveType", "label": "Type of leave", "type": "text", "placeholder": "annual leave" },
+      { "key": "from", "label": "From", "type": "date", "required": true },
+      { "key": "to", "label": "To", "type": "date", "required": true },
+      { "key": "reason", "label": "Reason (optional)", "type": "text", "placeholder": "a family function" },
+      { "key": "cover", "label": "Who will cover your work", "type": "text", "placeholder": "Anita" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Leave Request: {{from}} to {{to}}",
+    "body": "Hi {{recipient}},\n\nI would like to request {{#leaveType}}{{leaveType}}{{/leaveType}}{{^leaveType}}leave{{/leaveType}} from {{from}} to {{to}}{{#reason}} due to {{reason}}{{/reason}}.\n\nI will make sure that my pending work is completed or handed over before I leave.{{#cover}} {{cover}} has agreed to cover any urgent matters in my absence.{{/cover}}\n\nPlease let me know if you need any additional information. I would appreciate your approval.\n\nThank you,\n{{sender}}"
+  },
+  {
+    "id": "wfh-request",
+    "name": "Work-from-home request",
+    "category": "Requests",
+    "description": "Ask to work remotely for a day or a period.",
+    "fields": [
+      { "key": "recipient", "label": "Manager name", "type": "text", "required": true },
+      { "key": "from", "label": "From", "type": "date", "required": true },
+      { "key": "to", "label": "To (leave empty for a single day)", "type": "date" },
+      { "key": "reason", "label": "Reason", "type": "text", "placeholder": "a maintenance visit at home" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Work-from-Home Request: {{from}}{{#to}} to {{to}}{{/to}}",
+    "body": "Hi {{recipient}},\n\nI would like to request permission to work from home {{#to}}from {{from}} to {{to}}{{/to}}{{^to}}on {{from}}{{/to}}{{#reason}} due to {{reason}}{{/reason}}.\n\nI will be available online during my regular working hours, will attend all scheduled meetings, and will ensure that my deliverables are not affected.\n\nPlease let me know if this is acceptable.\n\nThank you,\n{{sender}}"
+  },
+  {
+    "id": "issue-escalation",
+    "name": "Issue escalation",
+    "category": "Issues",
+    "description": "Escalate an unresolved problem with impact and a clear ask.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "issue", "label": "Issue summary", "type": "text", "placeholder": "Production login failures", "required": true },
+      { "key": "reference", "label": "Ticket / reference", "type": "text", "placeholder": "INC-10423" },
+      { "key": "since", "label": "Open since", "type": "date" },
+      { "key": "impact", "label": "Business impact", "type": "textarea", "placeholder": "Around 200 users are unable to sign in.", "required": true },
+      { "key": "tried", "label": "Steps already taken", "type": "textarea", "placeholder": "- Restarted the auth service\n- Raised a ticket with the vendor" },
+      { "key": "ask", "label": "What you need", "type": "text", "placeholder": "a senior engineer to be assigned today", "required": true },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Escalation: {{issue}}{{#reference}} ({{reference}}){{/reference}}",
+    "body": "Hi {{recipient}},\n\nI am writing to escalate the following issue, which remains unresolved{{#since}} since {{since}}{{/since}}: {{issue}}{{#reference}} (reference: {{reference}}){{/reference}}.\n\nImpact:\n{{impact}}\n\n{{#tried}}Steps taken so far:\n{{tried}}\n\n{{/tried}}To move this forward, I would appreciate {{ask}}.\n\nI am available to provide any further details or to join a call at your convenience.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "technical-update",
+    "name": "Technical update",
+    "category": "Updates",
+    "description": "Explain a technical change, its cause and its effect.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "system", "label": "System or component", "type": "text", "placeholder": "Order API", "required": true },
+      { "key": "change", "label": "What changed", "type": "textarea", "placeholder": "Upgraded the database driver to version 5.2.", "required": true },
+      { "key": "cause", "label": "Root cause / reason", "type": "textarea", "placeholder": "The previous driver leaked connections under load." },
+      { "key": "impact", "label": "Impact", "type": "textarea", "placeholder": "No downtime is expected." },
+      { "key": "next", "label": "Next steps", "type": "textarea" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Technical Update: {{system}}",
+    "body": "Hi {{recipient}},\n\nHere is a technical update regarding {{system}}.\n\nWhat changed:\n{{change}}\n\n{{#cause}}Root cause / reason:\n{{cause}}\n\n{{/cause}}{{#impact}}Impact:\n{{impact}}\n\n{{/impact}}{{#next}}Next steps:\n{{next}}\n\n{{/next}}Please let me know if you have any questions.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "project-update",
+    "name": "Project update",
+    "category": "Updates",
+    "description": "Report overall project health to stakeholders.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "project", "label": "Project name", "type": "text", "required": true },
+      { "key": "status", "label": "Overall status", "type": "text", "placeholder": "On track", "required": true },
+      { "key": "milestones", "label": "Milestones achieved", "type": "textarea", "required": true },
+      { "key": "upcoming", "label": "Upcoming milestones", "type": "textarea" },
+      { "key": "risks", "label": "Risks and mitigation", "type": "textarea" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Project Update: {{project}} – {{status}}",
+    "body": "Hi {{recipient}},\n\nPlease find below the latest update on {{project}}.\n\nOverall status: {{status}}\n\nMilestones achieved:\n{{milestones}}\n\n{{#upcoming}}Upcoming milestones:\n{{upcoming}}\n\n{{/upcoming}}{{#risks}}Risks and mitigation:\n{{risks}}\n\n{{/risks}}I will share the next update as the project progresses. Please let me know if you would like to discuss any of the above.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "approval-request",
+    "name": "Approval request",
+    "category": "Requests",
+    "description": "Ask for sign-off with the context needed to decide.",
+    "fields": [
+      { "key": "recipient", "label": "Approver name", "type": "text", "required": true },
+      { "key": "item", "label": "What needs approval", "type": "text", "placeholder": "the purchase of two additional licences", "required": true },
+      { "key": "details", "label": "Details / justification", "type": "textarea", "required": true },
+      { "key": "cost", "label": "Cost (optional)", "type": "text", "placeholder": "USD 1,200 per year" },
+      { "key": "deadline", "label": "Approval needed by", "type": "date" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Approval Request: {{item}}",
+    "body": "Hi {{recipient}},\n\nI would like to request your approval for {{item}}.\n\nDetails:\n{{details}}\n\n{{#cost}}Estimated cost: {{cost}}\n\n{{/cost}}{{#deadline}}To stay on schedule, I would appreciate your approval by {{deadline}}.\n\n{{/deadline}}Please let me know if you need any additional information to make a decision.\n\nThank you,\n{{sender}}"
+  },
+  {
+    "id": "information-request",
+    "name": "Information request",
+    "category": "Requests",
+    "description": "Ask a colleague for specific information.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "topic", "label": "Topic", "type": "text", "placeholder": "the vendor onboarding process", "required": true },
+      { "key": "questions", "label": "What you need to know", "type": "textarea", "placeholder": "1. Who approves new vendors?\n2. How long does onboarding take?", "required": true },
+      { "key": "purpose", "label": "Why you need it", "type": "text", "placeholder": "I am preparing the Q4 procurement plan" },
+      { "key": "deadline", "label": "Needed by", "type": "date" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Request for Information: {{topic}}",
+    "body": "Hi {{recipient}},\n\nI hope you are doing well.\n\n{{#purpose}}{{purpose}}, and {{/purpose}}I would appreciate your help with some information regarding {{topic}}:\n{{questions}}\n\n{{#deadline}}It would be very helpful if you could share this by {{deadline}}.\n\n{{/deadline}}Thank you in advance for your time and assistance.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "thank-you",
+    "name": "Thank-you email",
+    "category": "Courtesy",
+    "description": "Acknowledge someone's help or contribution.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "reason", "label": "What you are thankful for", "type": "text", "placeholder": "your support during the release weekend", "required": true },
+      { "key": "impact", "label": "The difference it made", "type": "textarea", "placeholder": "Your quick fix allowed us to go live on schedule." },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Thank You",
+    "body": "Hi {{recipient}},\n\nI wanted to take a moment to thank you for {{reason}}.\n\n{{#impact}}{{impact}}\n\n{{/impact}}I truly appreciate your effort and look forward to working with you again.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "apology",
+    "name": "Apology email",
+    "category": "Courtesy",
+    "description": "Take responsibility and explain the corrective action.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "issue", "label": "What went wrong", "type": "text", "placeholder": "the delay in sharing the report", "required": true },
+      { "key": "cause", "label": "Brief explanation (optional)", "type": "textarea", "placeholder": "The source data arrived later than planned." },
+      { "key": "fix", "label": "Corrective action", "type": "textarea", "placeholder": "I have now shared the report and set up an earlier reminder for future cycles.", "required": true },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Apology for {{issue}}",
+    "body": "Hi {{recipient}},\n\nPlease accept my sincere apologies for {{issue}}.\n\n{{#cause}}{{cause}}\n\n{{/cause}}{{fix}}\n\nI understand the inconvenience this may have caused and will make sure it does not happen again. Thank you for your patience and understanding.\n\nBest regards,\n{{sender}}"
+  },
+  {
+    "id": "reminder",
+    "name": "Reminder email",
+    "category": "Follow-ups",
+    "description": "Politely follow up on something that is pending.",
+    "fields": [
+      { "key": "recipient", "label": "Recipient name", "type": "text", "required": true },
+      { "key": "item", "label": "What is pending", "type": "text", "placeholder": "the signed contract", "required": true },
+      { "key": "sentOn", "label": "Originally requested on", "type": "date" },
+      { "key": "deadline", "label": "Needed by", "type": "date" },
+      { "key": "note", "label": "Additional note", "type": "textarea" },
+      { "key": "sender", "label": "Your name", "type": "text", "required": true }
+    ],
+    "subject": "Gentle Reminder: {{item}}",
+    "body": "Hi {{recipient}},\n\nI hope you are doing well.\n\nThis is a gentle reminder regarding {{item}}{{#sentOn}}, which I requested on {{sentOn}}{{/sentOn}}.{{#deadline}} I would appreciate it if you could share it by {{deadline}}.{{/deadline}}\n\n{{#note}}{{note}}\n\n{{/note}}Please let me know if you need anything from me to proceed. If you have already taken care of this, kindly ignore this message.\n\nThank you,\n{{sender}}"
+  }
+]

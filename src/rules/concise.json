@@ -1,0 +1,1301 @@
+[
+  {
+    "id": "con-basically",
+    "original": "basically",
+    "pattern": "basically(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-actually",
+    "original": "actually",
+    "pattern": "actually(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-literally",
+    "original": "literally",
+    "pattern": "literally(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-honestly",
+    "original": "honestly",
+    "pattern": "honestly(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-simply",
+    "original": "simply",
+    "pattern": "simply(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-essentially",
+    "original": "essentially",
+    "pattern": "essentially(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-obviously",
+    "original": "obviously",
+    "pattern": "obviously(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-clearly",
+    "original": "clearly",
+    "pattern": "clearly(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-definitely",
+    "original": "definitely",
+    "pattern": "definitely(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-certainly",
+    "original": "certainly",
+    "pattern": "certainly(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-totally",
+    "original": "totally",
+    "pattern": "totally(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-practically",
+    "original": "practically",
+    "pattern": "practically(?=,? \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-very",
+    "original": "very",
+    "pattern": "(?:very|really|quite|extremely|pretty)(?= (?!much\\b|well\\b|few\\b|little\\b|soon\\b)\\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 25,
+    "description": "Intensifiers rarely add information."
+  },
+  {
+    "id": "con-just",
+    "original": "just",
+    "pattern": "just(?= (?!in case\\b|now\\b|like\\b|as\\b|a\\b|one\\b|before\\b|after\\b)\\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 25,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-kind-of",
+    "original": "kind of",
+    "pattern": "(?<!(?:what|which|this|that|any|some|a|the|same|every|each|no|one|other|another|right|wrong|new|different|these|those)[ \\t])(?:kind|sort) of(?= \\p{L})",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 30,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-you-know",
+    "original": "you know,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-i-mean",
+    "original": "I mean,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-as-a-matter-of-fact",
+    "original": "as a matter of fact,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-needless-to-say",
+    "original": "needless to say,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-in-fact",
+    "original": "in fact,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-to-be-honest",
+    "original": "to be honest,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-to-be-frank",
+    "original": "to be frank,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-frankly-speaking",
+    "original": "frankly speaking,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-honestly-speaking",
+    "original": "honestly speaking,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-as-you-know",
+    "original": "as you know,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-as-you-may-know",
+    "original": "as you may know,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-as-you-are-aware",
+    "original": "as you are aware,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-at-the-end-of-the-day",
+    "original": "at the end of the day,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-for-what-it-is-worth",
+    "original": "for what it is worth,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-if-i-may-say-so",
+    "original": "if I may say so,",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-it-goes-without-saying-that",
+    "original": "it goes without saying that",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 60,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-please-be-informed-that",
+    "original": "please be informed that",
+    "variants": [
+      "kindly be informed that",
+      "this is to inform you that",
+      "I am writing to inform you that",
+      "I would like to inform you that",
+      "I wanted to let you know that",
+      "I am writing to let you know that",
+      "just wanted to let you know that",
+      "I just wanted to let you know that",
+      "I would like to let you know that",
+      "please note that",
+      "kindly note that",
+      "it should be noted that",
+      "it is important to note that",
+      "I would like to point out that",
+      "I would like to mention that",
+      "I would like to bring to your notice that",
+      "I would like to bring to your attention that",
+      "please be advised that",
+      "I would like to take this opportunity to inform you that"
+    ],
+    "replacement": "",
+    "tone": "concise",
+    "priority": 80,
+    "description": "The sentence works without this lead-in."
+  },
+  {
+    "id": "con-i-hope-this-email-finds-you-well",
+    "original": "I hope this email finds you well",
+    "variants": [
+      "I hope this message finds you well",
+      "hope this email finds you well",
+      "I trust this email finds you well",
+      "I hope this mail finds you well",
+      "I hope you are doing well",
+      "hope you are doing well"
+    ],
+    "replacement": "",
+    "tone": "concise",
+    "priority": 80,
+    "description": "A courtesy line that can be dropped when brevity matters.",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "con-i-would-like-to-take-this-opportunity-to",
+    "original": "I would like to take this opportunity to",
+    "replacement": "I would like to",
+    "alternatives": [
+      "I want to"
+    ],
+    "tone": "concise",
+    "priority": 85
+  },
+  {
+    "id": "con-in-order-to",
+    "original": "in order to",
+    "replacement": "to",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"to\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-so-as-to",
+    "original": "so as to",
+    "replacement": "to",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"to\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-due-to-the-fact-that",
+    "original": "due to the fact that",
+    "variants": [
+      "owing to the fact that",
+      "in view of the fact that",
+      "on account of the fact that",
+      "for the reason that",
+      "in light of the fact that",
+      "on the grounds that"
+    ],
+    "replacement": "because",
+    "alternatives": [
+      "since"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"because\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-spite-of-the-fact-that",
+    "original": "in spite of the fact that",
+    "variants": [
+      "despite the fact that",
+      "regardless of the fact that",
+      "notwithstanding the fact that"
+    ],
+    "replacement": "although",
+    "alternatives": [
+      "though"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"although\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-at-this-point-in-time",
+    "original": "at this point in time",
+    "variants": [
+      "at the present time",
+      "at this moment in time",
+      "at the current time",
+      "at the present moment",
+      "as of this moment"
+    ],
+    "replacement": "now",
+    "alternatives": [
+      "currently"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"now\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-event-that",
+    "original": "in the event that",
+    "variants": [
+      "in the event of",
+      "under circumstances in which"
+    ],
+    "replacement": "if",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"if\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-near-future",
+    "original": "in the near future",
+    "replacement": "soon",
+    "alternatives": [
+      "shortly"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"soon\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-at-a-later-date",
+    "original": "at a later date",
+    "replacement": "later",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"later\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-at-an-early-date",
+    "original": "at an early date",
+    "replacement": "soon",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"soon\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-on-a-daily-basis",
+    "original": "on a daily basis",
+    "pattern": "on an? (daily|weekly|monthly|yearly|quarterly|hourly) basis",
+    "replacement": "$1",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"daily\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-on-a-regular-basis",
+    "original": "on a regular basis",
+    "replacement": "regularly",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"regularly\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-on-an-annual-basis",
+    "original": "on an annual basis",
+    "replacement": "annually",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"annually\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-on-an-ongoing-basis",
+    "original": "on an ongoing basis",
+    "replacement": "continually",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"continually\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-a-large-number-of",
+    "original": "a large number of",
+    "variants": [
+      "a great number of",
+      "a significant number of",
+      "a considerable number of",
+      "a wide range of",
+      "a wide variety of"
+    ],
+    "replacement": "many",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"many\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-the-majority-of",
+    "original": "the majority of",
+    "variants": [
+      "a majority of",
+      "the vast majority of"
+    ],
+    "replacement": "most",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"most\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-a-number-of",
+    "original": "a number of",
+    "replacement": "several",
+    "alternatives": [
+      "some"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"several\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-with-regard-to",
+    "original": "with regard to",
+    "variants": [
+      "with regards to",
+      "in regard to",
+      "in regards to",
+      "with respect to",
+      "with reference to",
+      "in relation to",
+      "pertaining to",
+      "in connection with",
+      "on the subject of",
+      "in reference to"
+    ],
+    "replacement": "about",
+    "alternatives": [
+      "regarding"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"about\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-for-the-purpose-of",
+    "original": "for the purpose of",
+    "replacement": "for",
+    "alternatives": [
+      "to"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"for\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-with-the-aim-of",
+    "original": "with the aim of",
+    "variants": [
+      "with a view to",
+      "with the intention of"
+    ],
+    "replacement": "to",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"to\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-has-the-ability-to",
+    "original": "has the ability to",
+    "variants": [
+      "is able to",
+      "has the capacity to",
+      "am able to",
+      "are able to",
+      "have the ability to",
+      "is in a position to",
+      "are in a position to"
+    ],
+    "replacement": "can",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"can\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-make-a-decision",
+    "original": "make a decision",
+    "replacement": "decide",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"decide\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-made-a-decision",
+    "original": "made a decision",
+    "replacement": "decided",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"decided\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-come-to-a-conclusion",
+    "original": "come to a conclusion",
+    "variants": [
+      "reach a conclusion",
+      "arrive at a conclusion"
+    ],
+    "replacement": "conclude",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"conclude\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-take-into-consideration",
+    "original": "take into consideration",
+    "variants": [
+      "take into account",
+      "give consideration to"
+    ],
+    "replacement": "consider",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"consider\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-conduct-an-investigation-into",
+    "original": "conduct an investigation into",
+    "variants": [
+      "carry out an investigation into",
+      "perform an investigation of"
+    ],
+    "replacement": "investigate",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"investigate\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-perform-an-analysis-of",
+    "original": "perform an analysis of",
+    "variants": [
+      "conduct an analysis of",
+      "carry out an analysis of"
+    ],
+    "replacement": "analyze",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"analyze\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-make-an-attempt-to",
+    "original": "make an attempt to",
+    "variants": [
+      "make an effort to"
+    ],
+    "replacement": "try to",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"try to\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-provide-assistance-to",
+    "original": "provide assistance to",
+    "variants": [
+      "give assistance to",
+      "offer assistance to"
+    ],
+    "replacement": "help",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"help\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-is-in-agreement-with",
+    "original": "is in agreement with",
+    "replacement": "agrees with",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"agrees with\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-are-in-agreement-with",
+    "original": "are in agreement with",
+    "replacement": "agree with",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"agree with\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-have-a-discussion-about",
+    "original": "have a discussion about",
+    "variants": [
+      "have a discussion on",
+      "hold a discussion about"
+    ],
+    "replacement": "discuss",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"discuss\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-at-all-times",
+    "original": "at all times",
+    "replacement": "always",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"always\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-each-and-every",
+    "original": "each and every",
+    "replacement": "every",
+    "alternatives": [
+      "each"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"every\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-first-and-foremost",
+    "original": "first and foremost",
+    "replacement": "first",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"first\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-any-and-all",
+    "original": "any and all",
+    "replacement": "all",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"all\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-end-result",
+    "original": "end result",
+    "replacement": "result",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"result\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-final-outcome",
+    "original": "final outcome",
+    "replacement": "outcome",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"outcome\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-future-plans",
+    "original": "future plans",
+    "replacement": "plans",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"plans\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-past-experience",
+    "original": "past experience",
+    "replacement": "experience",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"experience\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-advance-planning",
+    "original": "advance planning",
+    "replacement": "planning",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"planning\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-basic-fundamentals",
+    "original": "basic fundamentals",
+    "replacement": "fundamentals",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"fundamentals\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-completely-finished",
+    "original": "completely finished",
+    "replacement": "finished",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"finished\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-absolutely-essential",
+    "original": "absolutely essential",
+    "replacement": "essential",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"essential\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-close-proximity-to",
+    "original": "in close proximity to",
+    "replacement": "near",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"near\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-revert-back",
+    "original": "revert back",
+    "replacement": "revert",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"revert\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-return-back",
+    "original": "return back",
+    "replacement": "return",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"return\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-repeat-again",
+    "original": "repeat again",
+    "replacement": "repeat",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"repeat\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-combine-together",
+    "original": "combine together",
+    "replacement": "combine",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"combine\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-collaborate-together",
+    "original": "collaborate together",
+    "replacement": "collaborate",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"collaborate\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-join-together",
+    "original": "join together",
+    "replacement": "join",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"join\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-merge-together",
+    "original": "merge together",
+    "replacement": "merge",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"merge\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-postpone-until-later",
+    "original": "postpone until later",
+    "replacement": "postpone",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"postpone\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-still-remains",
+    "original": "still remains",
+    "replacement": "remains",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"remains\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-added-bonus",
+    "original": "added bonus",
+    "replacement": "bonus",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"bonus\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-unexpected-surprise",
+    "original": "unexpected surprise",
+    "replacement": "surprise",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"surprise\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-new-innovation",
+    "original": "new innovation",
+    "replacement": "innovation",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"innovation\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-brief-summary",
+    "original": "brief summary",
+    "replacement": "summary",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"summary\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-close-scrutiny",
+    "original": "close scrutiny",
+    "replacement": "scrutiny",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"scrutiny\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-current-status",
+    "original": "current status",
+    "replacement": "status",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"status\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-i-think-that",
+    "original": "I think that",
+    "replacement": "I think",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"I think\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-i-believe-that",
+    "original": "I believe that",
+    "replacement": "I believe",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"I believe\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-whether-or-not",
+    "original": "whether or not",
+    "replacement": "whether",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"whether\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-until-such-time-as",
+    "original": "until such time as",
+    "replacement": "until",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"until\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-with-the-exception-of",
+    "original": "with the exception of",
+    "replacement": "except",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"except\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-vicinity-of",
+    "original": "in the vicinity of",
+    "replacement": "near",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"near\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-prior-to",
+    "original": "prior to",
+    "replacement": "before",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"before\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-subsequent-to",
+    "original": "subsequent to",
+    "replacement": "after",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"after\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-as-a-result-of",
+    "original": "as a result of",
+    "replacement": "because of",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"because of\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-absence-of",
+    "original": "in the absence of",
+    "replacement": "without",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"without\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-by-means-of",
+    "original": "by means of",
+    "replacement": "by",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"by\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-amount-of",
+    "original": "in the amount of",
+    "replacement": "for",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"for\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-process-of",
+    "original": "in the process of",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-in-addition-to",
+    "original": "in addition to",
+    "replacement": "besides",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"besides\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-please-do-not-hesitate-to-contact-me",
+    "original": "please do not hesitate to contact me",
+    "variants": [
+      "please feel free to contact me",
+      "do not hesitate to contact me"
+    ],
+    "replacement": "please contact me",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"please contact me\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-i-am-writing-to",
+    "original": "I am writing to",
+    "variants": [
+      "I am writing this email to",
+      "I am reaching out to",
+      "I'm writing to",
+      "I am writing this mail to",
+      "I am sending this email to"
+    ],
+    "replacement": "I want to",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"I want to\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-is-of-the-opinion-that",
+    "original": "is of the opinion that",
+    "replacement": "thinks that",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"thinks that\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-it-is-possible-that",
+    "original": "it is possible that",
+    "replacement": "possibly,",
+    "alternatives": [
+      "perhaps"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"possibly,\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-there-is-a-possibility-that",
+    "original": "there is a possibility that",
+    "replacement": "possibly,",
+    "alternatives": [
+      "perhaps"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"possibly,\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-it-is-clear-that",
+    "original": "it is clear that",
+    "replacement": "clearly,",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"clearly,\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-it-is-evident-that",
+    "original": "it is evident that",
+    "replacement": "evidently,",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"evidently,\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-most-cases",
+    "original": "in most cases",
+    "replacement": "usually",
+    "alternatives": [
+      "mostly"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"usually\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-some-cases",
+    "original": "in some cases",
+    "replacement": "sometimes",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"sometimes\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-many-cases",
+    "original": "in many cases",
+    "replacement": "often",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"often\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-the-reason-why",
+    "original": "the reason why",
+    "replacement": "the reason",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"the reason\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-the-reason-is-because",
+    "original": "the reason is because",
+    "replacement": "the reason is that",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"the reason is that\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-on-the-occasion-of",
+    "original": "on the occasion of",
+    "replacement": "on",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"on\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-during-the-course-of",
+    "original": "during the course of",
+    "replacement": "during",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"during\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-for-the-duration-of",
+    "original": "for the duration of",
+    "replacement": "during",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"during\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-the-course-of",
+    "original": "in the course of",
+    "replacement": "during",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"during\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-at-the-time-of",
+    "original": "at the time of",
+    "replacement": "during",
+    "alternatives": [
+      "when"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"during\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-a-timely-manner",
+    "original": "in a timely manner",
+    "replacement": "promptly",
+    "alternatives": [
+      "on time"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"promptly\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-an-efficient-manner",
+    "original": "in an efficient manner",
+    "replacement": "efficiently",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"efficiently\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-a-careful-manner",
+    "original": "in a careful manner",
+    "replacement": "carefully",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"carefully\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-is-going-to",
+    "original": "is going to",
+    "replacement": "will",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"will\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-are-going-to",
+    "original": "are going to",
+    "replacement": "will",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"will\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-as-soon-as-possible",
+    "original": "as soon as possible",
+    "replacement": "soon",
+    "alternatives": [
+      "promptly"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"soon\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-a-total-of",
+    "original": "a total of",
+    "replacement": "",
+    "tone": "concise",
+    "priority": 50,
+    "description": "Filler that can be removed without changing the meaning."
+  },
+  {
+    "id": "con-as-well-as",
+    "original": "as well as",
+    "replacement": "and",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"and\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-in-terms-of",
+    "original": "in terms of",
+    "replacement": "for",
+    "alternatives": [
+      "regarding"
+    ],
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"for\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-at-your-earliest-convenience",
+    "original": "at your earliest convenience",
+    "replacement": "soon",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"soon\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-thank-you-very-much",
+    "original": "thank you very much",
+    "replacement": "thank you",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"thank you\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-would-like-to-request",
+    "original": "would like to request",
+    "replacement": "request",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"request\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-i-would-like-to-request-you-to",
+    "original": "I would like to request you to",
+    "replacement": "please",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"please\" says the same thing in fewer words."
+  },
+  {
+    "id": "con-i-would-request-you-to",
+    "original": "I would request you to",
+    "variants": [
+      "I request you to",
+      "I kindly request you to"
+    ],
+    "replacement": "please",
+    "tone": "concise",
+    "priority": 50,
+    "description": "\"please\" says the same thing in fewer words."
+  }
+]

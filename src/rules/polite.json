@@ -1,0 +1,640 @@
+[
+  {
+    "id": "pol-send-the-report",
+    "original": "Send the report",
+    "pattern": "(?:send|share|give|provide|forward|verify|confirm|resolve|complete|approve|arrange|tell|explain|clarify|look into|let me know|make sure|ensure|inform|notify|submit|attach|install|restart|assign|prioriti[sz]e|cancel|remove|add|create|bring|schedule|fix|finish|upload|sign|reschedule|investigate|escalate|deploy|merge|revert|rollback|roll back)(?= \\p{L})",
+    "replacement": "Could you please $0",
+    "alternatives": [
+      "Please $0",
+      "Would you be able to $0"
+    ],
+    "tone": "polite",
+    "priority": 40,
+    "context": "Requests",
+    "description": "Turns a bare instruction into a respectful request.",
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please",
+      "kindly",
+      "could you",
+      "would you",
+      "can you"
+    ]
+  },
+  {
+    "id": "pol-check-the-logs",
+    "original": "Check the logs",
+    "pattern": "(?:check|review|update|call|email|test|change|close|open|help|get|take|book|show|make|run|stop|start|delete|read|write|join|contact|reply|respond)(?= (?:me|us|the|this|that|these|those|your|it|a|an|him|her|them|my|our|with|whether|if|to|all)\\b)",
+    "replacement": "Could you please $0",
+    "alternatives": [
+      "Please $0",
+      "Would you be able to $0"
+    ],
+    "tone": "polite",
+    "priority": 40,
+    "context": "Requests",
+    "description": "Turns a bare instruction into a respectful request.",
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please",
+      "kindly",
+      "could you",
+      "would you",
+      "can you"
+    ]
+  },
+  {
+    "id": "pol-give-me",
+    "original": "Give me",
+    "replacement": "Could you please share",
+    "alternatives": [
+      "Could you please send me",
+      "Please share"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "context": "Requests",
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please",
+      "kindly",
+      "could you",
+      "would you",
+      "can you"
+    ]
+  },
+  {
+    "id": "pol-can-you",
+    "original": "Can you",
+    "replacement": "could you please",
+    "alternatives": [
+      "would you be able to",
+      "would you mind helping me"
+    ],
+    "tone": "polite",
+    "priority": 55,
+    "unlessSentenceContains": [
+      "please",
+      "kindly"
+    ]
+  },
+  {
+    "id": "pol-will-you",
+    "original": "Will you",
+    "replacement": "would you please",
+    "alternatives": [
+      "could you please"
+    ],
+    "tone": "polite",
+    "priority": 55,
+    "unlessSentenceContains": [
+      "please",
+      "kindly"
+    ]
+  },
+  {
+    "id": "pol-could-you",
+    "original": "Could you",
+    "variants": [
+      "would you"
+    ],
+    "replacement": "could you please",
+    "tone": "polite",
+    "priority": 45,
+    "unlessSentenceContains": [
+      "please",
+      "kindly",
+      "would you mind",
+      "would you be"
+    ]
+  },
+  {
+    "id": "pol-i-want-you-to",
+    "original": "I want you to",
+    "variants": [
+      "I need you to",
+      "I expect you to"
+    ],
+    "replacement": "I would appreciate it if you could",
+    "alternatives": [
+      "Could you please",
+      "It would be great if you could"
+    ],
+    "tone": "polite",
+    "priority": 75
+  },
+  {
+    "id": "pol-you-need-to",
+    "original": "You need to",
+    "variants": [
+      "you have to",
+      "you must",
+      "you should"
+    ],
+    "replacement": "could you please",
+    "alternatives": [
+      "it would be great if you could",
+      "I would suggest that you"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "description": "Softens a directive into a request."
+  },
+  {
+    "id": "pol-i-want",
+    "original": "I want",
+    "replacement": "I would like",
+    "alternatives": [
+      "I would appreciate"
+    ],
+    "tone": "polite",
+    "priority": 30
+  },
+  {
+    "id": "pol-i-need",
+    "original": "I need",
+    "pattern": "i need(?! to\\b)",
+    "replacement": "I would appreciate",
+    "alternatives": [
+      "I would like",
+      "may I request"
+    ],
+    "tone": "polite",
+    "priority": 30
+  },
+  {
+    "id": "pol-asap",
+    "original": "asap",
+    "variants": [
+      "a.s.a.p"
+    ],
+    "replacement": "at your earliest convenience",
+    "alternatives": [
+      "as soon as possible",
+      "when you have a moment"
+    ],
+    "tone": "polite",
+    "priority": 50,
+    "description": "Signals urgency without sounding demanding."
+  },
+  {
+    "id": "pol-immediately",
+    "original": "immediately",
+    "variants": [
+      "right now",
+      "right away",
+      "at once"
+    ],
+    "replacement": "as soon as possible",
+    "alternatives": [
+      "at your earliest convenience"
+    ],
+    "tone": "polite",
+    "priority": 45
+  },
+  {
+    "id": "pol-thanks",
+    "original": "Thanks",
+    "variants": [],
+    "pattern": "thanks(?! to\\b)",
+    "replacement": "thank you",
+    "alternatives": [
+      "many thanks"
+    ],
+    "tone": "polite",
+    "priority": 20
+  },
+  {
+    "id": "pol-thx",
+    "original": "thx",
+    "variants": [
+      "tnx",
+      "thanx"
+    ],
+    "replacement": "thank you",
+    "tone": "polite",
+    "priority": 40
+  },
+  {
+    "id": "pol-pls",
+    "original": "pls",
+    "variants": [
+      "plz"
+    ],
+    "replacement": "please",
+    "tone": "polite",
+    "priority": 40
+  },
+  {
+    "id": "pol-sorry",
+    "original": "Sorry",
+    "replacement": "I apologize",
+    "alternatives": [
+      "My apologies",
+      "I am sorry"
+    ],
+    "tone": "polite",
+    "priority": 20,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pol-that-s-wrong",
+    "original": "That's wrong",
+    "variants": [
+      "that is wrong",
+      "this is wrong",
+      "you are wrong",
+      "you're wrong",
+      "you are mistaken"
+    ],
+    "replacement": "I believe there may be a misunderstanding",
+    "alternatives": [
+      "I see this a little differently",
+      "I think this may need another look"
+    ],
+    "tone": "polite",
+    "priority": 70,
+    "description": "Disagrees without assigning blame."
+  },
+  {
+    "id": "pol-you-forgot-to",
+    "original": "You forgot to",
+    "variants": [
+      "you didn't remember to",
+      "you missed to"
+    ],
+    "replacement": "it looks like we still need to",
+    "alternatives": [
+      "could you please also",
+      "a gentle reminder to"
+    ],
+    "tone": "polite",
+    "priority": 65
+  },
+  {
+    "id": "pol-why-didn-t-you",
+    "original": "Why didn't you",
+    "variants": [
+      "why did you not",
+      "why have you not",
+      "why haven't you"
+    ],
+    "replacement": "could you help me understand why you did not",
+    "alternatives": [
+      "may I ask why you did not"
+    ],
+    "tone": "polite",
+    "priority": 65
+  },
+  {
+    "id": "pol-i-don-t-understand",
+    "original": "I don't understand",
+    "variants": [
+      "I do not understand",
+      "I didn't understand",
+      "I did not understand",
+      "I dont understand"
+    ],
+    "replacement": "I am not sure I fully understand",
+    "alternatives": [
+      "could you please clarify",
+      "could you please help me understand"
+    ],
+    "tone": "polite",
+    "priority": 60
+  },
+  {
+    "id": "pol-what-do-you-want",
+    "original": "What do you want",
+    "variants": [
+      "what do you need"
+    ],
+    "replacement": "how may I help you",
+    "alternatives": [
+      "what can I do for you",
+      "how can I assist you"
+    ],
+    "tone": "polite",
+    "priority": 65
+  },
+  {
+    "id": "pol-wait",
+    "original": "Wait",
+    "pattern": "wait(?=[ \\t]*(?:[.!\\n]|$))",
+    "replacement": "Please bear with me",
+    "alternatives": [
+      "Please give me a moment"
+    ],
+    "tone": "polite",
+    "priority": 50,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pol-wait-a-minute",
+    "original": "Wait a minute",
+    "variants": [
+      "wait a moment",
+      "wait a sec",
+      "wait a second",
+      "one sec",
+      "one second",
+      "hold on",
+      "one minute",
+      "just a minute",
+      "just a sec",
+      "one min"
+    ],
+    "replacement": "please give me a moment",
+    "alternatives": [
+      "please bear with me for a moment"
+    ],
+    "tone": "polite",
+    "priority": 65
+  },
+  {
+    "id": "pol-i-can-t",
+    "original": "I can't",
+    "variants": [
+      "I cannot",
+      "I can not",
+      "I cant"
+    ],
+    "replacement": "I'm afraid I am unable to",
+    "alternatives": [
+      "unfortunately, I am unable to",
+      "I regret that I cannot"
+    ],
+    "tone": "polite",
+    "priority": 50,
+    "description": "Declines gently."
+  },
+  {
+    "id": "pol-i-won-t",
+    "original": "I won't",
+    "variants": [
+      "I will not"
+    ],
+    "replacement": "I'm afraid I will not be able to",
+    "alternatives": [
+      "unfortunately, I will not be able to"
+    ],
+    "tone": "polite",
+    "priority": 50
+  },
+  {
+    "id": "pol-it-s-not-possible",
+    "original": "It's not possible",
+    "variants": [
+      "it is not possible",
+      "that's not possible",
+      "that is not possible",
+      "this is not possible",
+      "its not possible"
+    ],
+    "replacement": "unfortunately, that may not be possible",
+    "alternatives": [
+      "I'm afraid that will be difficult"
+    ],
+    "tone": "polite",
+    "priority": 60
+  },
+  {
+    "id": "pol-i-disagree",
+    "original": "I disagree",
+    "variants": [
+      "I don't agree",
+      "I do not agree"
+    ],
+    "replacement": "I see this differently",
+    "alternatives": [
+      "I have a different perspective",
+      "I respectfully disagree"
+    ],
+    "tone": "polite",
+    "priority": 55
+  },
+  {
+    "id": "pol-tell-me",
+    "original": "Tell me",
+    "replacement": "please let me know",
+    "alternatives": [
+      "could you please tell me",
+      "please share"
+    ],
+    "tone": "polite",
+    "priority": 55,
+    "unlessSentenceContains": [
+      "please",
+      "kindly"
+    ]
+  },
+  {
+    "id": "pol-any-update",
+    "original": "Any update",
+    "variants": [
+      "any updates",
+      "any news"
+    ],
+    "replacement": "Could you please share an update",
+    "alternatives": [
+      "May I ask if there is any update"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please"
+    ]
+  },
+  {
+    "id": "pol-thanks-in-advance",
+    "original": "Thanks in advance",
+    "replacement": "Thank you in advance for your help",
+    "alternatives": [
+      "I really appreciate your help with this"
+    ],
+    "tone": "polite",
+    "priority": 60
+  },
+  {
+    "id": "pol-hurry-up",
+    "original": "Hurry up",
+    "replacement": "could you please expedite this",
+    "alternatives": [
+      "I would appreciate it if this could be prioritized"
+    ],
+    "tone": "polite",
+    "priority": 60
+  },
+  {
+    "id": "pol-i-am-busy",
+    "original": "I am busy",
+    "variants": [
+      "I'm busy"
+    ],
+    "replacement": "I have limited availability at the moment",
+    "alternatives": [
+      "I am tied up at the moment"
+    ],
+    "tone": "polite",
+    "priority": 50
+  },
+  {
+    "id": "pol-as-i-said",
+    "original": "As I said",
+    "variants": [
+      "like I said",
+      "as I told you",
+      "as I already said",
+      "as I already told you",
+      "as I said before",
+      "as I told earlier"
+    ],
+    "replacement": "as mentioned earlier",
+    "alternatives": [
+      "as noted previously",
+      "to reiterate"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "description": "Removes the hint of impatience."
+  },
+  {
+    "id": "pol-i-already-told-you",
+    "original": "I already told you",
+    "variants": [
+      "I told you already",
+      "I have already told you"
+    ],
+    "replacement": "as mentioned earlier,",
+    "alternatives": [
+      "as noted previously,"
+    ],
+    "tone": "polite",
+    "priority": 65
+  },
+  {
+    "id": "pol-you-misunderstood",
+    "original": "You misunderstood",
+    "variants": [
+      "you don't understand",
+      "you do not understand",
+      "you misunderstood me",
+      "you didn't understand"
+    ],
+    "replacement": "I may not have been clear",
+    "alternatives": [
+      "allow me to clarify"
+    ],
+    "tone": "polite",
+    "priority": 60,
+    "description": "Takes responsibility for the misunderstanding."
+  },
+  {
+    "id": "pol-this-is-unacceptable",
+    "original": "This is unacceptable",
+    "variants": [
+      "that is unacceptable",
+      "that's unacceptable",
+      "this is not acceptable"
+    ],
+    "replacement": "this falls short of what we expected",
+    "alternatives": [
+      "I have some concerns about this"
+    ],
+    "tone": "polite",
+    "priority": 60
+  },
+  {
+    "id": "pol-let-me-know",
+    "original": "Let me know",
+    "replacement": "please let me know",
+    "alternatives": [
+      "kindly let me know",
+      "please keep me informed"
+    ],
+    "tone": "polite",
+    "priority": 45,
+    "unlessSentenceContains": [
+      "please",
+      "kindly"
+    ]
+  },
+  {
+    "id": "pol-do-it",
+    "original": "Do it",
+    "pattern": "do (it|this|that)",
+    "replacement": "Could you please take care of $1",
+    "alternatives": [
+      "Please take care of $1"
+    ],
+    "tone": "polite",
+    "priority": 55,
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please",
+      "kindly",
+      "could you",
+      "would you",
+      "can you"
+    ]
+  },
+  {
+    "id": "pol-no",
+    "original": "No",
+    "pattern": "no(?=[,.!])",
+    "replacement": "Unfortunately, no",
+    "alternatives": [
+      "I'm afraid not"
+    ],
+    "tone": "polite",
+    "priority": 30,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pol-call-me",
+    "original": "Call me",
+    "replacement": "Could you please call me",
+    "alternatives": [
+      "Please give me a call"
+    ],
+    "tone": "polite",
+    "priority": 55,
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please",
+      "kindly",
+      "could you",
+      "would you",
+      "can you"
+    ]
+  },
+  {
+    "id": "pol-you-are-late",
+    "original": "you are late",
+    "variants": [
+      "you're late"
+    ],
+    "replacement": "I noticed a delay",
+    "alternatives": [
+      "it seems there has been a delay"
+    ],
+    "tone": "polite",
+    "priority": 50
+  },
+  {
+    "id": "pol-your-mistake",
+    "original": "your mistake",
+    "variants": [
+      "your fault",
+      "your error"
+    ],
+    "replacement": "an oversight",
+    "alternatives": [
+      "a small error"
+    ],
+    "tone": "polite",
+    "priority": 50,
+    "description": "Describes the problem without assigning blame."
+  }
+]

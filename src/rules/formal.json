@@ -1,0 +1,1346 @@
+[
+  {
+    "id": "for-don-t",
+    "original": "don't",
+    "variants": [
+      "dont"
+    ],
+    "replacement": "do not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-doesn-t",
+    "original": "doesn't",
+    "variants": [
+      "doesnt"
+    ],
+    "replacement": "does not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-didn-t",
+    "original": "didn't",
+    "variants": [
+      "didnt"
+    ],
+    "replacement": "did not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-couldn-t",
+    "original": "couldn't",
+    "variants": [
+      "couldnt"
+    ],
+    "replacement": "could not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-wouldn-t",
+    "original": "wouldn't",
+    "variants": [
+      "wouldnt"
+    ],
+    "replacement": "would not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-shouldn-t",
+    "original": "shouldn't",
+    "variants": [
+      "shouldnt"
+    ],
+    "replacement": "should not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-isn-t",
+    "original": "isn't",
+    "variants": [
+      "isnt"
+    ],
+    "replacement": "is not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-aren-t",
+    "original": "aren't",
+    "variants": [
+      "arent"
+    ],
+    "replacement": "are not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-wasn-t",
+    "original": "wasn't",
+    "variants": [
+      "wasnt"
+    ],
+    "replacement": "was not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-weren-t",
+    "original": "weren't",
+    "variants": [
+      "werent"
+    ],
+    "replacement": "were not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-haven-t",
+    "original": "haven't",
+    "variants": [
+      "havent"
+    ],
+    "replacement": "have not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-hasn-t",
+    "original": "hasn't",
+    "variants": [
+      "hasnt"
+    ],
+    "replacement": "has not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-hadn-t",
+    "original": "hadn't",
+    "variants": [
+      "hadnt"
+    ],
+    "replacement": "had not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-mustn-t",
+    "original": "mustn't",
+    "variants": [
+      "mustnt"
+    ],
+    "replacement": "must not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-needn-t",
+    "original": "needn't",
+    "variants": [
+      "neednt"
+    ],
+    "replacement": "need not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-can-t",
+    "original": "can't",
+    "replacement": "cannot",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-won-t",
+    "original": "won't",
+    "replacement": "will not",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-i-m",
+    "original": "I'm",
+    "replacement": "I am",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-i-ve",
+    "original": "I've",
+    "replacement": "I have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-i-ll",
+    "original": "I'll",
+    "replacement": "I will",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-we-re",
+    "original": "we're",
+    "replacement": "we are",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-we-ve",
+    "original": "we've",
+    "replacement": "we have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-we-ll",
+    "original": "we'll",
+    "replacement": "we will",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-you-re",
+    "original": "you're",
+    "replacement": "you are",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-you-ve",
+    "original": "you've",
+    "replacement": "you have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-you-ll",
+    "original": "you'll",
+    "replacement": "you will",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-they-re",
+    "original": "they're",
+    "replacement": "they are",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-they-ve",
+    "original": "they've",
+    "replacement": "they have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-they-ll",
+    "original": "they'll",
+    "replacement": "they will",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-that-s",
+    "original": "that's",
+    "replacement": "that is",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-there-s",
+    "original": "there's",
+    "replacement": "there is",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-here-s",
+    "original": "here's",
+    "replacement": "here is",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-what-s",
+    "original": "what's",
+    "replacement": "what is",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-let-s",
+    "original": "let's",
+    "replacement": "let us",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-who-s",
+    "original": "who's",
+    "replacement": "who is",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-it-ll",
+    "original": "it'll",
+    "replacement": "it will",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-that-ll",
+    "original": "that'll",
+    "replacement": "that will",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-we-d-like",
+    "original": "we'd like",
+    "replacement": "we would like",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-i-d-like",
+    "original": "I'd like",
+    "replacement": "I would like",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-i-d-be",
+    "original": "I'd be",
+    "replacement": "I would be",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-i-d-appreciate",
+    "original": "I'd appreciate",
+    "replacement": "I would appreciate",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-we-d-be",
+    "original": "we'd be",
+    "replacement": "we would be",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-we-d-appreciate",
+    "original": "we'd appreciate",
+    "replacement": "we would appreciate",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-you-d",
+    "original": "you'd",
+    "replacement": "you would",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-could-ve",
+    "original": "could've",
+    "replacement": "could have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-should-ve",
+    "original": "should've",
+    "replacement": "should have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-would-ve",
+    "original": "would've",
+    "replacement": "would have",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-it-s-been",
+    "original": "it's been",
+    "replacement": "it has been",
+    "tone": "formal",
+    "priority": 45,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-it-s",
+    "original": "it's",
+    "replacement": "it is",
+    "alternatives": [
+      "it has"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-he-s",
+    "original": "he's",
+    "replacement": "he is",
+    "alternatives": [
+      "he has"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-she-s",
+    "original": "she's",
+    "replacement": "she is",
+    "alternatives": [
+      "she has"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing avoids contractions."
+  },
+  {
+    "id": "for-hi",
+    "original": "Hi",
+    "pattern": "(?:hi|hey|hello)(?= \\p{L})",
+    "replacement": "Dear",
+    "alternatives": [
+      "Hello"
+    ],
+    "tone": "formal",
+    "priority": 30,
+    "context": "Greetings",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-thanks-a-lot",
+    "original": "Thanks a lot",
+    "variants": [
+      "thanks so much",
+      "thanks a ton",
+      "many thanks",
+      "thank you so much"
+    ],
+    "replacement": "Thank you very much",
+    "tone": "formal",
+    "priority": 60
+  },
+  {
+    "id": "for-thanks",
+    "original": "Thanks",
+    "pattern": "thanks(?! to\\b)",
+    "replacement": "thank you",
+    "tone": "formal",
+    "priority": 20
+  },
+  {
+    "id": "for-sorry-for",
+    "original": "Sorry for",
+    "replacement": "I apologize for",
+    "alternatives": [
+      "Please accept my apologies for"
+    ],
+    "tone": "formal",
+    "priority": 55
+  },
+  {
+    "id": "for-sorry",
+    "original": "Sorry",
+    "replacement": "I apologize",
+    "alternatives": [
+      "Please accept my apologies"
+    ],
+    "tone": "formal",
+    "priority": 20,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-asap",
+    "original": "asap",
+    "variants": [
+      "a.s.a.p",
+      "as soon as you can"
+    ],
+    "replacement": "at the earliest opportunity",
+    "alternatives": [
+      "as soon as possible",
+      "at your earliest convenience"
+    ],
+    "tone": "formal",
+    "priority": 50
+  },
+  {
+    "id": "for-when-you-get-a-chance",
+    "original": "when you get a chance",
+    "variants": [
+      "when you get time",
+      "whenever you are free",
+      "when you are free",
+      "whenever you get time",
+      "when you have time"
+    ],
+    "replacement": "at your earliest convenience",
+    "tone": "formal",
+    "priority": 60
+  },
+  {
+    "id": "for-find-out",
+    "original": "find out",
+    "replacement": "determine",
+    "alternatives": [
+      "ascertain"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-talk-about",
+    "original": "talk about",
+    "replacement": "discuss",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-ask-for",
+    "original": "ask for",
+    "replacement": "request",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-look-into",
+    "original": "look into",
+    "replacement": "investigate",
+    "alternatives": [
+      "examine"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-set-up",
+    "original": "set up",
+    "replacement": "arrange",
+    "alternatives": [
+      "establish",
+      "schedule"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-get-in-touch-with",
+    "original": "get in touch with",
+    "replacement": "contact",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-go-ahead-with",
+    "original": "go ahead with",
+    "replacement": "proceed with",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-go-ahead",
+    "original": "go ahead",
+    "replacement": "proceed",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-come-up-with",
+    "original": "come up with",
+    "replacement": "propose",
+    "alternatives": [
+      "develop"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-put-off",
+    "original": "put off",
+    "replacement": "postpone",
+    "alternatives": [
+      "defer"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-call-off",
+    "original": "call off",
+    "replacement": "cancel",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-deal-with",
+    "original": "deal with",
+    "replacement": "address",
+    "alternatives": [
+      "handle"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-make-sure",
+    "original": "make sure",
+    "replacement": "ensure",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-let-you-know",
+    "original": "let you know",
+    "replacement": "inform you",
+    "alternatives": [
+      "notify you"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-in-charge-of",
+    "original": "in charge of",
+    "replacement": "responsible for",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-get-rid-of",
+    "original": "get rid of",
+    "replacement": "eliminate",
+    "alternatives": [
+      "remove"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-go-over",
+    "original": "go over",
+    "replacement": "review",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-point-out",
+    "original": "point out",
+    "replacement": "indicate",
+    "alternatives": [
+      "highlight"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-figure-out",
+    "original": "figure out",
+    "replacement": "determine",
+    "alternatives": [
+      "establish"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-hand-in",
+    "original": "hand in",
+    "replacement": "submit",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-fill-out",
+    "original": "fill out",
+    "replacement": "complete",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-fill-in",
+    "original": "fill in",
+    "replacement": "complete",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-look-at",
+    "original": "look at",
+    "replacement": "review",
+    "alternatives": [
+      "examine"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-think-about",
+    "original": "think about",
+    "replacement": "consider",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-give-up",
+    "original": "give up",
+    "replacement": "abandon",
+    "alternatives": [
+      "relinquish"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-turn-down",
+    "original": "turn down",
+    "replacement": "decline",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-keep-on",
+    "original": "keep on",
+    "replacement": "continue",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-go-up",
+    "original": "go up",
+    "replacement": "increase",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-go-down",
+    "original": "go down",
+    "replacement": "decrease",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-bring-up",
+    "original": "bring up",
+    "replacement": "raise",
+    "tone": "formal",
+    "priority": 40,
+    "description": "Formal writing prefers a single precise verb over a phrasal verb."
+  },
+  {
+    "id": "for-let-me-know-if-you-have-any-questions",
+    "original": "Let me know if you have any questions",
+    "variants": [
+      "please let me know if you have any questions",
+      "let me know if you have any doubts",
+      "let me know if you need anything",
+      "let me know if you have any queries",
+      "feel free to reach out if you have any questions",
+      "feel free to ask if you have any questions"
+    ],
+    "replacement": "Should you have any questions, please do not hesitate to contact me",
+    "alternatives": [
+      "Please do not hesitate to contact me should you require further information"
+    ],
+    "tone": "formal",
+    "priority": 90,
+    "context": "Closings"
+  },
+  {
+    "id": "for-let-me-know",
+    "original": "Let me know",
+    "replacement": "kindly inform me",
+    "alternatives": [
+      "please advise"
+    ],
+    "tone": "formal",
+    "priority": 35
+  },
+  {
+    "id": "for-let-us-know",
+    "original": "Let us know",
+    "replacement": "kindly inform us",
+    "alternatives": [
+      "please advise"
+    ],
+    "tone": "formal",
+    "priority": 35
+  },
+  {
+    "id": "for-i-want-to",
+    "original": "I want to",
+    "replacement": "I wish to",
+    "alternatives": [
+      "I would like to"
+    ],
+    "tone": "formal",
+    "priority": 45
+  },
+  {
+    "id": "for-i-want",
+    "original": "I want",
+    "replacement": "I would like",
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-we-want",
+    "original": "we want",
+    "variants": [
+      "we want to"
+    ],
+    "replacement": "we would like",
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-i-think",
+    "original": "I think",
+    "replacement": "I believe",
+    "alternatives": [
+      "In my opinion,",
+      "It is my understanding that"
+    ],
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-a-lot-of",
+    "original": "a lot of",
+    "variants": [
+      "lots of"
+    ],
+    "replacement": "a great deal of",
+    "alternatives": [
+      "numerous",
+      "considerable",
+      "many"
+    ],
+    "tone": "formal",
+    "priority": 40
+  },
+  {
+    "id": "for-your-help",
+    "original": "your help",
+    "variants": [
+      "your support"
+    ],
+    "replacement": "your assistance",
+    "tone": "formal",
+    "priority": 35
+  },
+  {
+    "id": "for-but",
+    "original": "But",
+    "pattern": "but(?= \\p{L})",
+    "replacement": "However,",
+    "alternatives": [
+      "Nevertheless,"
+    ],
+    "tone": "formal",
+    "priority": 30,
+    "description": "Formal writing avoids starting a sentence with a conjunction.",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-so",
+    "original": "So",
+    "pattern": "so(?=,? \\p{L})",
+    "replacement": "Therefore",
+    "alternatives": [
+      "Consequently",
+      "As a result"
+    ],
+    "tone": "formal",
+    "priority": 30,
+    "description": "Formal writing avoids starting a sentence with a conjunction.",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-also",
+    "original": "Also",
+    "pattern": "also(?=,? \\p{L})",
+    "replacement": "Additionally",
+    "alternatives": [
+      "Furthermore",
+      "In addition"
+    ],
+    "tone": "formal",
+    "priority": 30,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-and",
+    "original": "And",
+    "pattern": "and(?= \\p{L})",
+    "replacement": "Furthermore,",
+    "alternatives": [
+      "In addition,",
+      "Moreover,"
+    ],
+    "tone": "formal",
+    "priority": 25,
+    "description": "Formal writing avoids starting a sentence with a conjunction.",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-anyway",
+    "original": "Anyway",
+    "variants": [
+      "anyways",
+      "anyhow"
+    ],
+    "replacement": "In any case",
+    "alternatives": [
+      "Nevertheless"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-by-the-way",
+    "original": "by the way",
+    "variants": [
+      "btw"
+    ],
+    "replacement": "incidentally",
+    "alternatives": [
+      "on a related note"
+    ],
+    "tone": "formal",
+    "priority": 50
+  },
+  {
+    "id": "for-right-away",
+    "original": "right away",
+    "variants": [
+      "straight away"
+    ],
+    "replacement": "immediately",
+    "alternatives": [
+      "promptly"
+    ],
+    "tone": "formal",
+    "priority": 45
+  },
+  {
+    "id": "for-right-now",
+    "original": "right now",
+    "replacement": "at present",
+    "alternatives": [
+      "currently"
+    ],
+    "tone": "formal",
+    "priority": 45
+  },
+  {
+    "id": "for-get-back-to-you",
+    "original": "get back to you",
+    "replacement": "respond to you",
+    "alternatives": [
+      "revert to you with a response",
+      "follow up with you"
+    ],
+    "tone": "formal",
+    "priority": 55
+  },
+  {
+    "id": "for-get-back-to-me",
+    "original": "get back to me",
+    "replacement": "respond to me",
+    "alternatives": [
+      "reply to me"
+    ],
+    "tone": "formal",
+    "priority": 55
+  },
+  {
+    "id": "for-happy-to-help",
+    "original": "happy to help",
+    "variants": [
+      "glad to help"
+    ],
+    "replacement": "pleased to assist",
+    "tone": "formal",
+    "priority": 60
+  },
+  {
+    "id": "for-i-m-happy-to",
+    "original": "I'm happy to",
+    "variants": [
+      "I am happy to",
+      "I'm glad to",
+      "I am glad to",
+      "I'd be happy to",
+      "I would be happy to",
+      "I'd love to",
+      "I would love to"
+    ],
+    "replacement": "I would be pleased to",
+    "alternatives": [
+      "I would be glad to"
+    ],
+    "tone": "formal",
+    "priority": 65
+  },
+  {
+    "id": "for-hope-to-hear-from-you-soon",
+    "original": "Hope to hear from you soon",
+    "variants": [
+      "hoping to hear from you soon",
+      "waiting for your reply",
+      "awaiting your reply",
+      "looking forward to hearing from you",
+      "hope to hear from you"
+    ],
+    "replacement": "I look forward to your response",
+    "alternatives": [
+      "I look forward to hearing from you"
+    ],
+    "tone": "formal",
+    "priority": 70,
+    "context": "Closings"
+  },
+  {
+    "id": "for-ok",
+    "original": "Ok,",
+    "pattern": "ok(?:ay)?(?=,)",
+    "replacement": "Very well",
+    "alternatives": [
+      "Understood",
+      "Certainly"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-sure",
+    "original": "Sure",
+    "pattern": "sure(?=[,.!])",
+    "replacement": "Certainly",
+    "alternatives": [
+      "Of course"
+    ],
+    "tone": "formal",
+    "priority": 40,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-yeah",
+    "original": "yeah",
+    "variants": [
+      "yep",
+      "yup",
+      "ya"
+    ],
+    "replacement": "yes",
+    "tone": "formal",
+    "priority": 40
+  },
+  {
+    "id": "for-check-the",
+    "original": "check the",
+    "pattern": "check(?= (?:the|this|that|whether|if)\\b)",
+    "replacement": "verify",
+    "alternatives": [
+      "review",
+      "examine"
+    ],
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-more-info",
+    "original": "more info",
+    "variants": [
+      "more information",
+      "more details",
+      "more detail"
+    ],
+    "replacement": "further information",
+    "alternatives": [
+      "additional information"
+    ],
+    "tone": "formal",
+    "priority": 55
+  },
+  {
+    "id": "for-info",
+    "original": "info",
+    "replacement": "information",
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-in-the-end",
+    "original": "in the end",
+    "replacement": "ultimately",
+    "alternatives": [
+      "finally"
+    ],
+    "tone": "formal",
+    "priority": 45
+  },
+  {
+    "id": "for-to-sum-up",
+    "original": "to sum up",
+    "variants": [
+      "to wrap up",
+      "long story short",
+      "in short"
+    ],
+    "replacement": "in summary",
+    "alternatives": [
+      "in conclusion"
+    ],
+    "tone": "formal",
+    "priority": 50
+  },
+  {
+    "id": "for-cheers",
+    "original": "Cheers",
+    "variants": [],
+    "pattern": "cheers(?=[,.!\\n]|$)",
+    "replacement": "Kind regards",
+    "alternatives": [
+      "Yours sincerely",
+      "Best regards"
+    ],
+    "tone": "formal",
+    "priority": 50,
+    "context": "Closings",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "for-because-of",
+    "original": "because of",
+    "replacement": "owing to",
+    "alternatives": [
+      "due to",
+      "as a result of"
+    ],
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-i-need",
+    "original": "I need",
+    "pattern": "(i|we) need(?! to\\b)",
+    "replacement": "$1 require",
+    "alternatives": [
+      "$1 would require"
+    ],
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-pls",
+    "original": "pls",
+    "variants": [
+      "plz"
+    ],
+    "replacement": "please",
+    "tone": "formal",
+    "priority": 40
+  },
+  {
+    "id": "for-fyi",
+    "original": "fyi",
+    "replacement": "for your information",
+    "alternatives": [
+      "for your reference"
+    ],
+    "tone": "formal",
+    "priority": 45
+  },
+  {
+    "id": "for-tell-me-about",
+    "original": "tell me about",
+    "variants": [
+      "tell us about"
+    ],
+    "replacement": "provide details regarding",
+    "alternatives": [
+      "advise on"
+    ],
+    "tone": "formal",
+    "priority": 55
+  },
+  {
+    "id": "for-about",
+    "original": "about",
+    "pattern": "(?<=(?:email|message|question|query|concern|update|information|details|call|meeting|discussion|reminder|note|request|clarification) )about",
+    "replacement": "regarding",
+    "alternatives": [
+      "concerning",
+      "with regard to"
+    ],
+    "tone": "formal",
+    "priority": 25
+  },
+  {
+    "id": "for-get",
+    "original": "get",
+    "pattern": "(?<=(?:did not|will|to|not|should|would|can|could|may|might|we|you|they) )get(?= (?:the|a|an|your|my|any|this|that)\\b)",
+    "replacement": "receive",
+    "alternatives": [
+      "obtain"
+    ],
+    "tone": "formal",
+    "priority": 20,
+    "context": "Only suggested where \"get\" clearly means \"receive\"."
+  },
+  {
+    "id": "for-start",
+    "original": "start",
+    "pattern": "(?<=(?:will|to|shall|can|may) )start",
+    "replacement": "commence",
+    "alternatives": [
+      "begin"
+    ],
+    "tone": "formal",
+    "priority": 20
+  },
+  {
+    "id": "for-enough",
+    "original": "enough",
+    "pattern": "enough(?= (?:time|information|data|resources|evidence|budget|capacity|detail|details)\\b)",
+    "replacement": "sufficient",
+    "alternatives": [
+      "adequate"
+    ],
+    "tone": "formal",
+    "priority": 30
+  },
+  {
+    "id": "for-wrong",
+    "original": "wrong",
+    "replacement": "incorrect",
+    "alternatives": [
+      "inaccurate"
+    ],
+    "tone": "formal",
+    "priority": 20
+  },
+  {
+    "id": "for-buy",
+    "original": "buy",
+    "replacement": "purchase",
+    "alternatives": [
+      "procure"
+    ],
+    "tone": "formal",
+    "priority": 20
+  },
+  {
+    "id": "for-kids",
+    "original": "kids",
+    "replacement": "children",
+    "tone": "formal",
+    "priority": 20
+  },
+  {
+    "id": "for-thanks-for",
+    "original": "thanks for",
+    "replacement": "thank you for",
+    "tone": "formal",
+    "priority": 55
+  }
+]

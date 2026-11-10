@@ -1,0 +1,290 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Brand palette */
+  --color-navy: #142b49;
+  --color-navy-2: #1e3a5f;
+  --color-teal: #0d9488;
+  --color-teal-2: #14b8a6;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+
+  /* Semantic tokens (switch with the theme) */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+}
+
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --ink: #172033;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --brand: #142b49;
+  --accent: #0f766e; /* teal dark enough for text on white (AA) */
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0b1524;
+  --surface: #12213a;
+  --surface-2: #1a2d4a;
+  --ink: #e6ecf5;
+  --muted: #9aa9bf;
+  --line: #263a57;
+  --brand: #f1f5f9;
+  --accent: #2dd4bf;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-teal-2);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  button,
+  [role='button'],
+  summary {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--color-teal-2) 35%, transparent);
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 4px 16px rgb(15 23 42 / 0.04);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.65rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: background-color 0.15s, border-color 0.15s, color 0.15s, opacity 0.15s;
+  }
+  .btn:hover:not(:disabled) {
+    background: var(--surface-2);
+  }
+  .btn:disabled {
+    opacity: 0.5;
+  }
+  .btn-primary {
+    background: var(--color-navy);
+    border-color: var(--color-navy);
+    color: #fff;
+    font-weight: 600;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--color-navy-2);
+  }
+  .dark .btn-primary {
+    background: var(--color-teal-2);
+    border-color: var(--color-teal-2);
+    color: #06201d;
+  }
+  .dark .btn-primary:hover:not(:disabled) {
+    background: #2dd4bf;
+  }
+  .btn-danger {
+    color: var(--color-error);
+  }
+  .dark .btn-danger {
+    color: #f87171;
+  }
+  .btn-sm {
+    min-height: 2rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8125rem;
+    border-radius: 0.5rem;
+  }
+  .btn-ghost {
+    border-color: transparent;
+    background: transparent;
+  }
+  .input {
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.65rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.9375rem;
+  }
+  .input::placeholder {
+    color: color-mix(in srgb, var(--muted) 75%, transparent);
+  }
+  .input:focus-visible {
+    outline: 2px solid var(--color-teal-2);
+    outline-offset: 0;
+    border-color: var(--color-teal-2);
+  }
+  .label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background: var(--surface-2);
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+    text-align: left;
+    transition: background-color 0.15s, border-color 0.15s;
+  }
+  .chip:hover {
+    background: var(--surface-2);
+  }
+  .chip[aria-pressed='true'],
+  .chip[aria-checked='true'] {
+    border-color: var(--color-teal);
+    background: color-mix(in srgb, var(--color-teal-2) 14%, var(--surface));
+    font-weight: 600;
+  }
+
+  /* Before / after highlighting */
+  .seg-added {
+    background: #dcfce7;
+    color: #14532d;
+    border-radius: 3px;
+  }
+  .seg-removed {
+    background: #fee2e2;
+    color: #7f1d1d;
+    text-decoration: line-through;
+    border-radius: 3px;
+  }
+  .seg-replaced-old {
+    background: #fef3c7;
+    color: #78350f;
+    border-radius: 3px;
+  }
+  .seg-replaced-new {
+    background: #ccfbf1;
+    color: #134e4a;
+    border-radius: 3px;
+  }
+  .seg-grammar-old {
+    text-decoration: underline wavy var(--color-error);
+    text-decoration-skip-ink: none;
+    text-underline-offset: 3px;
+  }
+  .seg-grammar-new {
+    background: #e0f2fe;
+    color: #0c4a6e;
+    border-radius: 3px;
+  }
+  .dark .seg-added {
+    background: rgb(22 163 74 / 0.25);
+    color: #bbf7d0;
+  }
+  .dark .seg-removed {
+    background: rgb(220 38 38 / 0.25);
+    color: #fecaca;
+  }
+  .dark .seg-replaced-old {
+    background: rgb(217 119 6 / 0.25);
+    color: #fde68a;
+  }
+  .dark .seg-replaced-new {
+    background: rgb(20 184 166 / 0.25);
+    color: #99f6e4;
+  }
+  .dark .seg-grammar-new {
+    background: rgb(56 189 248 / 0.22);
+    color: #bae6fd;
+  }
+
+  /* Editor: a transparent textarea layered over a highlight backdrop */
+  .editor-layer {
+    margin: 0;
+    padding: 1rem 1.1rem;
+    border: 0;
+    font: inherit;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    letter-spacing: normal;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    tab-size: 4;
+  }
+  .editor-mark {
+    color: transparent;
+    background: transparent;
+    border-bottom: 2px solid color-mix(in srgb, var(--color-error) 80%, transparent);
+  }
+  .editor-mark-spelling {
+    border-bottom-style: dotted;
+    border-bottom-color: var(--color-warning);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

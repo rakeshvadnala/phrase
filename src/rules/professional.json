@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "pro-i-want-to-know",
+    "original": "I want to know",
+    "replacement": "I would like to understand",
+    "alternatives": [
+      "I would like to know",
+      "Could you please clarify"
+    ],
+    "tone": "professional",
+    "priority": 70,
+    "description": "A softer, more professional way to ask for information."
+  },
+  {
+    "id": "pro-i-am-facing-issue",
+    "original": "I am facing issue",
+    "variants": [
+      "I am facing an issue",
+      "I'm facing issue",
+      "I'm facing an issue",
+      "I am facing the issue",
+      "I am facing a issue",
+      "I am facing problem",
+      "I am facing a problem",
+      "I'm facing a problem",
+      "I am facing some issue",
+      "I am facing some problem"
+    ],
+    "replacement": "I am experiencing an issue",
+    "alternatives": [
+      "I have encountered an issue",
+      "I am running into an issue"
+    ],
+    "tone": "professional",
+    "priority": 70,
+    "description": "Standard workplace phrasing for reporting a problem."
+  },
+  {
+    "id": "pro-facing-issues",
+    "original": "facing issues",
+    "variants": [
+      "facing problems",
+      "facing some issues",
+      "facing some problems"
+    ],
+    "replacement": "experiencing issues",
+    "alternatives": [
+      "encountering issues"
+    ],
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-facing-an-issue",
+    "original": "facing an issue",
+    "variants": [
+      "facing issue",
+      "facing a problem",
+      "facing problem"
+    ],
+    "replacement": "experiencing an issue",
+    "alternatives": [
+      "encountering an issue"
+    ],
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-please-do-the-needful",
+    "original": "Please do the needful",
+    "variants": [
+      "kindly do the needful",
+      "do the needful",
+      "please do needful",
+      "kindly do needful",
+      "do needful"
+    ],
+    "replacement": "Could you please take the necessary action?",
+    "alternatives": [
+      "Please take the necessary action.",
+      "I would appreciate your assistance with this."
+    ],
+    "tone": "professional",
+    "priority": 80,
+    "context": "Requests",
+    "description": "\"Do the needful\" is dated; state the request directly."
+  },
+  {
+    "id": "pro-check-and-update",
+    "original": "Check and update",
+    "variants": [
+      "please check and update",
+      "kindly check and update",
+      "check and update me",
+      "please check and update me",
+      "check and let me know",
+      "please check and let me know",
+      "kindly check and let me know"
+    ],
+    "replacement": "Please review and provide an update",
+    "alternatives": [
+      "Could you please review this and share an update?",
+      "Please review and let me know your findings"
+    ],
+    "tone": "professional",
+    "priority": 80,
+    "context": "Requests"
+  },
+  {
+    "id": "pro-i-will-check",
+    "original": "I will check",
+    "pattern": "(?:i will|i['’]ll) check(?=[ \\t]*(?:[.,;!?\\n]|$|and\\b))",
+    "replacement": "I will look into this",
+    "alternatives": [
+      "I will review this",
+      "I will investigate"
+    ],
+    "tone": "professional",
+    "priority": 70,
+    "description": "Signals ownership of the follow-up."
+  },
+  {
+    "id": "pro-i-will-check-the",
+    "original": "I will check the",
+    "pattern": "(?:i will|i['’]ll) check(?= (?:the|this|that|these|those|it|your|our|my)\\b)",
+    "replacement": "I will review",
+    "alternatives": [
+      "I will look into",
+      "I will verify"
+    ],
+    "tone": "professional",
+    "priority": 65
+  },
+  {
+    "id": "pro-sorry-for-late-reply",
+    "original": "Sorry for late reply",
+    "variants": [
+      "sorry for the late reply",
+      "sorry for the delay",
+      "sorry for delay",
+      "sorry for the late response",
+      "sorry for late response",
+      "sorry for replying late",
+      "sorry for the delayed response",
+      "sorry for the delayed reply",
+      "sorry for delayed response",
+      "sorry for the delay in response",
+      "sorry for the delay in replying"
+    ],
+    "replacement": "Apologies for the delayed response",
+    "alternatives": [
+      "I apologize for the delay in responding",
+      "Thank you for your patience"
+    ],
+    "tone": "professional",
+    "priority": 80,
+    "context": "Apologies"
+  },
+  {
+    "id": "pro-do-one-thing",
+    "original": "Do one thing",
+    "replacement": "Could you please consider the following approach?",
+    "alternatives": [
+      "May I suggest the following?",
+      "Here is a suggestion."
+    ],
+    "tone": "professional",
+    "priority": 80,
+    "context": "Suggestions",
+    "description": "A direct translation that sounds abrupt in English."
+  },
+  {
+    "id": "pro-let-me-know",
+    "original": "Let me know",
+    "replacement": "Please keep me informed",
+    "alternatives": [
+      "Please let me know",
+      "Please share an update"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-let-me-know-if",
+    "original": "Let me know if",
+    "pattern": "let me know(?= (?:if|when|what|how|whether|which|who|where|your|the|once|in case|by)\\b)",
+    "replacement": "please let me know",
+    "alternatives": [
+      "please inform me"
+    ],
+    "tone": "professional",
+    "priority": 65
+  },
+  {
+    "id": "pro-asap",
+    "original": "asap",
+    "variants": [
+      "a.s.a.p"
+    ],
+    "replacement": "as soon as possible",
+    "alternatives": [
+      "at the earliest opportunity",
+      "at your earliest convenience"
+    ],
+    "tone": "professional",
+    "priority": 50,
+    "description": "Spell out informal abbreviations."
+  },
+  {
+    "id": "pro-fyi",
+    "original": "fyi",
+    "replacement": "for your information",
+    "alternatives": [
+      "for your reference"
+    ],
+    "tone": "professional",
+    "priority": 50,
+    "description": "Spell out informal abbreviations."
+  },
+  {
+    "id": "pro-pls",
+    "original": "pls",
+    "variants": [
+      "plz",
+      "plss",
+      "plzz"
+    ],
+    "replacement": "please",
+    "tone": "professional",
+    "priority": 50,
+    "description": "Spell out informal abbreviations."
+  },
+  {
+    "id": "pro-thx",
+    "original": "thx",
+    "variants": [
+      "tnx",
+      "thanx",
+      "tx"
+    ],
+    "replacement": "thank you",
+    "tone": "professional",
+    "priority": 50,
+    "description": "Spell out informal abbreviations."
+  },
+  {
+    "id": "pro-thanks-in-advance",
+    "original": "Thanks in advance",
+    "replacement": "Thank you for your support",
+    "alternatives": [
+      "I appreciate your help with this",
+      "Thank you in advance for your assistance"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-revert-back",
+    "original": "revert back",
+    "variants": [
+      "revert back to me"
+    ],
+    "replacement": "respond",
+    "alternatives": [
+      "reply",
+      "get back to me"
+    ],
+    "tone": "professional",
+    "priority": 60,
+    "description": "In standard English \"revert\" means \"return to a previous state\"."
+  },
+  {
+    "id": "pro-revert-to-me",
+    "original": "revert to me",
+    "pattern": "revert(?= (?:to me|to us|on this|on the same|at the earliest|asap|soon|by)\\b)",
+    "replacement": "respond",
+    "alternatives": [
+      "reply"
+    ],
+    "tone": "professional",
+    "priority": 55,
+    "description": "In standard English \"revert\" means \"return to a previous state\"."
+  },
+  {
+    "id": "pro-kindly",
+    "original": "kindly",
+    "replacement": "please",
+    "tone": "professional",
+    "priority": 10,
+    "description": "\"Please\" is the more common choice in modern business English."
+  },
+  {
+    "id": "pro-i-have-a-doubt",
+    "original": "I have a doubt",
+    "variants": [
+      "I have doubt",
+      "I have one doubt",
+      "I have a small doubt",
+      "I have got a doubt",
+      "I've a doubt"
+    ],
+    "replacement": "I have a question",
+    "alternatives": [
+      "I would like to clarify something"
+    ],
+    "tone": "professional",
+    "priority": 60,
+    "description": "A \"doubt\" implies distrust; a \"question\" asks for information."
+  },
+  {
+    "id": "pro-i-have-some-doubts",
+    "original": "I have some doubts",
+    "variants": [
+      "I have few doubts",
+      "I have a few doubts",
+      "I have doubts"
+    ],
+    "replacement": "I have a few questions",
+    "alternatives": [
+      "I would like to clarify a few points"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-out-of-station",
+    "original": "out of station",
+    "replacement": "out of town",
+    "alternatives": [
+      "away from the office",
+      "travelling"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-prepone",
+    "original": "prepone",
+    "replacement": "bring forward",
+    "alternatives": [
+      "move up",
+      "reschedule to an earlier time"
+    ],
+    "tone": "professional",
+    "priority": 50,
+    "description": "\"Prepone\" is not widely understood outside South Asia."
+  },
+  {
+    "id": "pro-preponed",
+    "original": "preponed",
+    "replacement": "brought forward",
+    "alternatives": [
+      "moved up",
+      "rescheduled to an earlier time"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-today-itself",
+    "original": "today itself",
+    "pattern": "(today|tomorrow|tonight|now|then|here|there) itself",
+    "replacement": "$1",
+    "tone": "professional",
+    "priority": 50,
+    "description": "\"Itself\" used for emphasis is a regional idiom."
+  },
+  {
+    "id": "pro-i-didn-t-get-you",
+    "original": "I didn't get you",
+    "variants": [
+      "I did not get you",
+      "I didn't get it",
+      "I did not get it",
+      "I didn't get that"
+    ],
+    "replacement": "I did not quite understand",
+    "alternatives": [
+      "Could you please clarify?",
+      "Could you please elaborate?"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-not-able-to",
+    "original": "not able to",
+    "variants": [
+      "can't able to",
+      "cannot able to"
+    ],
+    "replacement": "unable to",
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-i-think",
+    "original": "I think",
+    "replacement": "I believe",
+    "alternatives": [
+      "In my view",
+      "My understanding is that"
+    ],
+    "tone": "professional",
+    "priority": 20
+  },
+  {
+    "id": "pro-i-guess",
+    "original": "I guess",
+    "replacement": "I believe",
+    "alternatives": [
+      "It appears that"
+    ],
+    "tone": "professional",
+    "priority": 20
+  },
+  {
+    "id": "pro-ok",
+    "original": "Ok,",
+    "pattern": "ok(?:ay)?(?=,)",
+    "replacement": "Understood",
+    "alternatives": [
+      "Certainly",
+      "Noted"
+    ],
+    "tone": "professional",
+    "priority": 30,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pro-no-problem",
+    "original": "No problem",
+    "variants": [
+      "no issues",
+      "no worries",
+      "no probs"
+    ],
+    "replacement": "Certainly",
+    "alternatives": [
+      "You are welcome",
+      "Not a problem at all",
+      "Happy to help"
+    ],
+    "tone": "professional",
+    "priority": 40
+  },
+  {
+    "id": "pro-hi-guys",
+    "original": "Hi guys",
+    "variants": [
+      "hey guys",
+      "hello guys",
+      "hi folks",
+      "hey folks",
+      "hi all"
+    ],
+    "replacement": "Hello everyone",
+    "alternatives": [
+      "Hi team",
+      "Hello team"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-guys",
+    "original": "guys",
+    "replacement": "everyone",
+    "alternatives": [
+      "team",
+      "all"
+    ],
+    "tone": "professional",
+    "priority": 20
+  },
+  {
+    "id": "pro-hey",
+    "original": "Hey",
+    "replacement": "Hello",
+    "alternatives": [
+      "Hi"
+    ],
+    "tone": "professional",
+    "priority": 20,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pro-gonna",
+    "original": "gonna",
+    "replacement": "going to",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-wanna",
+    "original": "wanna",
+    "replacement": "want to",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-gotta",
+    "original": "gotta",
+    "replacement": "have to",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-kinda",
+    "original": "kinda",
+    "replacement": "somewhat",
+    "alternatives": [
+      "rather"
+    ],
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-dunno",
+    "original": "dunno",
+    "replacement": "do not know",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-lemme",
+    "original": "lemme",
+    "replacement": "let me",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-gimme",
+    "original": "gimme",
+    "replacement": "give me",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-ur",
+    "original": "ur",
+    "replacement": "your",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-thru",
+    "original": "thru",
+    "replacement": "through",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-btw",
+    "original": "btw",
+    "replacement": "by the way",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-idk",
+    "original": "idk",
+    "replacement": "I do not know",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-imo",
+    "original": "imo",
+    "replacement": "in my opinion",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-msg",
+    "original": "msg",
+    "replacement": "message",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-info",
+    "original": "info",
+    "replacement": "information",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-yeah",
+    "original": "yeah",
+    "replacement": "yes",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-yep",
+    "original": "yep",
+    "replacement": "yes",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-yup",
+    "original": "yup",
+    "replacement": "yes",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-nope",
+    "original": "nope",
+    "replacement": "no",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-cuz",
+    "original": "cuz",
+    "replacement": "because",
+    "tone": "professional",
+    "priority": 40,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-u",
+    "original": "u",
+    "replacement": "you",
+    "tone": "professional",
+    "priority": 15,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-tmrw",
+    "original": "tmrw",
+    "variants": [
+      "tmr",
+      "tomm",
+      "tmw",
+      "2moro"
+    ],
+    "replacement": "tomorrow",
+    "tone": "professional",
+    "priority": 50,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-bcoz",
+    "original": "bcoz",
+    "variants": [
+      "bcz",
+      "coz",
+      "becoz",
+      "bcos"
+    ],
+    "replacement": "because",
+    "tone": "professional",
+    "priority": 50,
+    "description": "Replace informal shorthand with the full word."
+  },
+  {
+    "id": "pro-wrt",
+    "original": "wrt",
+    "variants": [
+      "w.r.t",
+      "w.r.t."
+    ],
+    "replacement": "regarding",
+    "alternatives": [
+      "with respect to"
+    ],
+    "tone": "professional",
+    "priority": 50,
+    "description": "Spell out informal abbreviations."
+  },
+  {
+    "id": "pro-wfh",
+    "original": "wfh",
+    "replacement": "working from home",
+    "alternatives": [
+      "work from home"
+    ],
+    "tone": "professional",
+    "priority": 30,
+    "description": "Spell out informal abbreviations."
+  },
+  {
+    "id": "pro-ping-me",
+    "original": "ping me",
+    "pattern": "ping (me|you|him|her|them|us)",
+    "replacement": "contact $1",
+    "alternatives": [
+      "reach out to $1",
+      "message $1"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-fix-the-issue",
+    "original": "fix the issue",
+    "pattern": "fix (the|this|that|these|those) (issues?|problems?|bugs?|errors?|defects?)",
+    "replacement": "resolve $1 $2",
+    "alternatives": [
+      "address $1 $2"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-fixed-the-issue",
+    "original": "fixed the issue",
+    "pattern": "fixed (the|this|that|these|those) (issues?|problems?|bugs?|errors?|defects?)",
+    "replacement": "resolved $1 $2",
+    "alternatives": [
+      "addressed $1 $2"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-fixing-the-issue",
+    "original": "fixing the issue",
+    "pattern": "fixing (the|this|that|these|those) (issues?|problems?|bugs?|errors?|defects?)",
+    "replacement": "resolving $1 $2",
+    "alternatives": [
+      "addressing $1 $2"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-figure-out",
+    "original": "figure out",
+    "replacement": "determine",
+    "alternatives": [
+      "identify",
+      "work out"
+    ],
+    "tone": "professional",
+    "priority": 40
+  },
+  {
+    "id": "pro-right-now",
+    "original": "right now",
+    "replacement": "currently",
+    "alternatives": [
+      "at the moment",
+      "at present"
+    ],
+    "tone": "professional",
+    "priority": 35
+  },
+  {
+    "id": "pro-as-of-now",
+    "original": "as of now",
+    "replacement": "currently",
+    "alternatives": [
+      "at present",
+      "for now"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-at-the-earliest",
+    "original": "at the earliest",
+    "replacement": "as soon as possible",
+    "alternatives": [
+      "at your earliest convenience"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-what-s-the-status",
+    "original": "What's the status",
+    "variants": [
+      "what is the status",
+      "whats the status"
+    ],
+    "replacement": "Could you please share the current status",
+    "alternatives": [
+      "May I have an update on the status"
+    ],
+    "tone": "professional",
+    "priority": 60,
+    "unlessSentenceContains": [
+      "please"
+    ]
+  },
+  {
+    "id": "pro-any-update",
+    "original": "Any update",
+    "variants": [
+      "any updates",
+      "any news"
+    ],
+    "replacement": "Could you please share an update",
+    "alternatives": [
+      "Is there any update",
+      "May I have an update"
+    ],
+    "tone": "professional",
+    "priority": 60,
+    "context": "Follow-ups",
+    "position": "sentenceStart",
+    "unlessSentenceContains": [
+      "please"
+    ]
+  },
+  {
+    "id": "pro-i-need-your-help",
+    "original": "I need your help",
+    "variants": [
+      "need your help",
+      "I need help"
+    ],
+    "replacement": "I would appreciate your assistance",
+    "alternatives": [
+      "I would be grateful for your help",
+      "Could you please assist me"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-my-bad",
+    "original": "My bad",
+    "variants": [
+      "my mistake",
+      "oops"
+    ],
+    "replacement": "I apologize for the oversight",
+    "alternatives": [
+      "That was my oversight",
+      "I take responsibility for the error"
+    ],
+    "tone": "professional",
+    "priority": 55,
+    "context": "Apologies"
+  },
+  {
+    "id": "pro-sorry-for-the-inconvenience",
+    "original": "Sorry for the inconvenience",
+    "variants": [
+      "sorry for inconvenience",
+      "sorry for the trouble",
+      "sorry for the inconvenience caused"
+    ],
+    "replacement": "I apologize for the inconvenience",
+    "alternatives": [
+      "Apologies for any inconvenience caused"
+    ],
+    "tone": "professional",
+    "priority": 75,
+    "context": "Apologies"
+  },
+  {
+    "id": "pro-sorry-to-bother-you",
+    "original": "Sorry to bother you",
+    "variants": [
+      "sorry to disturb you",
+      "sorry for disturbing you",
+      "sorry for bothering you",
+      "sorry to trouble you"
+    ],
+    "replacement": "I apologize for the interruption",
+    "alternatives": [
+      "Thank you for taking the time"
+    ],
+    "tone": "professional",
+    "priority": 75,
+    "context": "Apologies"
+  },
+  {
+    "id": "pro-sorry",
+    "original": "Sorry",
+    "replacement": "Apologies",
+    "alternatives": [
+      "I apologize"
+    ],
+    "tone": "professional",
+    "priority": 10,
+    "context": "Apologies",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pro-thanks-a-lot",
+    "original": "Thanks a lot",
+    "variants": [
+      "thanks so much",
+      "thank you so much",
+      "many thanks",
+      "thanks a ton",
+      "thanks a bunch"
+    ],
+    "replacement": "Thank you very much",
+    "alternatives": [
+      "I really appreciate it",
+      "Thank you for your help"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-thanks",
+    "original": "Thanks",
+    "pattern": "thanks(?! to\\b)",
+    "replacement": "thank you",
+    "tone": "professional",
+    "priority": 10
+  },
+  {
+    "id": "pro-hope-you-are-doing-well",
+    "original": "Hope you are doing well",
+    "variants": [
+      "hope you're doing well",
+      "hope you are doing good",
+      "hope you are fine",
+      "hope you're doing good",
+      "hope you are well"
+    ],
+    "replacement": "I hope you are doing well",
+    "alternatives": [
+      "I hope this message finds you well"
+    ],
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-with-regards-to",
+    "original": "with regards to",
+    "variants": [
+      "in regards to",
+      "with regard to",
+      "in regard to"
+    ],
+    "replacement": "regarding",
+    "alternatives": [
+      "concerning",
+      "about"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-as-per-my-knowledge",
+    "original": "as per my knowledge",
+    "variants": [
+      "as per my understanding"
+    ],
+    "replacement": "to the best of my knowledge",
+    "alternatives": [
+      "as far as I know",
+      "based on my understanding"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-as-per",
+    "original": "as per",
+    "replacement": "according to",
+    "alternatives": [
+      "in line with",
+      "based on"
+    ],
+    "tone": "professional",
+    "priority": 25
+  },
+  {
+    "id": "pro-talk-to",
+    "original": "talk to",
+    "variants": [
+      "talk with"
+    ],
+    "replacement": "speak with",
+    "alternatives": [
+      "discuss with",
+      "consult"
+    ],
+    "tone": "professional",
+    "priority": 30
+  },
+  {
+    "id": "pro-tell-me",
+    "original": "Tell me",
+    "replacement": "please let me know",
+    "alternatives": [
+      "please inform me",
+      "please advise"
+    ],
+    "tone": "professional",
+    "priority": 40,
+    "unlessSentenceContains": [
+      "please"
+    ]
+  },
+  {
+    "id": "pro-get-it-done",
+    "original": "get it done",
+    "pattern": "get (it|this|that) done",
+    "replacement": "complete $1",
+    "alternatives": [
+      "finish $1"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-done-from-my-side",
+    "original": "done from my side",
+    "variants": [
+      "done from my end",
+      "done at my end",
+      "completed from my side"
+    ],
+    "replacement": "completed on my end",
+    "alternatives": [
+      "completed on my side"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-from-my-side",
+    "original": "from my side",
+    "variants": [
+      "from my end"
+    ],
+    "replacement": "on my end",
+    "alternatives": [
+      "on my side"
+    ],
+    "tone": "professional",
+    "priority": 35
+  },
+  {
+    "id": "pro-will-do",
+    "original": "Will do",
+    "pattern": "will do(?=[ \\t]*(?:[.,;!?\\n]|$))",
+    "replacement": "I will take care of it",
+    "alternatives": [
+      "Certainly, I will do that",
+      "I will get this done"
+    ],
+    "tone": "professional",
+    "priority": 45,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pro-i-am-busy",
+    "original": "I am busy",
+    "variants": [
+      "I'm busy",
+      "I am a bit busy",
+      "I'm a bit busy",
+      "I am little busy"
+    ],
+    "replacement": "I am currently occupied",
+    "alternatives": [
+      "I have limited availability at the moment",
+      "I am tied up at the moment"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-i-don-t-know",
+    "original": "I don't know",
+    "variants": [
+      "I do not know",
+      "no idea",
+      "I have no idea",
+      "I dont know"
+    ],
+    "replacement": "I am not certain",
+    "alternatives": [
+      "I will need to check on this",
+      "I will find out and confirm"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-this-is-wrong",
+    "original": "This is wrong",
+    "variants": [
+      "that is wrong",
+      "that's wrong",
+      "this is not correct",
+      "this is incorrect"
+    ],
+    "replacement": "this does not appear to be correct",
+    "alternatives": [
+      "there may be an error here",
+      "this may need to be revisited"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-it-s-not-working",
+    "original": "It's not working",
+    "variants": [
+      "it is not working",
+      "its not working",
+      "it doesn't work",
+      "it does not work",
+      "it isn't working"
+    ],
+    "replacement": "it is not functioning as expected",
+    "alternatives": [
+      "it is not working as expected"
+    ],
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-not-working",
+    "original": "not working",
+    "replacement": "not functioning as expected",
+    "alternatives": [
+      "not working as expected"
+    ],
+    "tone": "professional",
+    "priority": 30
+  },
+  {
+    "id": "pro-big-problem",
+    "original": "big problem",
+    "variants": [
+      "huge problem",
+      "big issue",
+      "huge issue",
+      "major problem"
+    ],
+    "replacement": "significant issue",
+    "alternatives": [
+      "major concern",
+      "serious issue"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-can-we-have-a-call",
+    "original": "Can we have a call",
+    "variants": [
+      "can we have a meeting",
+      "can we get on a call",
+      "can we connect",
+      "can we talk",
+      "shall we have a call"
+    ],
+    "replacement": "Could we schedule a call",
+    "alternatives": [
+      "Would you be available for a quick call",
+      "May we set up a brief call"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-are-you-free",
+    "original": "Are you free",
+    "replacement": "are you available",
+    "alternatives": [
+      "would you be available",
+      "do you have a moment"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-on-priority",
+    "original": "on priority",
+    "replacement": "as a priority",
+    "alternatives": [
+      "urgently"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-on-urgent-basis",
+    "original": "on urgent basis",
+    "variants": [
+      "on an urgent basis",
+      "on urgent priority"
+    ],
+    "replacement": "urgently",
+    "alternatives": [
+      "as a matter of urgency",
+      "as a priority"
+    ],
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-the-mail",
+    "original": "the mail",
+    "pattern": "(the|your|my|this|that|below|above|previous|earlier|last|attached|following|same) mail(s?)",
+    "replacement": "$1 email$2",
+    "tone": "professional",
+    "priority": 40,
+    "description": "\"Email\" is clearer than \"mail\" for electronic messages."
+  },
+  {
+    "id": "pro-a-mail",
+    "original": "a mail",
+    "variants": [
+      "one mail"
+    ],
+    "replacement": "an email",
+    "tone": "professional",
+    "priority": 40,
+    "description": "\"Email\" is clearer than \"mail\" for electronic messages."
+  },
+  {
+    "id": "pro-mail-me",
+    "original": "mail me",
+    "variants": [
+      "mail us"
+    ],
+    "replacement": "email me",
+    "tone": "professional",
+    "priority": 40
+  },
+  {
+    "id": "pro-drop-a-mail",
+    "original": "drop a mail",
+    "variants": [
+      "drop me a mail",
+      "drop an email",
+      "drop me an email",
+      "shoot a mail",
+      "shoot me a mail",
+      "shoot an email"
+    ],
+    "replacement": "send an email",
+    "alternatives": [
+      "email me"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-mail-id",
+    "original": "mail id",
+    "variants": [
+      "mail-id",
+      "email id",
+      "email-id",
+      "e-mail id",
+      "mailid"
+    ],
+    "replacement": "email address",
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-pfa",
+    "original": "PFA",
+    "variants": [
+      "pls find attached",
+      "please find the attached",
+      "find attached",
+      "PFA the"
+    ],
+    "replacement": "Please find attached",
+    "alternatives": [
+      "I have attached",
+      "Attached is"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-pfb",
+    "original": "PFB",
+    "variants": [
+      "pls find below",
+      "find below"
+    ],
+    "replacement": "Please find below",
+    "alternatives": [
+      "Please see below"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-attached-herewith",
+    "original": "attached herewith",
+    "variants": [
+      "enclosed herewith",
+      "herewith attached",
+      "attached here with"
+    ],
+    "replacement": "attached",
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-cent-percent",
+    "original": "cent percent",
+    "variants": [
+      "cent per cent",
+      "hundred percent"
+    ],
+    "replacement": "one hundred percent",
+    "alternatives": [
+      "completely",
+      "fully"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-your-good-name",
+    "original": "your good name",
+    "replacement": "your name",
+    "tone": "professional",
+    "priority": 60,
+    "description": "A direct translation; \"your name\" is standard."
+  },
+  {
+    "id": "pro-myself",
+    "original": "Myself",
+    "pattern": "myself(?! and\\b)",
+    "replacement": "I am",
+    "alternatives": [
+      "My name is"
+    ],
+    "tone": "professional",
+    "priority": 45,
+    "description": "Introduce yourself with \"I am\" or \"My name is\".",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "pro-i-am-having-a-doubt",
+    "original": "I am having a doubt",
+    "pattern": "(?:i am|i['’]m) having(?= (?:a |an |some |one |few |a few )?(?:doubts?|issues?|problems?|questions?|quer(?:y|ies)|concerns?|meeting|call)\\b)",
+    "replacement": "I have",
+    "tone": "professional",
+    "priority": 75,
+    "description": "Use the simple present for possession."
+  },
+  {
+    "id": "pro-intimate-me",
+    "original": "intimate me",
+    "pattern": "intimate (me|us|you|him|her|them|the)",
+    "replacement": "inform $1",
+    "alternatives": [
+      "notify $1"
+    ],
+    "tone": "professional",
+    "priority": 50,
+    "description": "\"Intimate\" as a verb is rarely understood outside South Asia."
+  },
+  {
+    "id": "pro-hurry-up",
+    "original": "Hurry up",
+    "replacement": "please prioritize this",
+    "alternatives": [
+      "please expedite this",
+      "please treat this as urgent"
+    ],
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-i-want",
+    "original": "I want",
+    "replacement": "I would like",
+    "alternatives": [
+      "I wish"
+    ],
+    "tone": "professional",
+    "priority": 15
+  },
+  {
+    "id": "pro-we-want",
+    "original": "we want",
+    "replacement": "we would like",
+    "tone": "professional",
+    "priority": 15
+  },
+  {
+    "id": "pro-i-need-to-know",
+    "original": "I need to know",
+    "replacement": "I would like to know",
+    "alternatives": [
+      "Could you please confirm"
+    ],
+    "tone": "professional",
+    "priority": 60
+  },
+  {
+    "id": "pro-give-me-some-time",
+    "original": "give me some time",
+    "variants": [
+      "give me sometime",
+      "give me some more time",
+      "I need some time"
+    ],
+    "replacement": "please allow me some time",
+    "alternatives": [
+      "I will need a little more time"
+    ],
+    "tone": "professional",
+    "priority": 55
+  },
+  {
+    "id": "pro-will-let-you-know",
+    "original": "will let you know",
+    "replacement": "will keep you informed",
+    "alternatives": [
+      "will update you",
+      "will get back to you"
+    ],
+    "tone": "professional",
+    "priority": 45
+  },
+  {
+    "id": "pro-do-the-same",
+    "original": "do the same",
+    "replacement": "do so",
+    "alternatives": [
+      "do this"
+    ],
+    "tone": "professional",
+    "priority": 30
+  },
+  {
+    "id": "pro-the-same",
+    "original": "the same",
+    "pattern": "(?<=(?:send|share|update|confirm|check|review|forward|approve|complete|verify|resolve|fix|do) )the same",
+    "replacement": "it",
+    "alternatives": [
+      "this"
+    ],
+    "tone": "professional",
+    "priority": 35,
+    "description": "\"The same\" as a pronoun is a regional idiom."
+  },
+  {
+    "id": "pro-at-the-soonest",
+    "original": "at the soonest",
+    "replacement": "as soon as possible",
+    "tone": "professional",
+    "priority": 50
+  },
+  {
+    "id": "pro-passed-out-from",
+    "original": "passed out from",
+    "variants": [
+      "passed out of"
+    ],
+    "replacement": "graduated from",
+    "tone": "professional",
+    "priority": 50,
+    "description": "\"Pass out\" means \"faint\" in standard English."
+  },
+  {
+    "id": "pro-timings",
+    "original": "timings",
+    "replacement": "time",
+    "alternatives": [
+      "schedule",
+      "hours"
+    ],
+    "tone": "professional",
+    "priority": 20
+  },
+  {
+    "id": "pro-discuss-the-same",
+    "original": "discuss the same",
+    "replacement": "discuss this",
+    "tone": "professional",
+    "priority": 60
+  }
+]

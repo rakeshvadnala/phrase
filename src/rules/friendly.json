@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "fri-do-not",
+    "original": "do not",
+    "pattern": "do[ \\t]+not(?= \\p{L})",
+    "replacement": "don't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-does-not",
+    "original": "does not",
+    "pattern": "does[ \\t]+not(?= \\p{L})",
+    "replacement": "doesn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-did-not",
+    "original": "did not",
+    "pattern": "did[ \\t]+not(?= \\p{L})",
+    "replacement": "didn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-cannot",
+    "original": "cannot",
+    "pattern": "cannot(?= \\p{L})",
+    "replacement": "can't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-can-not",
+    "original": "can not",
+    "pattern": "can[ \\t]+not(?= \\p{L})",
+    "replacement": "can't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-could-not",
+    "original": "could not",
+    "pattern": "could[ \\t]+not(?= \\p{L})",
+    "replacement": "couldn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-will-not",
+    "original": "will not",
+    "pattern": "will[ \\t]+not(?= \\p{L})",
+    "replacement": "won't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-would-not",
+    "original": "would not",
+    "pattern": "would[ \\t]+not(?= \\p{L})",
+    "replacement": "wouldn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-should-not",
+    "original": "should not",
+    "pattern": "should[ \\t]+not(?= \\p{L})",
+    "replacement": "shouldn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-is-not",
+    "original": "is not",
+    "pattern": "is[ \\t]+not(?= \\p{L})",
+    "replacement": "isn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-are-not",
+    "original": "are not",
+    "pattern": "are[ \\t]+not(?= \\p{L})",
+    "replacement": "aren't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-was-not",
+    "original": "was not",
+    "pattern": "was[ \\t]+not(?= \\p{L})",
+    "replacement": "wasn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-were-not",
+    "original": "were not",
+    "pattern": "were[ \\t]+not(?= \\p{L})",
+    "replacement": "weren't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-have-not",
+    "original": "have not",
+    "pattern": "have[ \\t]+not(?= \\p{L})",
+    "replacement": "haven't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-has-not",
+    "original": "has not",
+    "pattern": "has[ \\t]+not(?= \\p{L})",
+    "replacement": "hasn't",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-i-am",
+    "original": "I am",
+    "pattern": "I[ \\t]+am(?= \\p{L})",
+    "replacement": "I'm",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-i-will",
+    "original": "I will",
+    "pattern": "I[ \\t]+will(?= \\p{L})",
+    "replacement": "I'll",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-i-would",
+    "original": "I would",
+    "pattern": "I[ \\t]+would(?= \\p{L})",
+    "replacement": "I'd",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-we-are",
+    "original": "we are",
+    "pattern": "we[ \\t]+are(?= \\p{L})",
+    "replacement": "we're",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-we-will",
+    "original": "we will",
+    "pattern": "we[ \\t]+will(?= \\p{L})",
+    "replacement": "we'll",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-we-would",
+    "original": "we would",
+    "pattern": "we[ \\t]+would(?= \\p{L})",
+    "replacement": "we'd",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-you-are",
+    "original": "you are",
+    "pattern": "you[ \\t]+are(?= \\p{L})",
+    "replacement": "you're",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-you-will",
+    "original": "you will",
+    "pattern": "you[ \\t]+will(?= \\p{L})",
+    "replacement": "you'll",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-they-are",
+    "original": "they are",
+    "pattern": "they[ \\t]+are(?= \\p{L})",
+    "replacement": "they're",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-they-will",
+    "original": "they will",
+    "pattern": "they[ \\t]+will(?= \\p{L})",
+    "replacement": "they'll",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-it-is",
+    "original": "it is",
+    "pattern": "it[ \\t]+is(?= \\p{L})",
+    "replacement": "it's",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-that-is",
+    "original": "that is",
+    "pattern": "that[ \\t]+is(?= \\p{L})",
+    "replacement": "that's",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-there-is",
+    "original": "there is",
+    "pattern": "there[ \\t]+is(?= \\p{L})",
+    "replacement": "there's",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-here-is",
+    "original": "here is",
+    "pattern": "here[ \\t]+is(?= \\p{L})",
+    "replacement": "here's",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-let-us",
+    "original": "let us",
+    "pattern": "let[ \\t]+us(?= \\p{L})",
+    "replacement": "let's",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-what-is",
+    "original": "what is",
+    "pattern": "what[ \\t]+is(?= \\p{L})",
+    "replacement": "what's",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-i-have-been",
+    "original": "I have been",
+    "pattern": "(i|we|you|they) have(?= (?:been|already|just|attached|sent|shared|completed|updated|reviewed|checked|added|not|never|got)\\b)",
+    "replacement": "$1've",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "Contractions make writing sound more conversational."
+  },
+  {
+    "id": "fri-dear",
+    "original": "Dear",
+    "pattern": "dear(?= \\p{L})",
+    "replacement": "Hi",
+    "alternatives": [
+      "Hello",
+      "Hey"
+    ],
+    "tone": "friendly",
+    "priority": 40,
+    "context": "Greetings",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-greetings",
+    "original": "Greetings",
+    "pattern": "greetings(?=[,!. ])",
+    "replacement": "Hi",
+    "alternatives": [
+      "Hello"
+    ],
+    "tone": "friendly",
+    "priority": 40,
+    "context": "Greetings",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-i-would-like-to-inform-you-that",
+    "original": "I would like to inform you that",
+    "variants": [
+      "I am writing to inform you that",
+      "this is to inform you that",
+      "please be informed that",
+      "kindly be informed that",
+      "I wish to inform you that",
+      "I would like to let you know that",
+      "I am writing to let you know that"
+    ],
+    "replacement": "Just letting you know that",
+    "alternatives": [
+      "I wanted to let you know that",
+      "Quick update:"
+    ],
+    "tone": "friendly",
+    "priority": 90
+  },
+  {
+    "id": "fri-i-hope-this-email-finds-you-well",
+    "original": "I hope this email finds you well",
+    "variants": [
+      "I hope this message finds you well",
+      "hope this email finds you well",
+      "I trust this email finds you well",
+      "trust this email finds you well",
+      "I hope this mail finds you well",
+      "I trust you are well"
+    ],
+    "replacement": "I hope you're doing well",
+    "alternatives": [
+      "Hope you're having a good week",
+      "Hope all is well"
+    ],
+    "tone": "friendly",
+    "priority": 90,
+    "context": "Greetings"
+  },
+  {
+    "id": "fri-i-would-like-to",
+    "original": "I would like to",
+    "replacement": "I'd like to",
+    "alternatives": [
+      "I'd love to",
+      "I want to"
+    ],
+    "tone": "friendly",
+    "priority": 60
+  },
+  {
+    "id": "fri-kindly",
+    "original": "kindly",
+    "replacement": "please",
+    "tone": "friendly",
+    "priority": 30
+  },
+  {
+    "id": "fri-at-your-earliest-convenience",
+    "original": "at your earliest convenience",
+    "variants": [
+      "at the earliest opportunity",
+      "at your convenience"
+    ],
+    "replacement": "when you get a chance",
+    "alternatives": [
+      "whenever works for you",
+      "when you have a moment"
+    ],
+    "tone": "friendly",
+    "priority": 60
+  },
+  {
+    "id": "fri-thank-you-for-your-assistance",
+    "original": "Thank you for your assistance",
+    "variants": [
+      "thank you for your support",
+      "thank you for your help",
+      "thank you for your kind assistance",
+      "thank you for your cooperation"
+    ],
+    "replacement": "thanks for your help",
+    "alternatives": [
+      "thanks so much for helping out",
+      "really appreciate your help"
+    ],
+    "tone": "friendly",
+    "priority": 75
+  },
+  {
+    "id": "fri-thank-you-very-much",
+    "original": "Thank you very much",
+    "replacement": "thanks so much",
+    "alternatives": [
+      "thanks a lot",
+      "many thanks"
+    ],
+    "tone": "friendly",
+    "priority": 65
+  },
+  {
+    "id": "fri-thank-you-for-your-patience",
+    "original": "Thank you for your patience",
+    "replacement": "thanks for bearing with me",
+    "alternatives": [
+      "thanks for your patience"
+    ],
+    "tone": "friendly",
+    "priority": 75
+  },
+  {
+    "id": "fri-thank-you-for-your-understanding",
+    "original": "Thank you for your understanding",
+    "replacement": "thanks for understanding",
+    "tone": "friendly",
+    "priority": 75
+  },
+  {
+    "id": "fri-thank-you-for-your-prompt-response",
+    "original": "Thank you for your prompt response",
+    "variants": [
+      "thank you for the prompt response",
+      "thank you for your quick response",
+      "thank you for the quick response",
+      "thank you for your swift response"
+    ],
+    "replacement": "thanks for getting back to me so quickly",
+    "alternatives": [
+      "thanks for the quick reply"
+    ],
+    "tone": "friendly",
+    "priority": 80
+  },
+  {
+    "id": "fri-thank-you",
+    "original": "Thank you",
+    "replacement": "thanks",
+    "alternatives": [
+      "thanks so much"
+    ],
+    "tone": "friendly",
+    "priority": 25
+  },
+  {
+    "id": "fri-i-apologize-for",
+    "original": "I apologize for",
+    "variants": [
+      "I apologise for",
+      "apologies for",
+      "my apologies for",
+      "please accept my apologies for",
+      "I sincerely apologize for"
+    ],
+    "replacement": "sorry for",
+    "alternatives": [
+      "I'm sorry for",
+      "sorry about"
+    ],
+    "tone": "friendly",
+    "priority": 65
+  },
+  {
+    "id": "fri-i-apologize",
+    "original": "I apologize",
+    "variants": [
+      "I apologise",
+      "my apologies",
+      "apologies"
+    ],
+    "replacement": "I'm sorry",
+    "alternatives": [
+      "sorry about that"
+    ],
+    "tone": "friendly",
+    "priority": 40
+  },
+  {
+    "id": "fri-please-do-not-hesitate-to-contact-me",
+    "original": "Please do not hesitate to contact me",
+    "variants": [
+      "do not hesitate to contact me",
+      "please feel free to contact me",
+      "please do not hesitate to reach out",
+      "please don't hesitate to contact me",
+      "please do not hesitate to get in touch"
+    ],
+    "replacement": "feel free to reach out",
+    "alternatives": [
+      "just let me know",
+      "give me a shout"
+    ],
+    "tone": "friendly",
+    "priority": 85,
+    "context": "Closings"
+  },
+  {
+    "id": "fri-should-you-have-any-questions",
+    "original": "Should you have any questions",
+    "variants": [
+      "if you have any queries",
+      "should you have any queries",
+      "if you require any further information",
+      "should you require any further information",
+      "should you need any clarification"
+    ],
+    "replacement": "if you have any questions",
+    "alternatives": [
+      "if anything is unclear"
+    ],
+    "tone": "friendly",
+    "priority": 80,
+    "context": "Closings"
+  },
+  {
+    "id": "fri-i-look-forward-to-hearing-from-you",
+    "original": "I look forward to hearing from you",
+    "variants": [
+      "I look forward to your response",
+      "looking forward to your response",
+      "I look forward to your reply",
+      "awaiting your response",
+      "I await your response"
+    ],
+    "replacement": "Hope to hear from you soon",
+    "alternatives": [
+      "Looking forward to hearing from you!",
+      "Talk soon"
+    ],
+    "tone": "friendly",
+    "priority": 80,
+    "context": "Closings"
+  },
+  {
+    "id": "fri-yours-sincerely",
+    "original": "Yours sincerely",
+    "variants": [
+      "yours faithfully",
+      "yours truly",
+      "respectfully yours",
+      "sincerely"
+    ],
+    "replacement": "Best",
+    "alternatives": [
+      "Thanks",
+      "Cheers",
+      "All the best"
+    ],
+    "tone": "friendly",
+    "priority": 60,
+    "context": "Closings"
+  },
+  {
+    "id": "fri-kind-regards",
+    "original": "Kind regards",
+    "variants": [
+      "warm regards",
+      "best regards",
+      "with regards",
+      "regards"
+    ],
+    "replacement": "Best",
+    "alternatives": [
+      "Thanks",
+      "Cheers",
+      "All the best"
+    ],
+    "tone": "friendly",
+    "priority": 40,
+    "context": "Closings"
+  },
+  {
+    "id": "fri-assistance",
+    "original": "assistance",
+    "replacement": "help",
+    "alternatives": [
+      "support"
+    ],
+    "tone": "friendly",
+    "priority": 25
+  },
+  {
+    "id": "fri-regarding",
+    "original": "regarding",
+    "variants": [
+      "with regard to",
+      "with respect to",
+      "in regard to",
+      "pertaining to",
+      "with reference to",
+      "in relation to"
+    ],
+    "replacement": "about",
+    "alternatives": [
+      "on"
+    ],
+    "tone": "friendly",
+    "priority": 35
+  },
+  {
+    "id": "fri-i-request-you-to",
+    "original": "I request you to",
+    "variants": [
+      "request you to",
+      "requesting you to",
+      "you are requested to",
+      "I would request you to",
+      "I kindly request you to"
+    ],
+    "replacement": "could you please",
+    "alternatives": [
+      "would you mind",
+      "can you please"
+    ],
+    "tone": "friendly",
+    "priority": 75
+  },
+  {
+    "id": "fri-it-would-be-appreciated-if-you-could",
+    "original": "It would be appreciated if you could",
+    "variants": [
+      "I would appreciate it if you could",
+      "I would be grateful if you could",
+      "I would be obliged if you could",
+      "it would be great if you could"
+    ],
+    "replacement": "could you please",
+    "alternatives": [
+      "can you please",
+      "would you mind"
+    ],
+    "tone": "friendly",
+    "priority": 85
+  },
+  {
+    "id": "fri-require",
+    "original": "require",
+    "replacement": "need",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-requires",
+    "original": "requires",
+    "replacement": "needs",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-commence",
+    "original": "commence",
+    "replacement": "start",
+    "alternatives": [
+      "begin"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-prior-to",
+    "original": "prior to",
+    "replacement": "before",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-subsequent-to",
+    "original": "subsequent to",
+    "replacement": "after",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-in-order-to",
+    "original": "in order to",
+    "replacement": "to",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-utilize",
+    "original": "utilize",
+    "replacement": "use",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-utilise",
+    "original": "utilise",
+    "replacement": "use",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-utilizing",
+    "original": "utilizing",
+    "replacement": "using",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-utilized",
+    "original": "utilized",
+    "replacement": "used",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-obtain",
+    "original": "obtain",
+    "replacement": "get",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-sufficient",
+    "original": "sufficient",
+    "replacement": "enough",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-numerous",
+    "original": "numerous",
+    "replacement": "many",
+    "alternatives": [
+      "lots of"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-approximately",
+    "original": "approximately",
+    "replacement": "about",
+    "alternatives": [
+      "around"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-endeavor",
+    "original": "endeavor",
+    "replacement": "try",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-endeavour",
+    "original": "endeavour",
+    "replacement": "try",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-in-the-event-that",
+    "original": "in the event that",
+    "replacement": "if",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-inform",
+    "original": "inform",
+    "replacement": "tell",
+    "alternatives": [
+      "let … know"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-purchase",
+    "original": "purchase",
+    "replacement": "buy",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-additional",
+    "original": "additional",
+    "replacement": "more",
+    "alternatives": [
+      "extra"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-commenced",
+    "original": "commenced",
+    "replacement": "started",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-demonstrate",
+    "original": "demonstrate",
+    "replacement": "show",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-terminate",
+    "original": "terminate",
+    "replacement": "end",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-facilitate",
+    "original": "facilitate",
+    "replacement": "help with",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-ascertain",
+    "original": "ascertain",
+    "replacement": "find out",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-therefore",
+    "original": "therefore",
+    "replacement": "so",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-nevertheless",
+    "original": "nevertheless",
+    "replacement": "still",
+    "alternatives": [
+      "even so"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-immediately",
+    "original": "immediately",
+    "replacement": "right away",
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-currently",
+    "original": "currently",
+    "replacement": "right now",
+    "alternatives": [
+      "at the moment"
+    ],
+    "tone": "friendly",
+    "priority": 30,
+    "description": "A simpler, more approachable word."
+  },
+  {
+    "id": "fri-however",
+    "original": "However,",
+    "pattern": "however,",
+    "replacement": "But",
+    "alternatives": [
+      "That said,",
+      "Still,"
+    ],
+    "tone": "friendly",
+    "priority": 45,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-therefore-2",
+    "original": "Therefore,",
+    "pattern": "(?:therefore|consequently|hence|thus),",
+    "replacement": "So",
+    "alternatives": [
+      "That's why"
+    ],
+    "tone": "friendly",
+    "priority": 45,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-additionally",
+    "original": "Additionally,",
+    "pattern": "(?:additionally|furthermore|moreover|in addition),",
+    "replacement": "Also,",
+    "alternatives": [
+      "On top of that,",
+      "Plus,"
+    ],
+    "tone": "friendly",
+    "priority": 45,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-i-am-pleased-to",
+    "original": "I am pleased to",
+    "variants": [
+      "I am delighted to",
+      "I would be pleased to",
+      "I would be delighted to",
+      "I would be glad to"
+    ],
+    "replacement": "I'm happy to",
+    "alternatives": [
+      "I'm glad to",
+      "I'd love to"
+    ],
+    "tone": "friendly",
+    "priority": 70
+  },
+  {
+    "id": "fri-please-find-attached",
+    "original": "Please find attached",
+    "variants": [
+      "please find the attached",
+      "attached please find",
+      "please find enclosed",
+      "enclosed please find",
+      "kindly find attached"
+    ],
+    "replacement": "I've attached",
+    "alternatives": [
+      "Here's",
+      "Attaching"
+    ],
+    "tone": "friendly",
+    "priority": 75
+  },
+  {
+    "id": "fri-as-per-our-discussion",
+    "original": "As per our discussion",
+    "variants": [
+      "as per our conversation",
+      "as per our earlier discussion",
+      "pursuant to our discussion",
+      "further to our discussion",
+      "further to our conversation"
+    ],
+    "replacement": "as we discussed",
+    "alternatives": [
+      "following up on our chat",
+      "like we talked about"
+    ],
+    "tone": "friendly",
+    "priority": 80
+  },
+  {
+    "id": "fri-as-per",
+    "original": "as per",
+    "replacement": "based on",
+    "alternatives": [
+      "going by",
+      "following"
+    ],
+    "tone": "friendly",
+    "priority": 30
+  },
+  {
+    "id": "fri-noted",
+    "original": "Noted",
+    "pattern": "(?:noted|understood|acknowledged)(?=[.,!]|$)",
+    "replacement": "Got it",
+    "alternatives": [
+      "Sounds good",
+      "Makes sense"
+    ],
+    "tone": "friendly",
+    "priority": 50,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-certainly",
+    "original": "Certainly",
+    "pattern": "certainly(?=[.,!]|$)",
+    "replacement": "Sure",
+    "alternatives": [
+      "Of course",
+      "Happy to",
+      "Absolutely"
+    ],
+    "tone": "friendly",
+    "priority": 50,
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-please-advise",
+    "original": "Please advise",
+    "variants": [
+      "kindly advise",
+      "please advise accordingly"
+    ],
+    "replacement": "let me know what you think",
+    "alternatives": [
+      "let me know",
+      "what do you think?"
+    ],
+    "tone": "friendly",
+    "priority": 70
+  },
+  {
+    "id": "fri-we-regret-to-inform-you-that",
+    "original": "We regret to inform you that",
+    "variants": [
+      "I regret to inform you that",
+      "we are sorry to inform you that",
+      "I am sorry to inform you that"
+    ],
+    "replacement": "unfortunately,",
+    "alternatives": [
+      "I'm sorry to say that"
+    ],
+    "tone": "friendly",
+    "priority": 90
+  },
+  {
+    "id": "fri-please-note-that",
+    "original": "Please note that",
+    "variants": [
+      "kindly note that",
+      "please be advised that",
+      "please be aware that",
+      "it should be noted that"
+    ],
+    "replacement": "just so you know,",
+    "alternatives": [
+      "a quick heads-up:",
+      "just a note:"
+    ],
+    "tone": "friendly",
+    "priority": 80
+  },
+  {
+    "id": "fri-i-would-be-happy-to",
+    "original": "I would be happy to",
+    "replacement": "I'd be happy to",
+    "alternatives": [
+      "happy to"
+    ],
+    "tone": "friendly",
+    "priority": 70
+  },
+  {
+    "id": "fri-at-this-time",
+    "original": "at this time",
+    "variants": [
+      "at the present time",
+      "at this point in time",
+      "at present"
+    ],
+    "replacement": "right now",
+    "alternatives": [
+      "for now",
+      "at the moment"
+    ],
+    "tone": "friendly",
+    "priority": 60
+  },
+  {
+    "id": "fri-good-day",
+    "original": "Good day",
+    "replacement": "Hi",
+    "alternatives": [
+      "Hello"
+    ],
+    "tone": "friendly",
+    "priority": 50,
+    "context": "Greetings",
+    "position": "sentenceStart"
+  },
+  {
+    "id": "fri-to-whom-it-may-concern",
+    "original": "To whom it may concern",
+    "variants": [
+      "dear sir/madam",
+      "dear sir or madam",
+      "respected sir",
+      "respected madam",
+      "dear sir",
+      "dear madam"
+    ],
+    "replacement": "Hi there",
+    "alternatives": [
+      "Hello",
+      "Hi team"
+    ],
+    "tone": "friendly",
+    "priority": 85,
+    "context": "Greetings"
+  },
+  {
+    "id": "fri-i-am-writing-to",
+    "original": "I am writing to",
+    "variants": [
+      "I am writing this email to",
+      "I am reaching out to"
+    ],
+    "replacement": "I wanted to",
+    "alternatives": [
+      "I'm reaching out to",
+      "Just wanted to"
+    ],
+    "tone": "friendly",
+    "priority": 70
+  },
+  {
+    "id": "fri-could-you-please-confirm",
+    "original": "Could you please confirm",
+    "replacement": "can you confirm",
+    "alternatives": [
+      "could you confirm",
+      "mind confirming"
+    ],
+    "tone": "friendly",
+    "priority": 60
+  },
+  {
+    "id": "fri-we-will-2",
+    "original": "We will",
+    "pattern": "we shall(?= \\p{L})",
+    "replacement": "we'll",
+    "alternatives": [
+      "we're going to"
+    ],
+    "tone": "friendly",
+    "priority": 30
+  }
+]
