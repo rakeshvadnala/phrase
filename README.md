@@ -125,7 +125,7 @@ git commit -m "Initial commit: Phrase"
 ```
 
 ```bash
-git remote add origin https://github.com/<your-github-username>/phrase.git
+git remote add origin https://github.com/rakeshvadnala/phrase.git
 ```
 
 ```bash
@@ -152,9 +152,9 @@ At the DNS provider for `rakeshvadnala.in`, add one record:
 
 | Type | Name / Host | Value / Target | TTL |
 | --- | --- | --- | --- |
-| `CNAME` | `phrase` | `<your-github-username>.github.io` | 3600 (or default) |
+| `CNAME` | `phrase` | `rakeshvadnala.github.io` | 3600 (or default) |
 
-- Point the record at `<your-github-username>.github.io` — not at the repository URL.
+- Point the record at `rakeshvadnala.github.io` — not at the repository URL.
 - If you use Cloudflare, set the record to **DNS only** (grey cloud) until GitHub has issued the HTTPS certificate.
 - Propagation usually takes minutes but can take up to 24 hours. Verify with `nslookup phrase.rakeshvadnala.in`.
 - Recommended: verify the domain under **GitHub → Settings → Pages → Verified domains** to prevent takeover.
